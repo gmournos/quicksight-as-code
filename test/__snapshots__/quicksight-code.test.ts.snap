@@ -1,0 +1,4935 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pipeline Stack matches Snapshot 1`] = `
+{
+  "Parameters": {
+    "BootstrapVersion": {
+      "Default": "/cdk-bootstrap/hnb659fds/version",
+      "Description": "Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]",
+      "Type": "AWS::SSM::Parameter::Value<String>",
+    },
+  },
+  "Resources": {
+    "businessquicksighttemplate": {
+      "DependsOn": [
+        "qsautomationsqfsharedashboardresourceproviderframeworkonEvent388397F7",
+        "qsautomationsqfsharedashboardresourceproviderframeworkonEventServiceRoleDefaultPolicy31A55BD0",
+        "qsautomationsqfsharedashboardresourceproviderframeworkonEventServiceRoleE41381C0",
+        "qsautomationsqsdashboardsharefunction83A679BB",
+        "qsautomationsqsdashboardsharefunctionServiceRoleDefaultPolicyEFCDB505",
+        "qsautomationsqsdashboardsharefunctionServiceRoleCE1E73B3",
+      ],
+      "Properties": {
+        "AwsAccountId": {
+          "Ref": "AWS::AccountId",
+        },
+        "Definition": {
+          "AnalysisDefaults": {
+            "DefaultNewSheetConfiguration": {
+              "InteractiveLayoutConfiguration": {
+                "Grid": {
+                  "CanvasSizeOptions": {
+                    "ScreenCanvasSizeOptions": {
+                      "ResizeOption": "RESPONSIVE",
+                    },
+                  },
+                },
+              },
+              "SheetContentType": "INTERACTIVE",
+            },
+          },
+          "CalculatedFields": [],
+          "DataSetConfigurations": [
+            {
+              "ColumnGroupSchemaList": [],
+              "DataSetSchema": {
+                "ColumnSchemaList": [
+                  {
+                    "DataType": "DECIMAL",
+                    "Name": "Billed Amount",
+                  },
+                  {
+                    "DataType": "DECIMAL",
+                    "Name": "Cost",
+                  },
+                  {
+                    "DataType": "STRING",
+                    "Name": "Channel",
+                  },
+                  {
+                    "DataType": "STRING",
+                    "Name": "Customer ID",
+                  },
+                  {
+                    "DataType": "STRING",
+                    "GeographicRole": "STATE",
+                    "Name": "Customer Region",
+                  },
+                  {
+                    "DataType": "DATETIME",
+                    "Name": "Date",
+                  },
+                  {
+                    "DataType": "STRING",
+                    "Name": "Segment",
+                  },
+                  {
+                    "DataType": "STRING",
+                    "Name": "Service Line",
+                  },
+                ],
+              },
+              "Placeholder": "Business Review",
+            },
+          ],
+          "FilterGroups": [],
+          "ParameterDeclarations": [],
+          "Sheets": [
+            {
+              "ContentType": "INTERACTIVE",
+              "Layouts": [
+                {
+                  "Configuration": {
+                    "GridLayout": {
+                      "Elements": [
+                        {
+                          "ColumnIndex": 18,
+                          "ColumnSpan": 18,
+                          "ElementId": "47123950-f5f4-4b8b-a0c5-3cc3aca87cfb",
+                          "ElementType": "VISUAL",
+                          "RowIndex": 0,
+                          "RowSpan": 9,
+                        },
+                        {
+                          "ColumnIndex": 0,
+                          "ColumnSpan": 18,
+                          "ElementId": "39b73a9f-2d5d-4fd7-950a-c06f4c2322d6",
+                          "ElementType": "VISUAL",
+                          "RowIndex": 9,
+                          "RowSpan": 12,
+                        },
+                        {
+                          "ColumnIndex": 18,
+                          "ColumnSpan": 18,
+                          "ElementId": "a4a8d1c0-a74e-4d8d-8831-50749b80e787",
+                          "ElementType": "VISUAL",
+                          "RowIndex": 9,
+                          "RowSpan": 12,
+                        },
+                        {
+                          "ColumnIndex": 0,
+                          "ColumnSpan": 18,
+                          "ElementId": "b72f4875-b8e4-401f-a5cf-21fdb55d7d18",
+                          "ElementType": "VISUAL",
+                          "RowIndex": 21,
+                          "RowSpan": 12,
+                        },
+                        {
+                          "ColumnIndex": 18,
+                          "ColumnSpan": 18,
+                          "ElementId": "a730164d-ddc0-4c90-a43d-9e91cab763b1",
+                          "ElementType": "VISUAL",
+                          "RowIndex": 21,
+                          "RowSpan": 12,
+                        },
+                        {
+                          "ColumnIndex": 0,
+                          "ColumnSpan": 18,
+                          "ElementId": "4bccd6c5-4719-4878-84dc-6e5a418af15e",
+                          "ElementType": "VISUAL",
+                          "RowIndex": 33,
+                          "RowSpan": 12,
+                        },
+                        {
+                          "ColumnIndex": 18,
+                          "ColumnSpan": 18,
+                          "ElementId": "5e10b718-7472-4bfa-9502-0c8085802d16",
+                          "ElementType": "VISUAL",
+                          "RowIndex": 33,
+                          "RowSpan": 12,
+                        },
+                      ],
+                    },
+                  },
+                },
+              ],
+              "Name": "Sheet 1",
+              "SheetId": "8b9cf5c0-fac6-4f25-b131-fa4c30aefa21",
+              "Visuals": [
+                {
+                  "PivotTableVisual": {
+                    "Actions": [],
+                    "ChartConfiguration": {
+                      "FieldOptions": {
+                        "SelectedFieldOptions": [
+                          {
+                            "FieldId": "FieldId2",
+                            "Visibility": "VISIBLE",
+                          },
+                          {
+                            "FieldId": "FieldId1",
+                            "Visibility": "VISIBLE",
+                          },
+                          {
+                            "FieldId": "FieldId3",
+                            "Visibility": "VISIBLE",
+                          },
+                        ],
+                      },
+                      "FieldWells": {
+                        "PivotTableAggregatedFieldWells": {
+                          "Columns": [],
+                          "Rows": [
+                            {
+                              "CategoricalDimensionField": {
+                                "Column": {
+                                  "ColumnName": "Service Line",
+                                  "DataSetIdentifier": "Business Review",
+                                },
+                                "FieldId": "FieldId2",
+                              },
+                            },
+                          ],
+                          "Values": [
+                            {
+                              "NumericalMeasureField": {
+                                "AggregationFunction": {
+                                  "SimpleNumericalAggregation": "SUM",
+                                },
+                                "Column": {
+                                  "ColumnName": "Billed Amount",
+                                  "DataSetIdentifier": "Business Review",
+                                },
+                                "FieldId": "FieldId1",
+                              },
+                            },
+                            {
+                              "CategoricalMeasureField": {
+                                "AggregationFunction": "COUNT",
+                                "Column": {
+                                  "ColumnName": "Customer ID",
+                                  "DataSetIdentifier": "Business Review",
+                                },
+                                "FieldId": "FieldId3",
+                              },
+                            },
+                          ],
+                        },
+                      },
+                      "SortConfiguration": {
+                        "FieldSortOptions": [],
+                      },
+                    },
+                    "Subtitle": {
+                      "Visibility": "VISIBLE",
+                    },
+                    "Title": {
+                      "FormatText": {
+                        "PlainText": "YTD Revenues by Service Line and Segment",
+                      },
+                      "Visibility": "VISIBLE",
+                    },
+                    "VisualId": "47123950-f5f4-4b8b-a0c5-3cc3aca87cfb",
+                  },
+                },
+                {
+                  "BarChartVisual": {
+                    "Actions": [],
+                    "ChartConfiguration": {
+                      "BarsArrangement": "CLUSTERED",
+                      "FieldWells": {
+                        "BarChartAggregatedFieldWells": {
+                          "Category": [
+                            {
+                              "DateDimensionField": {
+                                "Column": {
+                                  "ColumnName": "Date",
+                                  "DataSetIdentifier": "Business Review",
+                                },
+                                "FieldId": "FieldId2",
+                                "HierarchyId": "FieldId2",
+                              },
+                            },
+                          ],
+                          "Colors": [
+                            {
+                              "CategoricalDimensionField": {
+                                "Column": {
+                                  "ColumnName": "Segment",
+                                  "DataSetIdentifier": "Business Review",
+                                },
+                                "FieldId": "FieldId3",
+                              },
+                            },
+                          ],
+                          "Values": [
+                            {
+                              "NumericalMeasureField": {
+                                "AggregationFunction": {
+                                  "SimpleNumericalAggregation": "SUM",
+                                },
+                                "Column": {
+                                  "ColumnName": "Billed Amount",
+                                  "DataSetIdentifier": "Business Review",
+                                },
+                                "FieldId": "FieldId1",
+                              },
+                            },
+                          ],
+                        },
+                      },
+                      "Orientation": "VERTICAL",
+                      "SortConfiguration": {
+                        "CategoryItemsLimit": {
+                          "OtherCategories": "INCLUDE",
+                        },
+                        "ColorItemsLimit": {
+                          "OtherCategories": "INCLUDE",
+                        },
+                        "SmallMultiplesLimitConfiguration": {
+                          "OtherCategories": "INCLUDE",
+                        },
+                      },
+                    },
+                    "ColumnHierarchies": [
+                      {
+                        "DateTimeHierarchy": {
+                          "HierarchyId": "FieldId2",
+                        },
+                      },
+                    ],
+                    "Subtitle": {
+                      "Visibility": "VISIBLE",
+                    },
+                    "Title": {
+                      "FormatText": {
+                        "PlainText": "Revenues by Customer Segment",
+                      },
+                      "Visibility": "VISIBLE",
+                    },
+                    "VisualId": "39b73a9f-2d5d-4fd7-950a-c06f4c2322d6",
+                  },
+                },
+                {
+                  "BarChartVisual": {
+                    "Actions": [],
+                    "ChartConfiguration": {
+                      "BarsArrangement": "STACKED",
+                      "FieldWells": {
+                        "BarChartAggregatedFieldWells": {
+                          "Category": [
+                            {
+                              "DateDimensionField": {
+                                "Column": {
+                                  "ColumnName": "Date",
+                                  "DataSetIdentifier": "Business Review",
+                                },
+                                "FieldId": "FieldId2",
+                                "HierarchyId": "FieldId2",
+                              },
+                            },
+                          ],
+                          "Colors": [
+                            {
+                              "CategoricalDimensionField": {
+                                "Column": {
+                                  "ColumnName": "Customer Region",
+                                  "DataSetIdentifier": "Business Review",
+                                },
+                                "FieldId": "FieldId3",
+                              },
+                            },
+                          ],
+                          "Values": [
+                            {
+                              "NumericalMeasureField": {
+                                "AggregationFunction": {
+                                  "SimpleNumericalAggregation": "SUM",
+                                },
+                                "Column": {
+                                  "ColumnName": "Billed Amount",
+                                  "DataSetIdentifier": "Business Review",
+                                },
+                                "FieldId": "FieldId1",
+                              },
+                            },
+                          ],
+                        },
+                      },
+                      "Orientation": "VERTICAL",
+                      "SortConfiguration": {
+                        "CategoryItemsLimit": {
+                          "OtherCategories": "INCLUDE",
+                        },
+                        "ColorItemsLimit": {
+                          "OtherCategories": "INCLUDE",
+                        },
+                        "SmallMultiplesLimitConfiguration": {
+                          "OtherCategories": "INCLUDE",
+                        },
+                      },
+                    },
+                    "ColumnHierarchies": [
+                      {
+                        "DateTimeHierarchy": {
+                          "HierarchyId": "FieldId2",
+                        },
+                      },
+                    ],
+                    "Subtitle": {
+                      "Visibility": "VISIBLE",
+                    },
+                    "Title": {
+                      "FormatText": {
+                        "PlainText": "Revenues by Region",
+                      },
+                      "Visibility": "VISIBLE",
+                    },
+                    "VisualId": "a4a8d1c0-a74e-4d8d-8831-50749b80e787",
+                  },
+                },
+                {
+                  "LineChartVisual": {
+                    "Actions": [],
+                    "ChartConfiguration": {
+                      "FieldWells": {
+                        "LineChartAggregatedFieldWells": {
+                          "Category": [
+                            {
+                              "DateDimensionField": {
+                                "Column": {
+                                  "ColumnName": "Date",
+                                  "DataSetIdentifier": "Business Review",
+                                },
+                                "DateGranularity": "YEAR",
+                                "FieldId": "FieldId2",
+                                "HierarchyId": "FieldId2",
+                              },
+                            },
+                          ],
+                          "Colors": [
+                            {
+                              "CategoricalDimensionField": {
+                                "Column": {
+                                  "ColumnName": "Channel",
+                                  "DataSetIdentifier": "Business Review",
+                                },
+                                "FieldId": "FieldId3",
+                              },
+                            },
+                          ],
+                          "Values": [
+                            {
+                              "NumericalMeasureField": {
+                                "AggregationFunction": {
+                                  "SimpleNumericalAggregation": "SUM",
+                                },
+                                "Column": {
+                                  "ColumnName": "Billed Amount",
+                                  "DataSetIdentifier": "Business Review",
+                                },
+                                "FieldId": "FieldId1",
+                              },
+                            },
+                          ],
+                        },
+                      },
+                      "SortConfiguration": {
+                        "CategoryItemsLimitConfiguration": {
+                          "OtherCategories": "INCLUDE",
+                        },
+                        "ColorItemsLimitConfiguration": {
+                          "OtherCategories": "INCLUDE",
+                        },
+                        "SmallMultiplesLimitConfiguration": {
+                          "OtherCategories": "INCLUDE",
+                        },
+                      },
+                      "Type": "AREA",
+                    },
+                    "ColumnHierarchies": [
+                      {
+                        "DateTimeHierarchy": {
+                          "HierarchyId": "FieldId2",
+                        },
+                      },
+                    ],
+                    "Subtitle": {
+                      "Visibility": "VISIBLE",
+                    },
+                    "Title": {
+                      "FormatText": {
+                        "PlainText": "Channel adoption across Time",
+                      },
+                      "Visibility": "VISIBLE",
+                    },
+                    "VisualId": "b72f4875-b8e4-401f-a5cf-21fdb55d7d18",
+                  },
+                },
+                {
+                  "BarChartVisual": {
+                    "Actions": [],
+                    "ChartConfiguration": {
+                      "BarsArrangement": "CLUSTERED",
+                      "FieldWells": {
+                        "BarChartAggregatedFieldWells": {
+                          "Category": [
+                            {
+                              "CategoricalDimensionField": {
+                                "Column": {
+                                  "ColumnName": "Segment",
+                                  "DataSetIdentifier": "Business Review",
+                                },
+                                "FieldId": "FieldId1",
+                              },
+                            },
+                          ],
+                          "Colors": [],
+                          "Values": [
+                            {
+                              "NumericalMeasureField": {
+                                "AggregationFunction": {
+                                  "SimpleNumericalAggregation": "AVERAGE",
+                                },
+                                "Column": {
+                                  "ColumnName": "Cost",
+                                  "DataSetIdentifier": "Business Review",
+                                },
+                                "FieldId": "FieldId2",
+                              },
+                            },
+                            {
+                              "NumericalMeasureField": {
+                                "AggregationFunction": {
+                                  "SimpleNumericalAggregation": "AVERAGE",
+                                },
+                                "Column": {
+                                  "ColumnName": "Billed Amount",
+                                  "DataSetIdentifier": "Business Review",
+                                },
+                                "FieldId": "FieldId3",
+                              },
+                            },
+                          ],
+                        },
+                      },
+                      "Orientation": "HORIZONTAL",
+                      "SortConfiguration": {
+                        "CategoryItemsLimit": {
+                          "OtherCategories": "INCLUDE",
+                        },
+                        "CategorySort": [
+                          {
+                            "FieldSort": {
+                              "Direction": "DESC",
+                              "FieldId": "FieldId1",
+                            },
+                          },
+                        ],
+                        "ColorItemsLimit": {
+                          "OtherCategories": "INCLUDE",
+                        },
+                        "SmallMultiplesLimitConfiguration": {
+                          "OtherCategories": "INCLUDE",
+                        },
+                      },
+                    },
+                    "ColumnHierarchies": [],
+                    "Subtitle": {
+                      "Visibility": "VISIBLE",
+                    },
+                    "Title": {
+                      "FormatText": {
+                        "PlainText": "Average Revenues vs Costs by Segment",
+                      },
+                      "Visibility": "VISIBLE",
+                    },
+                    "VisualId": "a730164d-ddc0-4c90-a43d-9e91cab763b1",
+                  },
+                },
+                {
+                  "PieChartVisual": {
+                    "Actions": [],
+                    "ChartConfiguration": {
+                      "DonutOptions": {
+                        "ArcOptions": {
+                          "ArcThickness": "WHOLE",
+                        },
+                      },
+                      "FieldWells": {
+                        "PieChartAggregatedFieldWells": {
+                          "Category": [
+                            {
+                              "CategoricalDimensionField": {
+                                "Column": {
+                                  "ColumnName": "Segment",
+                                  "DataSetIdentifier": "Business Review",
+                                },
+                                "FieldId": "FieldId1",
+                              },
+                            },
+                          ],
+                          "Values": [
+                            {
+                              "NumericalMeasureField": {
+                                "AggregationFunction": {
+                                  "SimpleNumericalAggregation": "SUM",
+                                },
+                                "Column": {
+                                  "ColumnName": "Billed Amount",
+                                  "DataSetIdentifier": "Business Review",
+                                },
+                                "FieldId": "FieldId2",
+                              },
+                            },
+                          ],
+                        },
+                      },
+                      "SortConfiguration": {
+                        "CategoryItemsLimit": {
+                          "OtherCategories": "INCLUDE",
+                        },
+                        "SmallMultiplesLimitConfiguration": {
+                          "OtherCategories": "INCLUDE",
+                        },
+                      },
+                    },
+                    "ColumnHierarchies": [],
+                    "Subtitle": {
+                      "Visibility": "VISIBLE",
+                    },
+                    "Title": {
+                      "FormatText": {
+                        "PlainText": "Revenues by segment",
+                      },
+                      "Visibility": "VISIBLE",
+                    },
+                    "VisualId": "4bccd6c5-4719-4878-84dc-6e5a418af15e",
+                  },
+                },
+                {
+                  "BarChartVisual": {
+                    "Actions": [],
+                    "ChartConfiguration": {
+                      "BarsArrangement": "CLUSTERED",
+                      "FieldWells": {
+                        "BarChartAggregatedFieldWells": {
+                          "Category": [
+                            {
+                              "CategoricalDimensionField": {
+                                "Column": {
+                                  "ColumnName": "Segment",
+                                  "DataSetIdentifier": "Business Review",
+                                },
+                                "FieldId": "FieldId1",
+                              },
+                            },
+                          ],
+                          "Colors": [
+                            {
+                              "CategoricalDimensionField": {
+                                "Column": {
+                                  "ColumnName": "Service Line",
+                                  "DataSetIdentifier": "Business Review",
+                                },
+                                "FieldId": "FieldId3",
+                              },
+                            },
+                          ],
+                          "Values": [
+                            {
+                              "NumericalMeasureField": {
+                                "AggregationFunction": {
+                                  "SimpleNumericalAggregation": "SUM",
+                                },
+                                "Column": {
+                                  "ColumnName": "Billed Amount",
+                                  "DataSetIdentifier": "Business Review",
+                                },
+                                "FieldId": "FieldId2",
+                              },
+                            },
+                          ],
+                        },
+                      },
+                      "Orientation": "HORIZONTAL",
+                      "SortConfiguration": {
+                        "CategoryItemsLimit": {
+                          "OtherCategories": "INCLUDE",
+                        },
+                        "ColorItemsLimit": {
+                          "OtherCategories": "INCLUDE",
+                        },
+                        "SmallMultiplesLimitConfiguration": {
+                          "OtherCategories": "INCLUDE",
+                        },
+                      },
+                    },
+                    "ColumnHierarchies": [],
+                    "Subtitle": {
+                      "Visibility": "VISIBLE",
+                    },
+                    "Title": {
+                      "FormatText": {
+                        "PlainText": "YTD Revenue by Service Category and Segment",
+                      },
+                      "Visibility": "VISIBLE",
+                    },
+                    "VisualId": "5e10b718-7472-4bfa-9502-0c8085802d16",
+                  },
+                },
+              ],
+            },
+          ],
+        },
+        "Name": "undefined business Template",
+        "TemplateId": "business-template",
+      },
+      "Type": "AWS::QuickSight::Template",
+    },
+    "peoplequicksighttemplate": {
+      "DependsOn": [
+        "qsautomationsqfsharedashboardresourceproviderframeworkonEvent388397F7",
+        "qsautomationsqfsharedashboardresourceproviderframeworkonEventServiceRoleDefaultPolicy31A55BD0",
+        "qsautomationsqfsharedashboardresourceproviderframeworkonEventServiceRoleE41381C0",
+        "qsautomationsqsdashboardsharefunction83A679BB",
+        "qsautomationsqsdashboardsharefunctionServiceRoleDefaultPolicyEFCDB505",
+        "qsautomationsqsdashboardsharefunctionServiceRoleCE1E73B3",
+      ],
+      "Properties": {
+        "AwsAccountId": {
+          "Ref": "AWS::AccountId",
+        },
+        "Definition": {
+          "AnalysisDefaults": {
+            "DefaultNewSheetConfiguration": {
+              "InteractiveLayoutConfiguration": {
+                "Grid": {
+                  "CanvasSizeOptions": {
+                    "ScreenCanvasSizeOptions": {
+                      "ResizeOption": "RESPONSIVE",
+                    },
+                  },
+                },
+              },
+              "SheetContentType": "INTERACTIVE",
+            },
+          },
+          "CalculatedFields": [],
+          "DataSetConfigurations": [
+            {
+              "ColumnGroupSchemaList": [],
+              "DataSetSchema": {
+                "ColumnSchemaList": [
+                  {
+                    "DataType": "DECIMAL",
+                    "Name": "Monthly Compensation",
+                  },
+                  {
+                    "DataType": "STRING",
+                    "Name": "Gender",
+                  },
+                  {
+                    "DataType": "DATETIME",
+                    "Name": "Date",
+                  },
+                  {
+                    "DataType": "INTEGER",
+                    "Name": "Tenure",
+                  },
+                  {
+                    "DataType": "STRING",
+                    "Name": "Education",
+                  },
+                  {
+                    "DataType": "STRING",
+                    "Name": "Notes",
+                  },
+                  {
+                    "DataType": "STRING",
+                    "GeographicRole": "STATE",
+                    "Name": "Region",
+                  },
+                  {
+                    "DataType": "STRING",
+                    "Name": "Business Function",
+                  },
+                ],
+              },
+              "Placeholder": "People Overview",
+            },
+          ],
+          "FilterGroups": [],
+          "ParameterDeclarations": [],
+          "Sheets": [
+            {
+              "ContentType": "INTERACTIVE",
+              "Layouts": [
+                {
+                  "Configuration": {
+                    "GridLayout": {
+                      "Elements": [
+                        {
+                          "ColumnIndex": 0,
+                          "ColumnSpan": 12,
+                          "ElementId": "7d4e9e0e-ae0a-4369-925a-8f8bea82440c",
+                          "ElementType": "VISUAL",
+                          "RowIndex": 0,
+                          "RowSpan": 4,
+                        },
+                        {
+                          "ColumnIndex": 0,
+                          "ColumnSpan": 4,
+                          "ElementId": "aaef7d2a-bf9a-496c-95bb-692a7eedb201",
+                          "ElementType": "VISUAL",
+                          "RowIndex": 4,
+                          "RowSpan": 4,
+                        },
+                        {
+                          "ColumnIndex": 4,
+                          "ColumnSpan": 4,
+                          "ElementId": "4534d043-a584-42a8-bb65-235a2f08a091",
+                          "ElementType": "VISUAL",
+                          "RowIndex": 4,
+                          "RowSpan": 4,
+                        },
+                        {
+                          "ColumnIndex": 8,
+                          "ColumnSpan": 4,
+                          "ElementId": "0100ac4a-2165-4a37-ac08-210a87bfbc53",
+                          "ElementType": "VISUAL",
+                          "RowIndex": 4,
+                          "RowSpan": 4,
+                        },
+                        {
+                          "ColumnIndex": 0,
+                          "ColumnSpan": 4,
+                          "ElementId": "6b78ca23-62f7-423c-beb7-fa88d458a278",
+                          "ElementType": "VISUAL",
+                          "RowIndex": 8,
+                          "RowSpan": 4,
+                        },
+                        {
+                          "ColumnIndex": 4,
+                          "ColumnSpan": 4,
+                          "ElementId": "880a57e3-0838-4b78-867e-245761db99a8",
+                          "ElementType": "VISUAL",
+                          "RowIndex": 8,
+                          "RowSpan": 4,
+                        },
+                        {
+                          "ColumnIndex": 8,
+                          "ColumnSpan": 4,
+                          "ElementId": "ac0d0495-2543-4cc1-a2e3-db423be6991b",
+                          "ElementType": "VISUAL",
+                          "RowIndex": 8,
+                          "RowSpan": 4,
+                        },
+                        {
+                          "ColumnIndex": 0,
+                          "ColumnSpan": 6,
+                          "ElementId": "6b3d03be-80f9-4f51-96b3-05de64bd4883",
+                          "ElementType": "VISUAL",
+                          "RowIndex": 12,
+                          "RowSpan": 4,
+                        },
+                        {
+                          "ColumnIndex": 6,
+                          "ColumnSpan": 6,
+                          "ElementId": "3cd5b576-059c-4d8a-b79c-4982bc198084",
+                          "ElementType": "VISUAL",
+                          "RowIndex": 12,
+                          "RowSpan": 4,
+                        },
+                      ],
+                    },
+                  },
+                },
+              ],
+              "Name": "Sheet 1",
+              "SheetId": "59c7ddef-c5e8-41f4-b300-80f0c26d0b14",
+              "Visuals": [
+                {
+                  "PieChartVisual": {
+                    "Actions": [],
+                    "ChartConfiguration": {
+                      "DonutOptions": {
+                        "ArcOptions": {
+                          "ArcThickness": "WHOLE",
+                        },
+                      },
+                      "FieldWells": {
+                        "PieChartAggregatedFieldWells": {
+                          "Category": [
+                            {
+                              "CategoricalDimensionField": {
+                                "Column": {
+                                  "ColumnName": "Region",
+                                  "DataSetIdentifier": "People Overview",
+                                },
+                                "FieldId": "FieldId1",
+                              },
+                            },
+                          ],
+                          "Values": [],
+                        },
+                      },
+                      "SortConfiguration": {
+                        "CategoryItemsLimit": {
+                          "OtherCategories": "INCLUDE",
+                        },
+                        "SmallMultiplesLimitConfiguration": {
+                          "OtherCategories": "INCLUDE",
+                        },
+                      },
+                    },
+                    "ColumnHierarchies": [],
+                    "Subtitle": {
+                      "Visibility": "VISIBLE",
+                    },
+                    "Title": {
+                      "FormatText": {
+                        "PlainText": "Employees by Region",
+                      },
+                      "Visibility": "VISIBLE",
+                    },
+                    "VisualId": "7d4e9e0e-ae0a-4369-925a-8f8bea82440c",
+                  },
+                },
+                {
+                  "LineChartVisual": {
+                    "Actions": [],
+                    "ChartConfiguration": {
+                      "FieldWells": {
+                        "LineChartAggregatedFieldWells": {
+                          "Category": [
+                            {
+                              "DateDimensionField": {
+                                "Column": {
+                                  "ColumnName": "Date",
+                                  "DataSetIdentifier": "People Overview",
+                                },
+                                "FieldId": "FieldId2",
+                                "HierarchyId": "FieldId2",
+                              },
+                            },
+                          ],
+                          "Colors": [
+                            {
+                              "CategoricalDimensionField": {
+                                "Column": {
+                                  "ColumnName": "Region",
+                                  "DataSetIdentifier": "People Overview",
+                                },
+                                "FieldId": "FieldId1",
+                              },
+                            },
+                          ],
+                          "Values": [],
+                        },
+                      },
+                      "SortConfiguration": {
+                        "CategoryItemsLimitConfiguration": {
+                          "OtherCategories": "INCLUDE",
+                        },
+                        "ColorItemsLimitConfiguration": {
+                          "OtherCategories": "INCLUDE",
+                        },
+                        "SmallMultiplesLimitConfiguration": {
+                          "OtherCategories": "INCLUDE",
+                        },
+                      },
+                      "Type": "LINE",
+                    },
+                    "ColumnHierarchies": [
+                      {
+                        "DateTimeHierarchy": {
+                          "HierarchyId": "FieldId2",
+                        },
+                      },
+                    ],
+                    "Subtitle": {
+                      "Visibility": "VISIBLE",
+                    },
+                    "Title": {
+                      "FormatText": {
+                        "PlainText": "Hiring by Region",
+                      },
+                      "Visibility": "VISIBLE",
+                    },
+                    "VisualId": "aaef7d2a-bf9a-496c-95bb-692a7eedb201",
+                  },
+                },
+                {
+                  "BarChartVisual": {
+                    "Actions": [],
+                    "ChartConfiguration": {
+                      "BarsArrangement": "STACKED",
+                      "FieldWells": {
+                        "BarChartAggregatedFieldWells": {
+                          "Category": [
+                            {
+                              "CategoricalDimensionField": {
+                                "Column": {
+                                  "ColumnName": "Business Function",
+                                  "DataSetIdentifier": "People Overview",
+                                },
+                                "FieldId": "FieldId2",
+                              },
+                            },
+                          ],
+                          "Colors": [
+                            {
+                              "CategoricalDimensionField": {
+                                "Column": {
+                                  "ColumnName": "Region",
+                                  "DataSetIdentifier": "People Overview",
+                                },
+                                "FieldId": "FieldId1",
+                              },
+                            },
+                          ],
+                          "Values": [],
+                        },
+                      },
+                      "Orientation": "HORIZONTAL",
+                      "SortConfiguration": {
+                        "CategoryItemsLimit": {
+                          "OtherCategories": "INCLUDE",
+                        },
+                        "ColorItemsLimit": {
+                          "OtherCategories": "INCLUDE",
+                        },
+                        "ColorSort": [
+                          {
+                            "FieldSort": {
+                              "Direction": "DESC",
+                              "FieldId": "FieldId1",
+                            },
+                          },
+                        ],
+                        "SmallMultiplesLimitConfiguration": {
+                          "OtherCategories": "INCLUDE",
+                        },
+                      },
+                    },
+                    "ColumnHierarchies": [],
+                    "Subtitle": {
+                      "Visibility": "VISIBLE",
+                    },
+                    "Title": {
+                      "FormatText": {
+                        "PlainText": "Hiring by Business Function",
+                      },
+                      "Visibility": "VISIBLE",
+                    },
+                    "VisualId": "4534d043-a584-42a8-bb65-235a2f08a091",
+                  },
+                },
+                {
+                  "LineChartVisual": {
+                    "Actions": [],
+                    "ChartConfiguration": {
+                      "FieldWells": {
+                        "LineChartAggregatedFieldWells": {
+                          "Category": [
+                            {
+                              "DateDimensionField": {
+                                "Column": {
+                                  "ColumnName": "Date",
+                                  "DataSetIdentifier": "People Overview",
+                                },
+                                "FieldId": "FieldId1",
+                                "HierarchyId": "FieldId1",
+                              },
+                            },
+                          ],
+                          "Colors": [
+                            {
+                              "CategoricalDimensionField": {
+                                "Column": {
+                                  "ColumnName": "Gender",
+                                  "DataSetIdentifier": "People Overview",
+                                },
+                                "FieldId": "FieldId2",
+                              },
+                            },
+                          ],
+                          "Values": [],
+                        },
+                      },
+                      "SortConfiguration": {
+                        "CategoryItemsLimitConfiguration": {
+                          "OtherCategories": "INCLUDE",
+                        },
+                        "ColorItemsLimitConfiguration": {
+                          "OtherCategories": "INCLUDE",
+                        },
+                        "SmallMultiplesLimitConfiguration": {
+                          "OtherCategories": "INCLUDE",
+                        },
+                      },
+                      "Type": "LINE",
+                    },
+                    "ColumnHierarchies": [
+                      {
+                        "DateTimeHierarchy": {
+                          "HierarchyId": "FieldId1",
+                        },
+                      },
+                    ],
+                    "Subtitle": {
+                      "Visibility": "VISIBLE",
+                    },
+                    "Title": {
+                      "FormatText": {
+                        "PlainText": "Gender diversity",
+                      },
+                      "Visibility": "VISIBLE",
+                    },
+                    "VisualId": "0100ac4a-2165-4a37-ac08-210a87bfbc53",
+                  },
+                },
+                {
+                  "LineChartVisual": {
+                    "Actions": [],
+                    "ChartConfiguration": {
+                      "FieldWells": {
+                        "LineChartAggregatedFieldWells": {
+                          "Category": [
+                            {
+                              "DateDimensionField": {
+                                "Column": {
+                                  "ColumnName": "Date",
+                                  "DataSetIdentifier": "People Overview",
+                                },
+                                "FieldId": "FieldId2",
+                                "HierarchyId": "FieldId2",
+                              },
+                            },
+                          ],
+                          "Colors": [
+                            {
+                              "CategoricalDimensionField": {
+                                "Column": {
+                                  "ColumnName": "Region",
+                                  "DataSetIdentifier": "People Overview",
+                                },
+                                "FieldId": "FieldId1",
+                              },
+                            },
+                          ],
+                          "Values": [],
+                        },
+                      },
+                      "SortConfiguration": {
+                        "CategoryItemsLimitConfiguration": {
+                          "OtherCategories": "INCLUDE",
+                        },
+                        "ColorItemsLimitConfiguration": {
+                          "OtherCategories": "INCLUDE",
+                        },
+                        "SmallMultiplesLimitConfiguration": {
+                          "OtherCategories": "INCLUDE",
+                        },
+                      },
+                      "Type": "LINE",
+                    },
+                    "ColumnHierarchies": [
+                      {
+                        "DateTimeHierarchy": {
+                          "HierarchyId": "FieldId2",
+                        },
+                      },
+                    ],
+                    "Subtitle": {
+                      "Visibility": "VISIBLE",
+                    },
+                    "Title": {
+                      "FormatText": {
+                        "PlainText": "Separation by region",
+                      },
+                      "Visibility": "VISIBLE",
+                    },
+                    "VisualId": "6b78ca23-62f7-423c-beb7-fa88d458a278",
+                  },
+                },
+                {
+                  "LineChartVisual": {
+                    "Actions": [],
+                    "ChartConfiguration": {
+                      "FieldWells": {
+                        "LineChartAggregatedFieldWells": {
+                          "Category": [
+                            {
+                              "DateDimensionField": {
+                                "Column": {
+                                  "ColumnName": "Date",
+                                  "DataSetIdentifier": "People Overview",
+                                },
+                                "FieldId": "FieldId2",
+                                "HierarchyId": "FieldId2",
+                              },
+                            },
+                          ],
+                          "Colors": [
+                            {
+                              "CategoricalDimensionField": {
+                                "Column": {
+                                  "ColumnName": "Business Function",
+                                  "DataSetIdentifier": "People Overview",
+                                },
+                                "FieldId": "FieldId1",
+                              },
+                            },
+                          ],
+                          "Values": [],
+                        },
+                      },
+                      "SortConfiguration": {
+                        "CategoryItemsLimitConfiguration": {
+                          "OtherCategories": "INCLUDE",
+                        },
+                        "ColorItemsLimitConfiguration": {
+                          "OtherCategories": "INCLUDE",
+                        },
+                        "SmallMultiplesLimitConfiguration": {
+                          "OtherCategories": "INCLUDE",
+                        },
+                      },
+                      "Type": "LINE",
+                    },
+                    "ColumnHierarchies": [
+                      {
+                        "DateTimeHierarchy": {
+                          "HierarchyId": "FieldId2",
+                        },
+                      },
+                    ],
+                    "Subtitle": {
+                      "Visibility": "VISIBLE",
+                    },
+                    "Title": {
+                      "FormatText": {
+                        "PlainText": "Separation by Business Function",
+                      },
+                      "Visibility": "VISIBLE",
+                    },
+                    "VisualId": "880a57e3-0838-4b78-867e-245761db99a8",
+                  },
+                },
+                {
+                  "BarChartVisual": {
+                    "Actions": [],
+                    "ChartConfiguration": {
+                      "BarsArrangement": "CLUSTERED",
+                      "FieldWells": {
+                        "BarChartAggregatedFieldWells": {
+                          "Category": [
+                            {
+                              "CategoricalDimensionField": {
+                                "Column": {
+                                  "ColumnName": "Notes",
+                                  "DataSetIdentifier": "People Overview",
+                                },
+                                "FieldId": "FieldId1",
+                              },
+                            },
+                          ],
+                          "Colors": [],
+                          "Values": [],
+                        },
+                      },
+                      "Orientation": "HORIZONTAL",
+                      "SortConfiguration": {
+                        "CategoryItemsLimit": {
+                          "OtherCategories": "INCLUDE",
+                        },
+                        "CategorySort": [
+                          {
+                            "FieldSort": {
+                              "Direction": "DESC",
+                              "FieldId": "FieldId1",
+                            },
+                          },
+                        ],
+                        "ColorItemsLimit": {
+                          "OtherCategories": "INCLUDE",
+                        },
+                        "SmallMultiplesLimitConfiguration": {
+                          "OtherCategories": "INCLUDE",
+                        },
+                      },
+                    },
+                    "ColumnHierarchies": [],
+                    "Subtitle": {
+                      "Visibility": "VISIBLE",
+                    },
+                    "Title": {
+                      "FormatText": {
+                        "PlainText": "Top Reasons for Separation",
+                      },
+                      "Visibility": "VISIBLE",
+                    },
+                    "VisualId": "ac0d0495-2543-4cc1-a2e3-db423be6991b",
+                  },
+                },
+                {
+                  "TreeMapVisual": {
+                    "Actions": [],
+                    "ChartConfiguration": {
+                      "FieldWells": {
+                        "TreeMapAggregatedFieldWells": {
+                          "Colors": [
+                            {
+                              "NumericalMeasureField": {
+                                "AggregationFunction": {
+                                  "SimpleNumericalAggregation": "AVERAGE",
+                                },
+                                "Column": {
+                                  "ColumnName": "Monthly Compensation",
+                                  "DataSetIdentifier": "People Overview",
+                                },
+                                "FieldId": "FieldId3",
+                              },
+                            },
+                          ],
+                          "Groups": [
+                            {
+                              "CategoricalDimensionField": {
+                                "Column": {
+                                  "ColumnName": "Business Function",
+                                  "DataSetIdentifier": "People Overview",
+                                },
+                                "FieldId": "FieldId2",
+                              },
+                            },
+                          ],
+                          "Sizes": [
+                            {
+                              "NumericalMeasureField": {
+                                "AggregationFunction": {
+                                  "SimpleNumericalAggregation": "AVERAGE",
+                                },
+                                "Column": {
+                                  "ColumnName": "Tenure",
+                                  "DataSetIdentifier": "People Overview",
+                                },
+                                "FieldId": "FieldId1",
+                              },
+                            },
+                          ],
+                        },
+                      },
+                      "SortConfiguration": {
+                        "TreeMapGroupItemsLimitConfiguration": {
+                          "OtherCategories": "INCLUDE",
+                        },
+                      },
+                    },
+                    "ColumnHierarchies": [],
+                    "Subtitle": {
+                      "Visibility": "VISIBLE",
+                    },
+                    "Title": {
+                      "FormatText": {
+                        "PlainText": "Average Tenure and Monthly Compensation",
+                      },
+                      "Visibility": "VISIBLE",
+                    },
+                    "VisualId": "6b3d03be-80f9-4f51-96b3-05de64bd4883",
+                  },
+                },
+                {
+                  "BarChartVisual": {
+                    "Actions": [],
+                    "ChartConfiguration": {
+                      "BarsArrangement": "STACKED",
+                      "FieldWells": {
+                        "BarChartAggregatedFieldWells": {
+                          "Category": [
+                            {
+                              "CategoricalDimensionField": {
+                                "Column": {
+                                  "ColumnName": "Education",
+                                  "DataSetIdentifier": "People Overview",
+                                },
+                                "FieldId": "FieldId1",
+                              },
+                            },
+                          ],
+                          "Colors": [
+                            {
+                              "CategoricalDimensionField": {
+                                "Column": {
+                                  "ColumnName": "Business Function",
+                                  "DataSetIdentifier": "People Overview",
+                                },
+                                "FieldId": "Field2",
+                              },
+                            },
+                          ],
+                          "Values": [],
+                        },
+                      },
+                      "Orientation": "VERTICAL",
+                      "SortConfiguration": {
+                        "CategoryItemsLimit": {
+                          "OtherCategories": "INCLUDE",
+                        },
+                        "ColorItemsLimit": {
+                          "OtherCategories": "INCLUDE",
+                        },
+                        "ColorSort": [
+                          {
+                            "FieldSort": {
+                              "Direction": "DESC",
+                              "FieldId": "Field2",
+                            },
+                          },
+                        ],
+                        "SmallMultiplesLimitConfiguration": {
+                          "OtherCategories": "INCLUDE",
+                        },
+                      },
+                    },
+                    "ColumnHierarchies": [],
+                    "Subtitle": {
+                      "Visibility": "VISIBLE",
+                    },
+                    "Title": {
+                      "FormatText": {
+                        "PlainText": "Education profile by Business function",
+                      },
+                      "Visibility": "VISIBLE",
+                    },
+                    "VisualId": "3cd5b576-059c-4d8a-b79c-4982bc198084",
+                  },
+                },
+              ],
+            },
+          ],
+        },
+        "Name": "undefined people Template",
+        "TemplateId": "people-template",
+      },
+      "Type": "AWS::QuickSight::Template",
+    },
+    "qsautomationsqfsharedashboardresourceproviderframeworkonEvent388397F7": {
+      "DependsOn": [
+        "qsautomationsqfsharedashboardresourceproviderframeworkonEventServiceRoleDefaultPolicy31A55BD0",
+        "qsautomationsqfsharedashboardresourceproviderframeworkonEventServiceRoleE41381C0",
+      ],
+      "Properties": {
+        "Code": {
+          "S3Bucket": {
+            "Fn::Sub": "cdk-hnb659fds-assets-\${AWS::AccountId}-\${AWS::Region}",
+          },
+          "S3Key": "8e3d635893ea17fa3158623489cd42c680fad925b38de1ef51cb10d84f6e245e.zip",
+        },
+        "Description": "AWS CDK resource provider framework - onEvent (MyTestStack/qs-automations/qf-share-dashboard-resource-provider)",
+        "Environment": {
+          "Variables": {
+            "USER_ON_EVENT_FUNCTION_ARN": {
+              "Fn::GetAtt": [
+                "qsautomationsqsdashboardsharefunction83A679BB",
+                "Arn",
+              ],
+            },
+          },
+        },
+        "Handler": "framework.onEvent",
+        "Role": {
+          "Fn::GetAtt": [
+            "qsautomationsqfsharedashboardresourceproviderframeworkonEventServiceRoleE41381C0",
+            "Arn",
+          ],
+        },
+        "Runtime": "nodejs14.x",
+        "Timeout": 900,
+      },
+      "Type": "AWS::Lambda::Function",
+    },
+    "qsautomationsqfsharedashboardresourceproviderframeworkonEventServiceRoleDefaultPolicy31A55BD0": {
+      "Properties": {
+        "PolicyDocument": {
+          "Statement": [
+            {
+              "Action": "lambda:InvokeFunction",
+              "Effect": "Allow",
+              "Resource": [
+                {
+                  "Fn::GetAtt": [
+                    "qsautomationsqsdashboardsharefunction83A679BB",
+                    "Arn",
+                  ],
+                },
+                {
+                  "Fn::Join": [
+                    "",
+                    [
+                      {
+                        "Fn::GetAtt": [
+                          "qsautomationsqsdashboardsharefunction83A679BB",
+                          "Arn",
+                        ],
+                      },
+                      ":*",
+                    ],
+                  ],
+                },
+              ],
+            },
+          ],
+          "Version": "2012-10-17",
+        },
+        "PolicyName": "qsautomationsqfsharedashboardresourceproviderframeworkonEventServiceRoleDefaultPolicy31A55BD0",
+        "Roles": [
+          {
+            "Ref": "qsautomationsqfsharedashboardresourceproviderframeworkonEventServiceRoleE41381C0",
+          },
+        ],
+      },
+      "Type": "AWS::IAM::Policy",
+    },
+    "qsautomationsqfsharedashboardresourceproviderframeworkonEventServiceRoleE41381C0": {
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "lambda.amazonaws.com",
+              },
+            },
+          ],
+          "Version": "2012-10-17",
+        },
+        "ManagedPolicyArns": [
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition",
+                },
+                ":iam::aws:policy/service-role/AWSLambdaBasicExecutionRole",
+              ],
+            ],
+          },
+        ],
+      },
+      "Type": "AWS::IAM::Role",
+    },
+    "qsautomationsqsdashboardsharefunction83A679BB": {
+      "DependsOn": [
+        "qsautomationsqsdashboardsharefunctionServiceRoleDefaultPolicyEFCDB505",
+        "qsautomationsqsdashboardsharefunctionServiceRoleCE1E73B3",
+      ],
+      "Properties": {
+        "Code": {
+          "S3Bucket": {
+            "Fn::Sub": "cdk-hnb659fds-assets-\${AWS::AccountId}-\${AWS::Region}",
+          },
+          "S3Key": "17f8ac1139b340592459823b5309018b9196ed37ec8c7890fcc8a64bd0815204.zip",
+        },
+        "Environment": {
+          "Variables": {
+            "AWS_NODEJS_CONNECTION_REUSE_ENABLED": "1",
+          },
+        },
+        "FunctionName": "qs-dashboard-share-function",
+        "Handler": "index.shareDashboard",
+        "Role": {
+          "Fn::GetAtt": [
+            "qsautomationsqsdashboardsharefunctionServiceRoleCE1E73B3",
+            "Arn",
+          ],
+        },
+        "Runtime": "nodejs18.x",
+      },
+      "Type": "AWS::Lambda::Function",
+    },
+    "qsautomationsqsdashboardsharefunctionServiceRoleCE1E73B3": {
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "lambda.amazonaws.com",
+              },
+            },
+          ],
+          "Version": "2012-10-17",
+        },
+        "ManagedPolicyArns": [
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition",
+                },
+                ":iam::aws:policy/service-role/AWSLambdaBasicExecutionRole",
+              ],
+            ],
+          },
+        ],
+      },
+      "Type": "AWS::IAM::Role",
+    },
+    "qsautomationsqsdashboardsharefunctionServiceRoleDefaultPolicyEFCDB505": {
+      "Properties": {
+        "PolicyDocument": {
+          "Statement": [
+            {
+              "Action": "quicksight:UpdateDashboardPermissions",
+              "Effect": "Allow",
+              "Resource": "*",
+            },
+          ],
+          "Version": "2012-10-17",
+        },
+        "PolicyName": "qsautomationsqsdashboardsharefunctionServiceRoleDefaultPolicyEFCDB505",
+        "Roles": [
+          {
+            "Ref": "qsautomationsqsdashboardsharefunctionServiceRoleCE1E73B3",
+          },
+        ],
+      },
+      "Type": "AWS::IAM::Policy",
+    },
+    "qsdatasetsbusinessdsbusinessdsdatasetF4DA6D9F": {
+      "Properties": {
+        "AwsAccountId": {
+          "Ref": "AWS::AccountId",
+        },
+        "DataSetId": "business-ds",
+        "ImportMode": "SPICE",
+        "LogicalTableMap": {
+          "anything": {
+            "Alias": "business-ds",
+            "DataTransforms": [
+              {
+                "RenameColumnOperation": {
+                  "ColumnName": "ColumnId-1",
+                  "NewColumnName": "Date",
+                },
+              },
+              {
+                "RenameColumnOperation": {
+                  "ColumnName": "ColumnId-2",
+                  "NewColumnName": "Customer ID",
+                },
+              },
+              {
+                "RenameColumnOperation": {
+                  "ColumnName": "ColumnId-3",
+                  "NewColumnName": "Customer Name",
+                },
+              },
+              {
+                "RenameColumnOperation": {
+                  "ColumnName": "ColumnId-4",
+                  "NewColumnName": "Customer Region",
+                },
+              },
+              {
+                "RenameColumnOperation": {
+                  "ColumnName": "ColumnId-5",
+                  "NewColumnName": "Segment",
+                },
+              },
+              {
+                "RenameColumnOperation": {
+                  "ColumnName": "ColumnId-6",
+                  "NewColumnName": "Service Line",
+                },
+              },
+              {
+                "RenameColumnOperation": {
+                  "ColumnName": "ColumnId-7",
+                  "NewColumnName": "Revenue Goal",
+                },
+              },
+              {
+                "RenameColumnOperation": {
+                  "ColumnName": "ColumnId-8",
+                  "NewColumnName": "Billed Amount",
+                },
+              },
+              {
+                "RenameColumnOperation": {
+                  "ColumnName": "ColumnId-9",
+                  "NewColumnName": "Cost",
+                },
+              },
+              {
+                "RenameColumnOperation": {
+                  "ColumnName": "ColumnId-10",
+                  "NewColumnName": "Channel",
+                },
+              },
+              {
+                "RenameColumnOperation": {
+                  "ColumnName": "ColumnId-11",
+                  "NewColumnName": "Distinct ID",
+                },
+              },
+              {
+                "CastColumnTypeOperation": {
+                  "ColumnName": "Cost",
+                  "NewColumnType": "DECIMAL",
+                },
+              },
+              {
+                "CastColumnTypeOperation": {
+                  "ColumnName": "Billed Amount",
+                  "NewColumnType": "DECIMAL",
+                },
+              },
+              {
+                "CastColumnTypeOperation": {
+                  "ColumnName": "Revenue Goal",
+                  "NewColumnType": "DECIMAL",
+                },
+              },
+              {
+                "CastColumnTypeOperation": {
+                  "ColumnName": "Distinct ID",
+                  "NewColumnType": "INTEGER",
+                },
+              },
+              {
+                "CastColumnTypeOperation": {
+                  "ColumnName": "Date",
+                  "Format": "M/d/yyyy",
+                  "NewColumnType": "DATETIME",
+                },
+              },
+              {
+                "TagColumnOperation": {
+                  "ColumnName": "Customer Region",
+                  "Tags": [
+                    {
+                      "ColumnGeographicRole": "STATE",
+                    },
+                  ],
+                },
+              },
+            ],
+            "Source": {
+              "PhysicalTableId": "anyKey",
+            },
+          },
+        },
+        "Name": "Business-ds",
+        "Permissions": [
+          {
+            "Actions": [
+              "quicksight:DescribeDataSet",
+              "quicksight:DescribeDataSetPermissions",
+              "quicksight:PassDataSet",
+              "quicksight:DescribeIngestion",
+              "quicksight:ListIngestions",
+              "quicksight:UpdateDataSet",
+              "quicksight:DeleteDataSet",
+              "quicksight:CreateIngestion",
+              "quicksight:CancelIngestion",
+              "quicksight:UpdateDataSetPermissions",
+            ],
+            "Principal": {
+              "Fn::Join": [
+                "",
+                [
+                  "arn:aws:quicksight:",
+                  {
+                    "Ref": "AWS::Region",
+                  },
+                  ":",
+                  {
+                    "Ref": "AWS::AccountId",
+                  },
+                  ":group/default/QS-Developers",
+                ],
+              ],
+            },
+          },
+        ],
+        "PhysicalTableMap": {
+          "anyKey": {
+            "S3Source": {
+              "DataSourceArn": {
+                "Fn::GetAtt": [
+                  "qsdatasetsrevenueqsdatasource1E2E206C",
+                  "Arn",
+                ],
+              },
+              "InputColumns": [
+                {
+                  "Name": "ColumnId-1",
+                  "Type": "STRING",
+                },
+                {
+                  "Name": "ColumnId-2",
+                  "Type": "STRING",
+                },
+                {
+                  "Name": "ColumnId-3",
+                  "Type": "STRING",
+                },
+                {
+                  "Name": "ColumnId-4",
+                  "Type": "STRING",
+                },
+                {
+                  "Name": "ColumnId-5",
+                  "Type": "STRING",
+                },
+                {
+                  "Name": "ColumnId-6",
+                  "Type": "STRING",
+                },
+                {
+                  "Name": "ColumnId-7",
+                  "Type": "STRING",
+                },
+                {
+                  "Name": "ColumnId-8",
+                  "Type": "STRING",
+                },
+                {
+                  "Name": "ColumnId-9",
+                  "Type": "STRING",
+                },
+                {
+                  "Name": "ColumnId-10",
+                  "Type": "STRING",
+                },
+                {
+                  "Name": "ColumnId-11",
+                  "Type": "STRING",
+                },
+              ],
+              "UploadSettings": {
+                "ContainsHeader": true,
+                "Delimiter": ",",
+                "Format": "CSV",
+                "StartFromRow": 1,
+                "TextQualifier": "DOUBLE_QUOTE",
+              },
+            },
+          },
+        },
+      },
+      "Type": "AWS::QuickSight::DataSet",
+    },
+    "qsdatasetshrqsdatasourceD1190614": {
+      "Properties": {
+        "AwsAccountId": {
+          "Ref": "AWS::AccountId",
+        },
+        "DataSourceId": "hr-qs-data-source",
+        "DataSourceParameters": {
+          "S3Parameters": {
+            "ManifestFileLocation": {
+              "Bucket": {
+                "Fn::Join": [
+                  "",
+                  [
+                    "spaceneedle-samplefiles.prod.",
+                    {
+                      "Ref": "AWS::Region",
+                    },
+                  ],
+                ],
+              },
+              "Key": "hr/manifest.json",
+            },
+          },
+        },
+        "Name": "hr-qs-data-source",
+        "Permissions": [
+          {
+            "Actions": [
+              "quicksight:DescribeDataSource",
+              "quicksight:DescribeDataSourcePermissions",
+              "quicksight:PassDataSource",
+            ],
+            "Principal": {
+              "Fn::Join": [
+                "",
+                [
+                  "arn:aws:quicksight:",
+                  {
+                    "Ref": "AWS::Region",
+                  },
+                  ":",
+                  {
+                    "Ref": "AWS::AccountId",
+                  },
+                  ":group/default/QS-Developers",
+                ],
+              ],
+            },
+          },
+        ],
+        "Type": "S3",
+      },
+      "Type": "AWS::QuickSight::DataSource",
+    },
+    "qsdatasetsmarketingqsdatasource69C51853": {
+      "Properties": {
+        "AwsAccountId": {
+          "Ref": "AWS::AccountId",
+        },
+        "DataSourceId": "marketing-qs-data-source",
+        "DataSourceParameters": {
+          "S3Parameters": {
+            "ManifestFileLocation": {
+              "Bucket": {
+                "Fn::Join": [
+                  "",
+                  [
+                    "spaceneedle-samplefiles.prod.",
+                    {
+                      "Ref": "AWS::Region",
+                    },
+                  ],
+                ],
+              },
+              "Key": "marketing/manifest.json",
+            },
+          },
+        },
+        "Name": "marketing-qs-data-source",
+        "Permissions": [
+          {
+            "Actions": [
+              "quicksight:DescribeDataSource",
+              "quicksight:DescribeDataSourcePermissions",
+              "quicksight:PassDataSource",
+            ],
+            "Principal": {
+              "Fn::Join": [
+                "",
+                [
+                  "arn:aws:quicksight:",
+                  {
+                    "Ref": "AWS::Region",
+                  },
+                  ":",
+                  {
+                    "Ref": "AWS::AccountId",
+                  },
+                  ":group/default/QS-Developers",
+                ],
+              ],
+            },
+          },
+        ],
+        "Type": "S3",
+      },
+      "Type": "AWS::QuickSight::DataSource",
+    },
+    "qsdatasetspeopledspeopledsdatasetD0DC24AE": {
+      "Properties": {
+        "AwsAccountId": {
+          "Ref": "AWS::AccountId",
+        },
+        "DataSetId": "people-ds",
+        "ImportMode": "SPICE",
+        "LogicalTableMap": {
+          "anything": {
+            "Alias": "people-ds",
+            "DataTransforms": [
+              {
+                "RenameColumnOperation": {
+                  "ColumnName": "ColumnId-1",
+                  "NewColumnName": "Date",
+                },
+              },
+              {
+                "RenameColumnOperation": {
+                  "ColumnName": "ColumnId-2",
+                  "NewColumnName": "Employee Name",
+                },
+              },
+              {
+                "RenameColumnOperation": {
+                  "ColumnName": "ColumnId-3",
+                  "NewColumnName": "Employee ID",
+                },
+              },
+              {
+                "RenameColumnOperation": {
+                  "ColumnName": "ColumnId-4",
+                  "NewColumnName": "Tenure",
+                },
+              },
+              {
+                "RenameColumnOperation": {
+                  "ColumnName": "ColumnId-5",
+                  "NewColumnName": "Monthly Compensation",
+                },
+              },
+              {
+                "RenameColumnOperation": {
+                  "ColumnName": "ColumnId-6",
+                  "NewColumnName": "Date of Birth",
+                },
+              },
+              {
+                "RenameColumnOperation": {
+                  "ColumnName": "ColumnId-7",
+                  "NewColumnName": "Gender",
+                },
+              },
+              {
+                "RenameColumnOperation": {
+                  "ColumnName": "ColumnId-8",
+                  "NewColumnName": "Education",
+                },
+              },
+              {
+                "RenameColumnOperation": {
+                  "ColumnName": "ColumnId-9",
+                  "NewColumnName": "Event Type",
+                },
+              },
+              {
+                "RenameColumnOperation": {
+                  "ColumnName": "ColumnId-10",
+                  "NewColumnName": "Region",
+                },
+              },
+              {
+                "RenameColumnOperation": {
+                  "ColumnName": "ColumnId-11",
+                  "NewColumnName": "Business Function",
+                },
+              },
+              {
+                "RenameColumnOperation": {
+                  "ColumnName": "ColumnId-12",
+                  "NewColumnName": "Job Family",
+                },
+              },
+              {
+                "RenameColumnOperation": {
+                  "ColumnName": "ColumnId-13",
+                  "NewColumnName": "Job Level",
+                },
+              },
+              {
+                "RenameColumnOperation": {
+                  "ColumnName": "ColumnId-14",
+                  "NewColumnName": "Notes",
+                },
+              },
+              {
+                "RenameColumnOperation": {
+                  "ColumnName": "ColumnId-15",
+                  "NewColumnName": "isUnique",
+                },
+              },
+              {
+                "CastColumnTypeOperation": {
+                  "ColumnName": "Monthly Compensation",
+                  "NewColumnType": "DECIMAL",
+                },
+              },
+              {
+                "CastColumnTypeOperation": {
+                  "ColumnName": "Tenure",
+                  "NewColumnType": "INTEGER",
+                },
+              },
+              {
+                "CastColumnTypeOperation": {
+                  "ColumnName": "Date of Birth",
+                  "Format": "yyyy-MM-dd",
+                  "NewColumnType": "DATETIME",
+                },
+              },
+              {
+                "CastColumnTypeOperation": {
+                  "ColumnName": "Date",
+                  "Format": "yyyy-MM-dd",
+                  "NewColumnType": "DATETIME",
+                },
+              },
+              {
+                "TagColumnOperation": {
+                  "ColumnName": "Region",
+                  "Tags": [
+                    {
+                      "ColumnGeographicRole": "STATE",
+                    },
+                  ],
+                },
+              },
+            ],
+            "Source": {
+              "PhysicalTableId": "anyKey",
+            },
+          },
+        },
+        "Name": "People-ds",
+        "Permissions": [
+          {
+            "Actions": [
+              "quicksight:DescribeDataSet",
+              "quicksight:DescribeDataSetPermissions",
+              "quicksight:PassDataSet",
+              "quicksight:DescribeIngestion",
+              "quicksight:ListIngestions",
+              "quicksight:UpdateDataSet",
+              "quicksight:DeleteDataSet",
+              "quicksight:CreateIngestion",
+              "quicksight:CancelIngestion",
+              "quicksight:UpdateDataSetPermissions",
+            ],
+            "Principal": {
+              "Fn::Join": [
+                "",
+                [
+                  "arn:aws:quicksight:",
+                  {
+                    "Ref": "AWS::Region",
+                  },
+                  ":",
+                  {
+                    "Ref": "AWS::AccountId",
+                  },
+                  ":group/default/QS-Developers",
+                ],
+              ],
+            },
+          },
+        ],
+        "PhysicalTableMap": {
+          "anyKey": {
+            "S3Source": {
+              "DataSourceArn": {
+                "Fn::GetAtt": [
+                  "qsdatasetshrqsdatasourceD1190614",
+                  "Arn",
+                ],
+              },
+              "InputColumns": [
+                {
+                  "Name": "ColumnId-1",
+                  "Type": "STRING",
+                },
+                {
+                  "Name": "ColumnId-2",
+                  "Type": "STRING",
+                },
+                {
+                  "Name": "ColumnId-3",
+                  "Type": "STRING",
+                },
+                {
+                  "Name": "ColumnId-4",
+                  "Type": "STRING",
+                },
+                {
+                  "Name": "ColumnId-5",
+                  "Type": "STRING",
+                },
+                {
+                  "Name": "ColumnId-6",
+                  "Type": "STRING",
+                },
+                {
+                  "Name": "ColumnId-7",
+                  "Type": "STRING",
+                },
+                {
+                  "Name": "ColumnId-8",
+                  "Type": "STRING",
+                },
+                {
+                  "Name": "ColumnId-9",
+                  "Type": "STRING",
+                },
+                {
+                  "Name": "ColumnId-10",
+                  "Type": "STRING",
+                },
+                {
+                  "Name": "ColumnId-11",
+                  "Type": "STRING",
+                },
+                {
+                  "Name": "ColumnId-12",
+                  "Type": "STRING",
+                },
+                {
+                  "Name": "ColumnId-13",
+                  "Type": "STRING",
+                },
+                {
+                  "Name": "ColumnId-14",
+                  "Type": "STRING",
+                },
+                {
+                  "Name": "ColumnId-15",
+                  "Type": "STRING",
+                },
+              ],
+              "UploadSettings": {
+                "ContainsHeader": true,
+                "Delimiter": ",",
+                "Format": "CSV",
+                "StartFromRow": 1,
+                "TextQualifier": "DOUBLE_QUOTE",
+              },
+            },
+          },
+        },
+      },
+      "Type": "AWS::QuickSight::DataSet",
+    },
+    "qsdatasetsrevenueqsdatasource1E2E206C": {
+      "Properties": {
+        "AwsAccountId": {
+          "Ref": "AWS::AccountId",
+        },
+        "DataSourceId": "revenue-qs-data-source",
+        "DataSourceParameters": {
+          "S3Parameters": {
+            "ManifestFileLocation": {
+              "Bucket": {
+                "Fn::Join": [
+                  "",
+                  [
+                    "spaceneedle-samplefiles.prod.",
+                    {
+                      "Ref": "AWS::Region",
+                    },
+                  ],
+                ],
+              },
+              "Key": "revenue/manifest.json",
+            },
+          },
+        },
+        "Name": "revenue-qs-data-source",
+        "Permissions": [
+          {
+            "Actions": [
+              "quicksight:DescribeDataSource",
+              "quicksight:DescribeDataSourcePermissions",
+              "quicksight:PassDataSource",
+            ],
+            "Principal": {
+              "Fn::Join": [
+                "",
+                [
+                  "arn:aws:quicksight:",
+                  {
+                    "Ref": "AWS::Region",
+                  },
+                  ":",
+                  {
+                    "Ref": "AWS::AccountId",
+                  },
+                  ":group/default/QS-Developers",
+                ],
+              ],
+            },
+          },
+        ],
+        "Type": "S3",
+      },
+      "Type": "AWS::QuickSight::DataSource",
+    },
+    "qsdatasetssalesdssalesdsdatasetB7D8C2F3": {
+      "Properties": {
+        "AwsAccountId": {
+          "Ref": "AWS::AccountId",
+        },
+        "DataSetId": "sales-ds",
+        "ImportMode": "SPICE",
+        "LogicalTableMap": {
+          "anything": {
+            "Alias": "sales-ds",
+            "DataTransforms": [
+              {
+                "RenameColumnOperation": {
+                  "ColumnName": "ColumnId-1",
+                  "NewColumnName": "Date",
+                },
+              },
+              {
+                "RenameColumnOperation": {
+                  "ColumnName": "ColumnId-2",
+                  "NewColumnName": "Salesperson",
+                },
+              },
+              {
+                "RenameColumnOperation": {
+                  "ColumnName": "ColumnId-3",
+                  "NewColumnName": "Lead Name",
+                },
+              },
+              {
+                "RenameColumnOperation": {
+                  "ColumnName": "ColumnId-4",
+                  "NewColumnName": "Segment",
+                },
+              },
+              {
+                "RenameColumnOperation": {
+                  "ColumnName": "ColumnId-5",
+                  "NewColumnName": "Region",
+                },
+              },
+              {
+                "RenameColumnOperation": {
+                  "ColumnName": "ColumnId-6",
+                  "NewColumnName": "Target Close",
+                },
+              },
+              {
+                "RenameColumnOperation": {
+                  "ColumnName": "ColumnId-7",
+                  "NewColumnName": "Forecasted Monthly Revenue",
+                },
+              },
+              {
+                "RenameColumnOperation": {
+                  "ColumnName": "ColumnId-8",
+                  "NewColumnName": "Opportunity Stage",
+                },
+              },
+              {
+                "RenameColumnOperation": {
+                  "ColumnName": "ColumnId-9",
+                  "NewColumnName": "Weighted Revenue",
+                },
+              },
+              {
+                "RenameColumnOperation": {
+                  "ColumnName": "ColumnId-10",
+                  "NewColumnName": "Is Closed",
+                },
+              },
+              {
+                "RenameColumnOperation": {
+                  "ColumnName": "ColumnId-11",
+                  "NewColumnName": "ActiveItem",
+                },
+              },
+              {
+                "RenameColumnOperation": {
+                  "ColumnName": "ColumnId-12",
+                  "NewColumnName": "IsLatest",
+                },
+              },
+              {
+                "CastColumnTypeOperation": {
+                  "ColumnName": "Forecasted Monthly Revenue",
+                  "NewColumnType": "INTEGER",
+                },
+              },
+              {
+                "CastColumnTypeOperation": {
+                  "ColumnName": "Weighted Revenue",
+                  "NewColumnType": "INTEGER",
+                },
+              },
+              {
+                "CastColumnTypeOperation": {
+                  "ColumnName": "Target Close",
+                  "Format": "M/d/yyyy",
+                  "NewColumnType": "DATETIME",
+                },
+              },
+              {
+                "CastColumnTypeOperation": {
+                  "ColumnName": "Date",
+                  "Format": "M/d/yyyy",
+                  "NewColumnType": "DATETIME",
+                },
+              },
+              {
+                "TagColumnOperation": {
+                  "ColumnName": "Region",
+                  "Tags": [
+                    {
+                      "ColumnGeographicRole": "STATE",
+                    },
+                  ],
+                },
+              },
+            ],
+            "Source": {
+              "PhysicalTableId": "anyKey",
+            },
+          },
+        },
+        "Name": "Sales-ds",
+        "Permissions": [
+          {
+            "Actions": [
+              "quicksight:DescribeDataSet",
+              "quicksight:DescribeDataSetPermissions",
+              "quicksight:PassDataSet",
+              "quicksight:DescribeIngestion",
+              "quicksight:ListIngestions",
+              "quicksight:UpdateDataSet",
+              "quicksight:DeleteDataSet",
+              "quicksight:CreateIngestion",
+              "quicksight:CancelIngestion",
+              "quicksight:UpdateDataSetPermissions",
+            ],
+            "Principal": {
+              "Fn::Join": [
+                "",
+                [
+                  "arn:aws:quicksight:",
+                  {
+                    "Ref": "AWS::Region",
+                  },
+                  ":",
+                  {
+                    "Ref": "AWS::AccountId",
+                  },
+                  ":group/default/QS-Developers",
+                ],
+              ],
+            },
+          },
+        ],
+        "PhysicalTableMap": {
+          "anyKey": {
+            "S3Source": {
+              "DataSourceArn": {
+                "Fn::GetAtt": [
+                  "qsdatasetssalesqsdatasourceD48E7AA0",
+                  "Arn",
+                ],
+              },
+              "InputColumns": [
+                {
+                  "Name": "ColumnId-1",
+                  "Type": "STRING",
+                },
+                {
+                  "Name": "ColumnId-2",
+                  "Type": "STRING",
+                },
+                {
+                  "Name": "ColumnId-3",
+                  "Type": "STRING",
+                },
+                {
+                  "Name": "ColumnId-4",
+                  "Type": "STRING",
+                },
+                {
+                  "Name": "ColumnId-5",
+                  "Type": "STRING",
+                },
+                {
+                  "Name": "ColumnId-6",
+                  "Type": "STRING",
+                },
+                {
+                  "Name": "ColumnId-7",
+                  "Type": "STRING",
+                },
+                {
+                  "Name": "ColumnId-8",
+                  "Type": "STRING",
+                },
+                {
+                  "Name": "ColumnId-9",
+                  "Type": "STRING",
+                },
+                {
+                  "Name": "ColumnId-10",
+                  "Type": "STRING",
+                },
+                {
+                  "Name": "ColumnId-11",
+                  "Type": "STRING",
+                },
+                {
+                  "Name": "ColumnId-12",
+                  "Type": "STRING",
+                },
+              ],
+              "UploadSettings": {
+                "ContainsHeader": true,
+                "Delimiter": ",",
+                "Format": "CSV",
+                "StartFromRow": 1,
+                "TextQualifier": "DOUBLE_QUOTE",
+              },
+            },
+          },
+        },
+      },
+      "Type": "AWS::QuickSight::DataSet",
+    },
+    "qsdatasetssalesqsdatasourceD48E7AA0": {
+      "Properties": {
+        "AwsAccountId": {
+          "Ref": "AWS::AccountId",
+        },
+        "DataSourceId": "sales-qs-data-source",
+        "DataSourceParameters": {
+          "S3Parameters": {
+            "ManifestFileLocation": {
+              "Bucket": {
+                "Fn::Join": [
+                  "",
+                  [
+                    "spaceneedle-samplefiles.prod.",
+                    {
+                      "Ref": "AWS::Region",
+                    },
+                  ],
+                ],
+              },
+              "Key": "sales/manifest.json",
+            },
+          },
+        },
+        "Name": "sales-qs-data-source",
+        "Permissions": [
+          {
+            "Actions": [
+              "quicksight:DescribeDataSource",
+              "quicksight:DescribeDataSourcePermissions",
+              "quicksight:PassDataSource",
+            ],
+            "Principal": {
+              "Fn::Join": [
+                "",
+                [
+                  "arn:aws:quicksight:",
+                  {
+                    "Ref": "AWS::Region",
+                  },
+                  ":",
+                  {
+                    "Ref": "AWS::AccountId",
+                  },
+                  ":group/default/QS-Developers",
+                ],
+              ],
+            },
+          },
+        ],
+        "Type": "S3",
+      },
+      "Type": "AWS::QuickSight::DataSource",
+    },
+    "qsdatasetswebdswebdsdatasetB4D0FE11": {
+      "Properties": {
+        "AwsAccountId": {
+          "Ref": "AWS::AccountId",
+        },
+        "DataSetId": "web-ds",
+        "ImportMode": "SPICE",
+        "LogicalTableMap": {
+          "anything": {
+            "Alias": "web-ds",
+            "DataTransforms": [
+              {
+                "RenameColumnOperation": {
+                  "ColumnName": "ColumnId-1",
+                  "NewColumnName": "Date",
+                },
+              },
+              {
+                "RenameColumnOperation": {
+                  "ColumnName": "ColumnId-2",
+                  "NewColumnName": "New visitors SEO",
+                },
+              },
+              {
+                "RenameColumnOperation": {
+                  "ColumnName": "ColumnId-3",
+                  "NewColumnName": "New visitors CPC",
+                },
+              },
+              {
+                "RenameColumnOperation": {
+                  "ColumnName": "ColumnId-4",
+                  "NewColumnName": "New visitors Social Media",
+                },
+              },
+              {
+                "RenameColumnOperation": {
+                  "ColumnName": "ColumnId-5",
+                  "NewColumnName": "Return visitors",
+                },
+              },
+              {
+                "RenameColumnOperation": {
+                  "ColumnName": "ColumnId-6",
+                  "NewColumnName": "Twitter mentions",
+                },
+              },
+              {
+                "RenameColumnOperation": {
+                  "ColumnName": "ColumnId-7",
+                  "NewColumnName": "Twitter followers adds",
+                },
+              },
+              {
+                "RenameColumnOperation": {
+                  "ColumnName": "ColumnId-8",
+                  "NewColumnName": "Twitter followers cumulative",
+                },
+              },
+              {
+                "RenameColumnOperation": {
+                  "ColumnName": "ColumnId-9",
+                  "NewColumnName": "Mailing list adds",
+                },
+              },
+              {
+                "RenameColumnOperation": {
+                  "ColumnName": "ColumnId-10",
+                  "NewColumnName": "Mailing list cumulative",
+                },
+              },
+              {
+                "RenameColumnOperation": {
+                  "ColumnName": "ColumnId-11",
+                  "NewColumnName": "Website Pageviews",
+                },
+              },
+              {
+                "RenameColumnOperation": {
+                  "ColumnName": "ColumnId-12",
+                  "NewColumnName": "Website Visits",
+                },
+              },
+              {
+                "RenameColumnOperation": {
+                  "ColumnName": "ColumnId-13",
+                  "NewColumnName": "Website Unique Visits",
+                },
+              },
+              {
+                "RenameColumnOperation": {
+                  "ColumnName": "ColumnId-14",
+                  "NewColumnName": "Mobile uniques",
+                },
+              },
+              {
+                "RenameColumnOperation": {
+                  "ColumnName": "ColumnId-15",
+                  "NewColumnName": "Tablet uniques",
+                },
+              },
+              {
+                "RenameColumnOperation": {
+                  "ColumnName": "ColumnId-16",
+                  "NewColumnName": "Desktop uniques",
+                },
+              },
+              {
+                "RenameColumnOperation": {
+                  "ColumnName": "ColumnId-17",
+                  "NewColumnName": "Free sign up",
+                },
+              },
+              {
+                "RenameColumnOperation": {
+                  "ColumnName": "ColumnId-18",
+                  "NewColumnName": "Paid conversion",
+                },
+              },
+              {
+                "RenameColumnOperation": {
+                  "ColumnName": "ColumnId-19",
+                  "NewColumnName": "Events",
+                },
+              },
+              {
+                "CastColumnTypeOperation": {
+                  "ColumnName": "Free sign up",
+                  "NewColumnType": "INTEGER",
+                },
+              },
+              {
+                "CastColumnTypeOperation": {
+                  "ColumnName": "Paid conversion",
+                  "NewColumnType": "INTEGER",
+                },
+              },
+              {
+                "CastColumnTypeOperation": {
+                  "ColumnName": "Tablet uniques",
+                  "NewColumnType": "INTEGER",
+                },
+              },
+              {
+                "CastColumnTypeOperation": {
+                  "ColumnName": "Desktop uniques",
+                  "NewColumnType": "INTEGER",
+                },
+              },
+              {
+                "CastColumnTypeOperation": {
+                  "ColumnName": "Mailing list adds",
+                  "NewColumnType": "INTEGER",
+                },
+              },
+              {
+                "CastColumnTypeOperation": {
+                  "ColumnName": "Twitter followers cumulative",
+                  "NewColumnType": "INTEGER",
+                },
+              },
+              {
+                "CastColumnTypeOperation": {
+                  "ColumnName": "Mailing list cumulative",
+                  "NewColumnType": "INTEGER",
+                },
+              },
+              {
+                "CastColumnTypeOperation": {
+                  "ColumnName": "Return visitors",
+                  "NewColumnType": "INTEGER",
+                },
+              },
+              {
+                "CastColumnTypeOperation": {
+                  "ColumnName": "Website Unique Visits",
+                  "NewColumnType": "INTEGER",
+                },
+              },
+              {
+                "CastColumnTypeOperation": {
+                  "ColumnName": "New visitors Social Media",
+                  "NewColumnType": "INTEGER",
+                },
+              },
+              {
+                "CastColumnTypeOperation": {
+                  "ColumnName": "Mobile uniques",
+                  "NewColumnType": "INTEGER",
+                },
+              },
+              {
+                "CastColumnTypeOperation": {
+                  "ColumnName": "Twitter followers adds",
+                  "NewColumnType": "INTEGER",
+                },
+              },
+              {
+                "CastColumnTypeOperation": {
+                  "ColumnName": "Website Pageviews",
+                  "NewColumnType": "INTEGER",
+                },
+              },
+              {
+                "CastColumnTypeOperation": {
+                  "ColumnName": "Twitter mentions",
+                  "NewColumnType": "INTEGER",
+                },
+              },
+              {
+                "CastColumnTypeOperation": {
+                  "ColumnName": "Website Visits",
+                  "NewColumnType": "INTEGER",
+                },
+              },
+              {
+                "CastColumnTypeOperation": {
+                  "ColumnName": "New visitors CPC",
+                  "NewColumnType": "INTEGER",
+                },
+              },
+              {
+                "CastColumnTypeOperation": {
+                  "ColumnName": "New visitors SEO",
+                  "NewColumnType": "INTEGER",
+                },
+              },
+              {
+                "CastColumnTypeOperation": {
+                  "ColumnName": "Date",
+                  "Format": "M/d/yyyy",
+                  "NewColumnType": "DATETIME",
+                },
+              },
+            ],
+            "Source": {
+              "PhysicalTableId": "anyKey",
+            },
+          },
+        },
+        "Name": "Web-ds",
+        "Permissions": [
+          {
+            "Actions": [
+              "quicksight:DescribeDataSet",
+              "quicksight:DescribeDataSetPermissions",
+              "quicksight:PassDataSet",
+              "quicksight:DescribeIngestion",
+              "quicksight:ListIngestions",
+              "quicksight:UpdateDataSet",
+              "quicksight:DeleteDataSet",
+              "quicksight:CreateIngestion",
+              "quicksight:CancelIngestion",
+              "quicksight:UpdateDataSetPermissions",
+            ],
+            "Principal": {
+              "Fn::Join": [
+                "",
+                [
+                  "arn:aws:quicksight:",
+                  {
+                    "Ref": "AWS::Region",
+                  },
+                  ":",
+                  {
+                    "Ref": "AWS::AccountId",
+                  },
+                  ":group/default/QS-Developers",
+                ],
+              ],
+            },
+          },
+        ],
+        "PhysicalTableMap": {
+          "anyKey": {
+            "S3Source": {
+              "DataSourceArn": {
+                "Fn::GetAtt": [
+                  "qsdatasetsmarketingqsdatasource69C51853",
+                  "Arn",
+                ],
+              },
+              "InputColumns": [
+                {
+                  "Name": "ColumnId-1",
+                  "Type": "STRING",
+                },
+                {
+                  "Name": "ColumnId-2",
+                  "Type": "STRING",
+                },
+                {
+                  "Name": "ColumnId-3",
+                  "Type": "STRING",
+                },
+                {
+                  "Name": "ColumnId-4",
+                  "Type": "STRING",
+                },
+                {
+                  "Name": "ColumnId-5",
+                  "Type": "STRING",
+                },
+                {
+                  "Name": "ColumnId-6",
+                  "Type": "STRING",
+                },
+                {
+                  "Name": "ColumnId-7",
+                  "Type": "STRING",
+                },
+                {
+                  "Name": "ColumnId-8",
+                  "Type": "STRING",
+                },
+                {
+                  "Name": "ColumnId-9",
+                  "Type": "STRING",
+                },
+                {
+                  "Name": "ColumnId-10",
+                  "Type": "STRING",
+                },
+                {
+                  "Name": "ColumnId-11",
+                  "Type": "STRING",
+                },
+                {
+                  "Name": "ColumnId-12",
+                  "Type": "STRING",
+                },
+                {
+                  "Name": "ColumnId-13",
+                  "Type": "STRING",
+                },
+                {
+                  "Name": "ColumnId-14",
+                  "Type": "STRING",
+                },
+                {
+                  "Name": "ColumnId-15",
+                  "Type": "STRING",
+                },
+                {
+                  "Name": "ColumnId-16",
+                  "Type": "STRING",
+                },
+                {
+                  "Name": "ColumnId-17",
+                  "Type": "STRING",
+                },
+                {
+                  "Name": "ColumnId-18",
+                  "Type": "STRING",
+                },
+                {
+                  "Name": "ColumnId-19",
+                  "Type": "STRING",
+                },
+              ],
+              "UploadSettings": {
+                "ContainsHeader": true,
+                "Delimiter": ",",
+                "Format": "CSV",
+                "StartFromRow": 1,
+                "TextQualifier": "DOUBLE_QUOTE",
+              },
+            },
+          },
+        },
+      },
+      "Type": "AWS::QuickSight::DataSet",
+    },
+    "qstemplatesbusinessbusinessqsanalysis0C258A3C": {
+      "DependsOn": [
+        "qsautomationsqfsharedashboardresourceproviderframeworkonEvent388397F7",
+        "qsautomationsqfsharedashboardresourceproviderframeworkonEventServiceRoleDefaultPolicy31A55BD0",
+        "qsautomationsqfsharedashboardresourceproviderframeworkonEventServiceRoleE41381C0",
+        "qsautomationsqsdashboardsharefunction83A679BB",
+        "qsautomationsqsdashboardsharefunctionServiceRoleDefaultPolicyEFCDB505",
+        "qsautomationsqsdashboardsharefunctionServiceRoleCE1E73B3",
+        "businessquicksighttemplate",
+      ],
+      "Properties": {
+        "AnalysisId": "business-analysis",
+        "AwsAccountId": {
+          "Ref": "AWS::AccountId",
+        },
+        "Name": "undefined business Analysis",
+        "Permissions": [
+          {
+            "Actions": [
+              "quicksight:RestoreAnalysis",
+              "quicksight:UpdateAnalysisPermissions",
+              "quicksight:DeleteAnalysis",
+              "quicksight:DescribeAnalysisPermissions",
+              "quicksight:QueryAnalysis",
+              "quicksight:DescribeAnalysis",
+              "quicksight:UpdateAnalysis",
+            ],
+            "Principal": {
+              "Fn::Join": [
+                "",
+                [
+                  "arn:aws:quicksight:",
+                  {
+                    "Ref": "AWS::Region",
+                  },
+                  ":",
+                  {
+                    "Ref": "AWS::AccountId",
+                  },
+                  ":group/default/QS-Developers",
+                ],
+              ],
+            },
+          },
+        ],
+        "SourceEntity": {
+          "SourceTemplate": {
+            "Arn": {
+              "Fn::Join": [
+                "",
+                [
+                  "arn:aws:quicksight:",
+                  {
+                    "Ref": "AWS::Region",
+                  },
+                  ":",
+                  {
+                    "Ref": "AWS::AccountId",
+                  },
+                  ":template/business-template",
+                ],
+              ],
+            },
+            "DataSetReferences": [
+              {
+                "DataSetArn": {
+                  "Fn::Join": [
+                    "",
+                    [
+                      "arn:aws:quicksight:",
+                      {
+                        "Ref": "AWS::Region",
+                      },
+                      ":",
+                      {
+                        "Ref": "AWS::AccountId",
+                      },
+                      ":dataset/business-ds",
+                    ],
+                  ],
+                },
+                "DataSetPlaceholder": "Business Review",
+              },
+            ],
+          },
+        },
+        "ThemeArn": "arn:aws:quicksight::aws:theme/CLASSIC",
+      },
+      "Type": "AWS::QuickSight::Analysis",
+    },
+    "qstemplatesbusinessbusinessqsdashboard9C239EE6": {
+      "DependsOn": [
+        "qsautomationsqfsharedashboardresourceproviderframeworkonEvent388397F7",
+        "qsautomationsqfsharedashboardresourceproviderframeworkonEventServiceRoleDefaultPolicy31A55BD0",
+        "qsautomationsqfsharedashboardresourceproviderframeworkonEventServiceRoleE41381C0",
+        "qsautomationsqsdashboardsharefunction83A679BB",
+        "qsautomationsqsdashboardsharefunctionServiceRoleDefaultPolicyEFCDB505",
+        "qsautomationsqsdashboardsharefunctionServiceRoleCE1E73B3",
+        "businessquicksighttemplate",
+      ],
+      "Properties": {
+        "AwsAccountId": {
+          "Ref": "AWS::AccountId",
+        },
+        "DashboardId": "business-dashboard",
+        "DashboardPublishOptions": {
+          "AdHocFilteringOption": {
+            "AvailabilityStatus": "ENABLED",
+          },
+          "DataPointDrillUpDownOption": {
+            "AvailabilityStatus": "ENABLED",
+          },
+          "DataPointMenuLabelOption": {
+            "AvailabilityStatus": "ENABLED",
+          },
+          "DataPointTooltipOption": {
+            "AvailabilityStatus": "ENABLED",
+          },
+          "ExportToCSVOption": {
+            "AvailabilityStatus": "ENABLED",
+          },
+          "ExportWithHiddenFieldsOption": {
+            "AvailabilityStatus": "DISABLED",
+          },
+          "SheetControlsOption": {
+            "VisibilityState": "EXPANDED",
+          },
+          "SheetLayoutElementMaximizationOption": {
+            "AvailabilityStatus": "ENABLED",
+          },
+          "VisualAxisSortOption": {
+            "AvailabilityStatus": "ENABLED",
+          },
+          "VisualMenuOption": {
+            "AvailabilityStatus": "ENABLED",
+          },
+        },
+        "Name": "undefined business Dashboard",
+        "Permissions": [
+          {
+            "Actions": [
+              "quicksight:DescribeDashboard",
+              "quicksight:ListDashboardVersions",
+              "quicksight:UpdateDashboardPermissions",
+              "quicksight:QueryDashboard",
+              "quicksight:UpdateDashboard",
+              "quicksight:DeleteDashboard",
+              "quicksight:DescribeDashboardPermissions",
+              "quicksight:UpdateDashboardPublishedVersion",
+            ],
+            "Principal": {
+              "Fn::Join": [
+                "",
+                [
+                  "arn:aws:quicksight:",
+                  {
+                    "Ref": "AWS::Region",
+                  },
+                  ":",
+                  {
+                    "Ref": "AWS::AccountId",
+                  },
+                  ":group/default/QS-Developers",
+                ],
+              ],
+            },
+          },
+        ],
+        "SourceEntity": {
+          "SourceTemplate": {
+            "Arn": {
+              "Fn::Join": [
+                "",
+                [
+                  "arn:aws:quicksight:",
+                  {
+                    "Ref": "AWS::Region",
+                  },
+                  ":",
+                  {
+                    "Ref": "AWS::AccountId",
+                  },
+                  ":template/business-template",
+                ],
+              ],
+            },
+            "DataSetReferences": [
+              {
+                "DataSetArn": {
+                  "Fn::Join": [
+                    "",
+                    [
+                      "arn:aws:quicksight:",
+                      {
+                        "Ref": "AWS::Region",
+                      },
+                      ":",
+                      {
+                        "Ref": "AWS::AccountId",
+                      },
+                      ":dataset/business-ds",
+                    ],
+                  ],
+                },
+                "DataSetPlaceholder": "Business Review",
+              },
+            ],
+          },
+        },
+        "ThemeArn": "arn:aws:quicksight::aws:theme/CLASSIC",
+      },
+      "Type": "AWS::QuickSight::Dashboard",
+    },
+    "qstemplatesbusinessbusinessqsdashboardsharefunctionC7349E9C": {
+      "DeletionPolicy": "Delete",
+      "DependsOn": [
+        "qsautomationsqfsharedashboardresourceproviderframeworkonEvent388397F7",
+        "qsautomationsqfsharedashboardresourceproviderframeworkonEventServiceRoleDefaultPolicy31A55BD0",
+        "qsautomationsqfsharedashboardresourceproviderframeworkonEventServiceRoleE41381C0",
+        "qsautomationsqsdashboardsharefunction83A679BB",
+        "qsautomationsqsdashboardsharefunctionServiceRoleDefaultPolicyEFCDB505",
+        "qsautomationsqsdashboardsharefunctionServiceRoleCE1E73B3",
+        "qstemplatesbusinessbusinessqsdashboard9C239EE6",
+      ],
+      "Properties": {
+        "AwsAccountId": {
+          "Ref": "AWS::AccountId",
+        },
+        "DashboardId": "business-dashboard",
+        "Region": {
+          "Ref": "AWS::Region",
+        },
+        "ServiceToken": {
+          "Fn::GetAtt": [
+            "qsautomationsqfsharedashboardresourceproviderframeworkonEvent388397F7",
+            "Arn",
+          ],
+        },
+      },
+      "Type": "AWS::CloudFormation::CustomResource",
+      "UpdateReplacePolicy": "Delete",
+    },
+    "qstemplatespeoplepeopleqsanalysisC12232E1": {
+      "DependsOn": [
+        "qsautomationsqfsharedashboardresourceproviderframeworkonEvent388397F7",
+        "qsautomationsqfsharedashboardresourceproviderframeworkonEventServiceRoleDefaultPolicy31A55BD0",
+        "qsautomationsqfsharedashboardresourceproviderframeworkonEventServiceRoleE41381C0",
+        "qsautomationsqsdashboardsharefunction83A679BB",
+        "qsautomationsqsdashboardsharefunctionServiceRoleDefaultPolicyEFCDB505",
+        "qsautomationsqsdashboardsharefunctionServiceRoleCE1E73B3",
+        "peoplequicksighttemplate",
+      ],
+      "Properties": {
+        "AnalysisId": "people-analysis",
+        "AwsAccountId": {
+          "Ref": "AWS::AccountId",
+        },
+        "Name": "undefined people Analysis",
+        "Permissions": [
+          {
+            "Actions": [
+              "quicksight:RestoreAnalysis",
+              "quicksight:UpdateAnalysisPermissions",
+              "quicksight:DeleteAnalysis",
+              "quicksight:DescribeAnalysisPermissions",
+              "quicksight:QueryAnalysis",
+              "quicksight:DescribeAnalysis",
+              "quicksight:UpdateAnalysis",
+            ],
+            "Principal": {
+              "Fn::Join": [
+                "",
+                [
+                  "arn:aws:quicksight:",
+                  {
+                    "Ref": "AWS::Region",
+                  },
+                  ":",
+                  {
+                    "Ref": "AWS::AccountId",
+                  },
+                  ":group/default/QS-Developers",
+                ],
+              ],
+            },
+          },
+        ],
+        "SourceEntity": {
+          "SourceTemplate": {
+            "Arn": {
+              "Fn::Join": [
+                "",
+                [
+                  "arn:aws:quicksight:",
+                  {
+                    "Ref": "AWS::Region",
+                  },
+                  ":",
+                  {
+                    "Ref": "AWS::AccountId",
+                  },
+                  ":template/people-template",
+                ],
+              ],
+            },
+            "DataSetReferences": [
+              {
+                "DataSetArn": {
+                  "Fn::Join": [
+                    "",
+                    [
+                      "arn:aws:quicksight:",
+                      {
+                        "Ref": "AWS::Region",
+                      },
+                      ":",
+                      {
+                        "Ref": "AWS::AccountId",
+                      },
+                      ":dataset/people-ds",
+                    ],
+                  ],
+                },
+                "DataSetPlaceholder": "People Overview",
+              },
+            ],
+          },
+        },
+        "ThemeArn": "arn:aws:quicksight::aws:theme/CLASSIC",
+      },
+      "Type": "AWS::QuickSight::Analysis",
+    },
+    "qstemplatespeoplepeopleqsdashboardE8783D09": {
+      "DependsOn": [
+        "qsautomationsqfsharedashboardresourceproviderframeworkonEvent388397F7",
+        "qsautomationsqfsharedashboardresourceproviderframeworkonEventServiceRoleDefaultPolicy31A55BD0",
+        "qsautomationsqfsharedashboardresourceproviderframeworkonEventServiceRoleE41381C0",
+        "qsautomationsqsdashboardsharefunction83A679BB",
+        "qsautomationsqsdashboardsharefunctionServiceRoleDefaultPolicyEFCDB505",
+        "qsautomationsqsdashboardsharefunctionServiceRoleCE1E73B3",
+        "peoplequicksighttemplate",
+      ],
+      "Properties": {
+        "AwsAccountId": {
+          "Ref": "AWS::AccountId",
+        },
+        "DashboardId": "people-dashboard",
+        "DashboardPublishOptions": {
+          "AdHocFilteringOption": {
+            "AvailabilityStatus": "ENABLED",
+          },
+          "DataPointDrillUpDownOption": {
+            "AvailabilityStatus": "ENABLED",
+          },
+          "DataPointMenuLabelOption": {
+            "AvailabilityStatus": "ENABLED",
+          },
+          "DataPointTooltipOption": {
+            "AvailabilityStatus": "ENABLED",
+          },
+          "ExportToCSVOption": {
+            "AvailabilityStatus": "ENABLED",
+          },
+          "ExportWithHiddenFieldsOption": {
+            "AvailabilityStatus": "DISABLED",
+          },
+          "SheetControlsOption": {
+            "VisibilityState": "EXPANDED",
+          },
+          "SheetLayoutElementMaximizationOption": {
+            "AvailabilityStatus": "ENABLED",
+          },
+          "VisualAxisSortOption": {
+            "AvailabilityStatus": "ENABLED",
+          },
+          "VisualMenuOption": {
+            "AvailabilityStatus": "ENABLED",
+          },
+        },
+        "Name": "undefined people Dashboard",
+        "Permissions": [
+          {
+            "Actions": [
+              "quicksight:DescribeDashboard",
+              "quicksight:ListDashboardVersions",
+              "quicksight:UpdateDashboardPermissions",
+              "quicksight:QueryDashboard",
+              "quicksight:UpdateDashboard",
+              "quicksight:DeleteDashboard",
+              "quicksight:DescribeDashboardPermissions",
+              "quicksight:UpdateDashboardPublishedVersion",
+            ],
+            "Principal": {
+              "Fn::Join": [
+                "",
+                [
+                  "arn:aws:quicksight:",
+                  {
+                    "Ref": "AWS::Region",
+                  },
+                  ":",
+                  {
+                    "Ref": "AWS::AccountId",
+                  },
+                  ":group/default/QS-Developers",
+                ],
+              ],
+            },
+          },
+        ],
+        "SourceEntity": {
+          "SourceTemplate": {
+            "Arn": {
+              "Fn::Join": [
+                "",
+                [
+                  "arn:aws:quicksight:",
+                  {
+                    "Ref": "AWS::Region",
+                  },
+                  ":",
+                  {
+                    "Ref": "AWS::AccountId",
+                  },
+                  ":template/people-template",
+                ],
+              ],
+            },
+            "DataSetReferences": [
+              {
+                "DataSetArn": {
+                  "Fn::Join": [
+                    "",
+                    [
+                      "arn:aws:quicksight:",
+                      {
+                        "Ref": "AWS::Region",
+                      },
+                      ":",
+                      {
+                        "Ref": "AWS::AccountId",
+                      },
+                      ":dataset/people-ds",
+                    ],
+                  ],
+                },
+                "DataSetPlaceholder": "People Overview",
+              },
+            ],
+          },
+        },
+        "ThemeArn": "arn:aws:quicksight::aws:theme/CLASSIC",
+      },
+      "Type": "AWS::QuickSight::Dashboard",
+    },
+    "qstemplatespeoplepeopleqsdashboardsharefunction63C9B823": {
+      "DeletionPolicy": "Delete",
+      "DependsOn": [
+        "qsautomationsqfsharedashboardresourceproviderframeworkonEvent388397F7",
+        "qsautomationsqfsharedashboardresourceproviderframeworkonEventServiceRoleDefaultPolicy31A55BD0",
+        "qsautomationsqfsharedashboardresourceproviderframeworkonEventServiceRoleE41381C0",
+        "qsautomationsqsdashboardsharefunction83A679BB",
+        "qsautomationsqsdashboardsharefunctionServiceRoleDefaultPolicyEFCDB505",
+        "qsautomationsqsdashboardsharefunctionServiceRoleCE1E73B3",
+        "qstemplatespeoplepeopleqsdashboardE8783D09",
+      ],
+      "Properties": {
+        "AwsAccountId": {
+          "Ref": "AWS::AccountId",
+        },
+        "DashboardId": "people-dashboard",
+        "Region": {
+          "Ref": "AWS::Region",
+        },
+        "ServiceToken": {
+          "Fn::GetAtt": [
+            "qsautomationsqfsharedashboardresourceproviderframeworkonEvent388397F7",
+            "Arn",
+          ],
+        },
+      },
+      "Type": "AWS::CloudFormation::CustomResource",
+      "UpdateReplacePolicy": "Delete",
+    },
+    "qstemplatessalessalesqsanalysisCAC7BF91": {
+      "DependsOn": [
+        "qsautomationsqfsharedashboardresourceproviderframeworkonEvent388397F7",
+        "qsautomationsqfsharedashboardresourceproviderframeworkonEventServiceRoleDefaultPolicy31A55BD0",
+        "qsautomationsqfsharedashboardresourceproviderframeworkonEventServiceRoleE41381C0",
+        "qsautomationsqsdashboardsharefunction83A679BB",
+        "qsautomationsqsdashboardsharefunctionServiceRoleDefaultPolicyEFCDB505",
+        "qsautomationsqsdashboardsharefunctionServiceRoleCE1E73B3",
+        "salesquicksighttemplate",
+      ],
+      "Properties": {
+        "AnalysisId": "sales-analysis",
+        "AwsAccountId": {
+          "Ref": "AWS::AccountId",
+        },
+        "Name": "undefined sales Analysis",
+        "Permissions": [
+          {
+            "Actions": [
+              "quicksight:RestoreAnalysis",
+              "quicksight:UpdateAnalysisPermissions",
+              "quicksight:DeleteAnalysis",
+              "quicksight:DescribeAnalysisPermissions",
+              "quicksight:QueryAnalysis",
+              "quicksight:DescribeAnalysis",
+              "quicksight:UpdateAnalysis",
+            ],
+            "Principal": {
+              "Fn::Join": [
+                "",
+                [
+                  "arn:aws:quicksight:",
+                  {
+                    "Ref": "AWS::Region",
+                  },
+                  ":",
+                  {
+                    "Ref": "AWS::AccountId",
+                  },
+                  ":group/default/QS-Developers",
+                ],
+              ],
+            },
+          },
+        ],
+        "SourceEntity": {
+          "SourceTemplate": {
+            "Arn": {
+              "Fn::Join": [
+                "",
+                [
+                  "arn:aws:quicksight:",
+                  {
+                    "Ref": "AWS::Region",
+                  },
+                  ":",
+                  {
+                    "Ref": "AWS::AccountId",
+                  },
+                  ":template/sales-template",
+                ],
+              ],
+            },
+            "DataSetReferences": [
+              {
+                "DataSetArn": {
+                  "Fn::Join": [
+                    "",
+                    [
+                      "arn:aws:quicksight:",
+                      {
+                        "Ref": "AWS::Region",
+                      },
+                      ":",
+                      {
+                        "Ref": "AWS::AccountId",
+                      },
+                      ":dataset/sales-ds",
+                    ],
+                  ],
+                },
+                "DataSetPlaceholder": "Sales Pipeline",
+              },
+            ],
+          },
+        },
+        "ThemeArn": "arn:aws:quicksight::aws:theme/CLASSIC",
+      },
+      "Type": "AWS::QuickSight::Analysis",
+    },
+    "qstemplatessalessalesqsdashboard15DB6E04": {
+      "DependsOn": [
+        "qsautomationsqfsharedashboardresourceproviderframeworkonEvent388397F7",
+        "qsautomationsqfsharedashboardresourceproviderframeworkonEventServiceRoleDefaultPolicy31A55BD0",
+        "qsautomationsqfsharedashboardresourceproviderframeworkonEventServiceRoleE41381C0",
+        "qsautomationsqsdashboardsharefunction83A679BB",
+        "qsautomationsqsdashboardsharefunctionServiceRoleDefaultPolicyEFCDB505",
+        "qsautomationsqsdashboardsharefunctionServiceRoleCE1E73B3",
+        "salesquicksighttemplate",
+      ],
+      "Properties": {
+        "AwsAccountId": {
+          "Ref": "AWS::AccountId",
+        },
+        "DashboardId": "sales-dashboard",
+        "DashboardPublishOptions": {
+          "AdHocFilteringOption": {
+            "AvailabilityStatus": "ENABLED",
+          },
+          "DataPointDrillUpDownOption": {
+            "AvailabilityStatus": "ENABLED",
+          },
+          "DataPointMenuLabelOption": {
+            "AvailabilityStatus": "ENABLED",
+          },
+          "DataPointTooltipOption": {
+            "AvailabilityStatus": "ENABLED",
+          },
+          "ExportToCSVOption": {
+            "AvailabilityStatus": "ENABLED",
+          },
+          "ExportWithHiddenFieldsOption": {
+            "AvailabilityStatus": "DISABLED",
+          },
+          "SheetControlsOption": {
+            "VisibilityState": "EXPANDED",
+          },
+          "SheetLayoutElementMaximizationOption": {
+            "AvailabilityStatus": "ENABLED",
+          },
+          "VisualAxisSortOption": {
+            "AvailabilityStatus": "ENABLED",
+          },
+          "VisualMenuOption": {
+            "AvailabilityStatus": "ENABLED",
+          },
+        },
+        "Name": "undefined sales Dashboard",
+        "Permissions": [
+          {
+            "Actions": [
+              "quicksight:DescribeDashboard",
+              "quicksight:ListDashboardVersions",
+              "quicksight:UpdateDashboardPermissions",
+              "quicksight:QueryDashboard",
+              "quicksight:UpdateDashboard",
+              "quicksight:DeleteDashboard",
+              "quicksight:DescribeDashboardPermissions",
+              "quicksight:UpdateDashboardPublishedVersion",
+            ],
+            "Principal": {
+              "Fn::Join": [
+                "",
+                [
+                  "arn:aws:quicksight:",
+                  {
+                    "Ref": "AWS::Region",
+                  },
+                  ":",
+                  {
+                    "Ref": "AWS::AccountId",
+                  },
+                  ":group/default/QS-Developers",
+                ],
+              ],
+            },
+          },
+        ],
+        "SourceEntity": {
+          "SourceTemplate": {
+            "Arn": {
+              "Fn::Join": [
+                "",
+                [
+                  "arn:aws:quicksight:",
+                  {
+                    "Ref": "AWS::Region",
+                  },
+                  ":",
+                  {
+                    "Ref": "AWS::AccountId",
+                  },
+                  ":template/sales-template",
+                ],
+              ],
+            },
+            "DataSetReferences": [
+              {
+                "DataSetArn": {
+                  "Fn::Join": [
+                    "",
+                    [
+                      "arn:aws:quicksight:",
+                      {
+                        "Ref": "AWS::Region",
+                      },
+                      ":",
+                      {
+                        "Ref": "AWS::AccountId",
+                      },
+                      ":dataset/sales-ds",
+                    ],
+                  ],
+                },
+                "DataSetPlaceholder": "Sales Pipeline",
+              },
+            ],
+          },
+        },
+        "ThemeArn": "arn:aws:quicksight::aws:theme/CLASSIC",
+      },
+      "Type": "AWS::QuickSight::Dashboard",
+    },
+    "qstemplatessalessalesqsdashboardsharefunction305336F4": {
+      "DeletionPolicy": "Delete",
+      "DependsOn": [
+        "qsautomationsqfsharedashboardresourceproviderframeworkonEvent388397F7",
+        "qsautomationsqfsharedashboardresourceproviderframeworkonEventServiceRoleDefaultPolicy31A55BD0",
+        "qsautomationsqfsharedashboardresourceproviderframeworkonEventServiceRoleE41381C0",
+        "qsautomationsqsdashboardsharefunction83A679BB",
+        "qsautomationsqsdashboardsharefunctionServiceRoleDefaultPolicyEFCDB505",
+        "qsautomationsqsdashboardsharefunctionServiceRoleCE1E73B3",
+        "qstemplatessalessalesqsdashboard15DB6E04",
+      ],
+      "Properties": {
+        "AwsAccountId": {
+          "Ref": "AWS::AccountId",
+        },
+        "DashboardId": "sales-dashboard",
+        "Region": {
+          "Ref": "AWS::Region",
+        },
+        "ServiceToken": {
+          "Fn::GetAtt": [
+            "qsautomationsqfsharedashboardresourceproviderframeworkonEvent388397F7",
+            "Arn",
+          ],
+        },
+      },
+      "Type": "AWS::CloudFormation::CustomResource",
+      "UpdateReplacePolicy": "Delete",
+    },
+    "qstemplateswebwebqsanalysis17BD408F": {
+      "DependsOn": [
+        "qsautomationsqfsharedashboardresourceproviderframeworkonEvent388397F7",
+        "qsautomationsqfsharedashboardresourceproviderframeworkonEventServiceRoleDefaultPolicy31A55BD0",
+        "qsautomationsqfsharedashboardresourceproviderframeworkonEventServiceRoleE41381C0",
+        "qsautomationsqsdashboardsharefunction83A679BB",
+        "qsautomationsqsdashboardsharefunctionServiceRoleDefaultPolicyEFCDB505",
+        "qsautomationsqsdashboardsharefunctionServiceRoleCE1E73B3",
+        "webquicksighttemplate",
+      ],
+      "Properties": {
+        "AnalysisId": "web-analysis",
+        "AwsAccountId": {
+          "Ref": "AWS::AccountId",
+        },
+        "Name": "undefined web Analysis",
+        "Permissions": [
+          {
+            "Actions": [
+              "quicksight:RestoreAnalysis",
+              "quicksight:UpdateAnalysisPermissions",
+              "quicksight:DeleteAnalysis",
+              "quicksight:DescribeAnalysisPermissions",
+              "quicksight:QueryAnalysis",
+              "quicksight:DescribeAnalysis",
+              "quicksight:UpdateAnalysis",
+            ],
+            "Principal": {
+              "Fn::Join": [
+                "",
+                [
+                  "arn:aws:quicksight:",
+                  {
+                    "Ref": "AWS::Region",
+                  },
+                  ":",
+                  {
+                    "Ref": "AWS::AccountId",
+                  },
+                  ":group/default/QS-Developers",
+                ],
+              ],
+            },
+          },
+        ],
+        "SourceEntity": {
+          "SourceTemplate": {
+            "Arn": {
+              "Fn::Join": [
+                "",
+                [
+                  "arn:aws:quicksight:",
+                  {
+                    "Ref": "AWS::Region",
+                  },
+                  ":",
+                  {
+                    "Ref": "AWS::AccountId",
+                  },
+                  ":template/web-template",
+                ],
+              ],
+            },
+            "DataSetReferences": [
+              {
+                "DataSetArn": {
+                  "Fn::Join": [
+                    "",
+                    [
+                      "arn:aws:quicksight:",
+                      {
+                        "Ref": "AWS::Region",
+                      },
+                      ":",
+                      {
+                        "Ref": "AWS::AccountId",
+                      },
+                      ":dataset/web-ds",
+                    ],
+                  ],
+                },
+                "DataSetPlaceholder": "Web and Social Media Analytics",
+              },
+            ],
+          },
+        },
+        "ThemeArn": "arn:aws:quicksight::aws:theme/CLASSIC",
+      },
+      "Type": "AWS::QuickSight::Analysis",
+    },
+    "qstemplateswebwebqsdashboard1AC867DC": {
+      "DependsOn": [
+        "qsautomationsqfsharedashboardresourceproviderframeworkonEvent388397F7",
+        "qsautomationsqfsharedashboardresourceproviderframeworkonEventServiceRoleDefaultPolicy31A55BD0",
+        "qsautomationsqfsharedashboardresourceproviderframeworkonEventServiceRoleE41381C0",
+        "qsautomationsqsdashboardsharefunction83A679BB",
+        "qsautomationsqsdashboardsharefunctionServiceRoleDefaultPolicyEFCDB505",
+        "qsautomationsqsdashboardsharefunctionServiceRoleCE1E73B3",
+        "webquicksighttemplate",
+      ],
+      "Properties": {
+        "AwsAccountId": {
+          "Ref": "AWS::AccountId",
+        },
+        "DashboardId": "web-dashboard",
+        "DashboardPublishOptions": {
+          "AdHocFilteringOption": {
+            "AvailabilityStatus": "ENABLED",
+          },
+          "DataPointDrillUpDownOption": {
+            "AvailabilityStatus": "ENABLED",
+          },
+          "DataPointMenuLabelOption": {
+            "AvailabilityStatus": "ENABLED",
+          },
+          "DataPointTooltipOption": {
+            "AvailabilityStatus": "ENABLED",
+          },
+          "ExportToCSVOption": {
+            "AvailabilityStatus": "ENABLED",
+          },
+          "ExportWithHiddenFieldsOption": {
+            "AvailabilityStatus": "DISABLED",
+          },
+          "SheetControlsOption": {
+            "VisibilityState": "EXPANDED",
+          },
+          "SheetLayoutElementMaximizationOption": {
+            "AvailabilityStatus": "ENABLED",
+          },
+          "VisualAxisSortOption": {
+            "AvailabilityStatus": "ENABLED",
+          },
+          "VisualMenuOption": {
+            "AvailabilityStatus": "ENABLED",
+          },
+        },
+        "Name": "undefined web Dashboard",
+        "Permissions": [
+          {
+            "Actions": [
+              "quicksight:DescribeDashboard",
+              "quicksight:ListDashboardVersions",
+              "quicksight:UpdateDashboardPermissions",
+              "quicksight:QueryDashboard",
+              "quicksight:UpdateDashboard",
+              "quicksight:DeleteDashboard",
+              "quicksight:DescribeDashboardPermissions",
+              "quicksight:UpdateDashboardPublishedVersion",
+            ],
+            "Principal": {
+              "Fn::Join": [
+                "",
+                [
+                  "arn:aws:quicksight:",
+                  {
+                    "Ref": "AWS::Region",
+                  },
+                  ":",
+                  {
+                    "Ref": "AWS::AccountId",
+                  },
+                  ":group/default/QS-Developers",
+                ],
+              ],
+            },
+          },
+        ],
+        "SourceEntity": {
+          "SourceTemplate": {
+            "Arn": {
+              "Fn::Join": [
+                "",
+                [
+                  "arn:aws:quicksight:",
+                  {
+                    "Ref": "AWS::Region",
+                  },
+                  ":",
+                  {
+                    "Ref": "AWS::AccountId",
+                  },
+                  ":template/web-template",
+                ],
+              ],
+            },
+            "DataSetReferences": [
+              {
+                "DataSetArn": {
+                  "Fn::Join": [
+                    "",
+                    [
+                      "arn:aws:quicksight:",
+                      {
+                        "Ref": "AWS::Region",
+                      },
+                      ":",
+                      {
+                        "Ref": "AWS::AccountId",
+                      },
+                      ":dataset/web-ds",
+                    ],
+                  ],
+                },
+                "DataSetPlaceholder": "Web and Social Media Analytics",
+              },
+            ],
+          },
+        },
+        "ThemeArn": "arn:aws:quicksight::aws:theme/CLASSIC",
+      },
+      "Type": "AWS::QuickSight::Dashboard",
+    },
+    "qstemplateswebwebqsdashboardsharefunctionC0173B60": {
+      "DeletionPolicy": "Delete",
+      "DependsOn": [
+        "qsautomationsqfsharedashboardresourceproviderframeworkonEvent388397F7",
+        "qsautomationsqfsharedashboardresourceproviderframeworkonEventServiceRoleDefaultPolicy31A55BD0",
+        "qsautomationsqfsharedashboardresourceproviderframeworkonEventServiceRoleE41381C0",
+        "qsautomationsqsdashboardsharefunction83A679BB",
+        "qsautomationsqsdashboardsharefunctionServiceRoleDefaultPolicyEFCDB505",
+        "qsautomationsqsdashboardsharefunctionServiceRoleCE1E73B3",
+        "qstemplateswebwebqsdashboard1AC867DC",
+      ],
+      "Properties": {
+        "AwsAccountId": {
+          "Ref": "AWS::AccountId",
+        },
+        "DashboardId": "web-dashboard",
+        "Region": {
+          "Ref": "AWS::Region",
+        },
+        "ServiceToken": {
+          "Fn::GetAtt": [
+            "qsautomationsqfsharedashboardresourceproviderframeworkonEvent388397F7",
+            "Arn",
+          ],
+        },
+      },
+      "Type": "AWS::CloudFormation::CustomResource",
+      "UpdateReplacePolicy": "Delete",
+    },
+    "salesquicksighttemplate": {
+      "DependsOn": [
+        "qsautomationsqfsharedashboardresourceproviderframeworkonEvent388397F7",
+        "qsautomationsqfsharedashboardresourceproviderframeworkonEventServiceRoleDefaultPolicy31A55BD0",
+        "qsautomationsqfsharedashboardresourceproviderframeworkonEventServiceRoleE41381C0",
+        "qsautomationsqsdashboardsharefunction83A679BB",
+        "qsautomationsqsdashboardsharefunctionServiceRoleDefaultPolicyEFCDB505",
+        "qsautomationsqsdashboardsharefunctionServiceRoleCE1E73B3",
+      ],
+      "Properties": {
+        "AwsAccountId": {
+          "Ref": "AWS::AccountId",
+        },
+        "Definition": {
+          "AnalysisDefaults": {
+            "DefaultNewSheetConfiguration": {
+              "InteractiveLayoutConfiguration": {
+                "Grid": {
+                  "CanvasSizeOptions": {
+                    "ScreenCanvasSizeOptions": {
+                      "ResizeOption": "RESPONSIVE",
+                    },
+                  },
+                },
+              },
+              "SheetContentType": "INTERACTIVE",
+            },
+          },
+          "CalculatedFields": [],
+          "DataSetConfigurations": [
+            {
+              "ColumnGroupSchemaList": [],
+              "DataSetSchema": {
+                "ColumnSchemaList": [
+                  {
+                    "DataType": "DATETIME",
+                    "Name": "Date",
+                  },
+                  {
+                    "DataType": "STRING",
+                    "Name": "Opportunity Stage",
+                  },
+                  {
+                    "DataType": "STRING",
+                    "Name": "Segment",
+                  },
+                  {
+                    "DataType": "STRING",
+                    "GeographicRole": "STATE",
+                    "Name": "Region",
+                  },
+                  {
+                    "DataType": "INTEGER",
+                    "Name": "Weighted Revenue",
+                  },
+                ],
+              },
+              "Placeholder": "Sales Pipeline",
+            },
+          ],
+          "FilterGroups": [],
+          "ParameterDeclarations": [],
+          "Sheets": [
+            {
+              "ContentType": "INTERACTIVE",
+              "Layouts": [
+                {
+                  "Configuration": {
+                    "GridLayout": {
+                      "Elements": [
+                        {
+                          "ColumnIndex": 0,
+                          "ColumnSpan": 12,
+                          "ElementId": "acf8088a-60c2-49ad-aac0-64d9228514cb",
+                          "ElementType": "VISUAL",
+                          "RowIndex": 0,
+                          "RowSpan": 4,
+                        },
+                        {
+                          "ColumnIndex": 0,
+                          "ColumnSpan": 6,
+                          "ElementId": "5299943b-38a0-4f15-8144-254c9103584e",
+                          "ElementType": "VISUAL",
+                          "RowIndex": 4,
+                          "RowSpan": 4,
+                        },
+                        {
+                          "ColumnIndex": 6,
+                          "ColumnSpan": 6,
+                          "ElementId": "8d946f88-c73c-458f-b3bd-dcb1d8a720b1",
+                          "ElementType": "VISUAL",
+                          "RowIndex": 4,
+                          "RowSpan": 4,
+                        },
+                        {
+                          "ColumnIndex": 0,
+                          "ColumnSpan": 6,
+                          "ElementId": "520da2ef-9dd8-4d45-8b10-f45b8da3f5a6",
+                          "ElementType": "VISUAL",
+                          "RowIndex": 8,
+                          "RowSpan": 4,
+                        },
+                        {
+                          "ColumnIndex": 6,
+                          "ColumnSpan": 6,
+                          "ElementId": "3e40b471-e65f-4ab0-8ec4-cef4171beaaf",
+                          "ElementType": "VISUAL",
+                          "RowIndex": 8,
+                          "RowSpan": 4,
+                        },
+                      ],
+                    },
+                  },
+                },
+              ],
+              "Name": "Sheet 1",
+              "SheetId": "85a0a54a-d3f9-4973-9a0f-1db21ffb3d40",
+              "Visuals": [
+                {
+                  "LineChartVisual": {
+                    "Actions": [],
+                    "ChartConfiguration": {
+                      "FieldWells": {
+                        "LineChartAggregatedFieldWells": {
+                          "Category": [
+                            {
+                              "DateDimensionField": {
+                                "Column": {
+                                  "ColumnName": "Date",
+                                  "DataSetIdentifier": "Sales Pipeline",
+                                },
+                                "FieldId": "FieldId2",
+                                "HierarchyId": "FieldId2",
+                              },
+                            },
+                          ],
+                          "Colors": [
+                            {
+                              "CategoricalDimensionField": {
+                                "Column": {
+                                  "ColumnName": "Opportunity Stage",
+                                  "DataSetIdentifier": "Sales Pipeline",
+                                },
+                                "FieldId": "FieldId1",
+                              },
+                            },
+                          ],
+                          "Values": [],
+                        },
+                      },
+                      "SortConfiguration": {
+                        "CategoryItemsLimitConfiguration": {
+                          "OtherCategories": "INCLUDE",
+                        },
+                        "ColorItemsLimitConfiguration": {
+                          "OtherCategories": "INCLUDE",
+                        },
+                        "SmallMultiplesLimitConfiguration": {
+                          "OtherCategories": "INCLUDE",
+                        },
+                      },
+                      "Type": "LINE",
+                    },
+                    "ColumnHierarchies": [
+                      {
+                        "DateTimeHierarchy": {
+                          "HierarchyId": "FieldId2",
+                        },
+                      },
+                    ],
+                    "Subtitle": {
+                      "Visibility": "VISIBLE",
+                    },
+                    "Title": {
+                      "FormatText": {
+                        "PlainText": "Historical  opportunity pipeline",
+                      },
+                      "Visibility": "VISIBLE",
+                    },
+                    "VisualId": "acf8088a-60c2-49ad-aac0-64d9228514cb",
+                  },
+                },
+                {
+                  "PieChartVisual": {
+                    "Actions": [],
+                    "ChartConfiguration": {
+                      "DonutOptions": {
+                        "ArcOptions": {
+                          "ArcThickness": "WHOLE",
+                        },
+                      },
+                      "FieldWells": {
+                        "PieChartAggregatedFieldWells": {
+                          "Category": [
+                            {
+                              "CategoricalDimensionField": {
+                                "Column": {
+                                  "ColumnName": "Opportunity Stage",
+                                  "DataSetIdentifier": "Sales Pipeline",
+                                },
+                                "FieldId": "FieldId1",
+                              },
+                            },
+                          ],
+                          "Values": [
+                            {
+                              "NumericalMeasureField": {
+                                "AggregationFunction": {
+                                  "SimpleNumericalAggregation": "SUM",
+                                },
+                                "Column": {
+                                  "ColumnName": "Weighted Revenue",
+                                  "DataSetIdentifier": "Sales Pipeline",
+                                },
+                                "FieldId": "FieldId2",
+                              },
+                            },
+                          ],
+                        },
+                      },
+                      "SortConfiguration": {
+                        "CategoryItemsLimit": {
+                          "OtherCategories": "INCLUDE",
+                        },
+                        "CategorySort": [
+                          {
+                            "FieldSort": {
+                              "Direction": "DESC",
+                              "FieldId": "FieldId1",
+                            },
+                          },
+                        ],
+                        "SmallMultiplesLimitConfiguration": {
+                          "OtherCategories": "INCLUDE",
+                        },
+                      },
+                    },
+                    "ColumnHierarchies": [],
+                    "Subtitle": {
+                      "Visibility": "VISIBLE",
+                    },
+                    "Title": {
+                      "FormatText": {
+                        "PlainText": "Current open pipeline by weighted revenue",
+                      },
+                      "Visibility": "VISIBLE",
+                    },
+                    "VisualId": "5299943b-38a0-4f15-8144-254c9103584e",
+                  },
+                },
+                {
+                  "BarChartVisual": {
+                    "Actions": [],
+                    "ChartConfiguration": {
+                      "BarsArrangement": "CLUSTERED",
+                      "FieldWells": {
+                        "BarChartAggregatedFieldWells": {
+                          "Category": [
+                            {
+                              "CategoricalDimensionField": {
+                                "Column": {
+                                  "ColumnName": "Segment",
+                                  "DataSetIdentifier": "Sales Pipeline",
+                                },
+                                "FieldId": "FieldId2",
+                              },
+                            },
+                          ],
+                          "Colors": [
+                            {
+                              "CategoricalDimensionField": {
+                                "Column": {
+                                  "ColumnName": "Opportunity Stage",
+                                  "DataSetIdentifier": "Sales Pipeline",
+                                },
+                                "FieldId": "FieldId1",
+                              },
+                            },
+                          ],
+                          "Values": [],
+                        },
+                      },
+                      "Orientation": "HORIZONTAL",
+                      "SortConfiguration": {
+                        "CategoryItemsLimit": {
+                          "OtherCategories": "INCLUDE",
+                        },
+                        "CategorySort": [
+                          {
+                            "FieldSort": {
+                              "Direction": "DESC",
+                              "FieldId": "FieldId2",
+                            },
+                          },
+                        ],
+                        "ColorItemsLimit": {
+                          "OtherCategories": "INCLUDE",
+                        },
+                        "SmallMultiplesLimitConfiguration": {
+                          "OtherCategories": "INCLUDE",
+                        },
+                      },
+                    },
+                    "ColumnHierarchies": [],
+                    "Subtitle": {
+                      "Visibility": "VISIBLE",
+                    },
+                    "Title": {
+                      "FormatText": {
+                        "PlainText": "YTD Opportunities by Stage and Segment",
+                      },
+                      "Visibility": "VISIBLE",
+                    },
+                    "VisualId": "8d946f88-c73c-458f-b3bd-dcb1d8a720b1",
+                  },
+                },
+                {
+                  "BarChartVisual": {
+                    "Actions": [],
+                    "ChartConfiguration": {
+                      "BarsArrangement": "CLUSTERED",
+                      "FieldWells": {
+                        "BarChartAggregatedFieldWells": {
+                          "Category": [
+                            {
+                              "CategoricalDimensionField": {
+                                "Column": {
+                                  "ColumnName": "Region",
+                                  "DataSetIdentifier": "Sales Pipeline",
+                                },
+                                "FieldId": "FieldId2",
+                              },
+                            },
+                          ],
+                          "Colors": [
+                            {
+                              "CategoricalDimensionField": {
+                                "Column": {
+                                  "ColumnName": "Opportunity Stage",
+                                  "DataSetIdentifier": "Sales Pipeline",
+                                },
+                                "FieldId": "FieldId1",
+                              },
+                            },
+                          ],
+                          "Values": [],
+                        },
+                      },
+                      "Orientation": "HORIZONTAL",
+                      "SortConfiguration": {
+                        "CategoryItemsLimit": {
+                          "OtherCategories": "INCLUDE",
+                        },
+                        "CategorySort": [
+                          {
+                            "FieldSort": {
+                              "Direction": "DESC",
+                              "FieldId": "FieldId2",
+                            },
+                          },
+                        ],
+                        "ColorItemsLimit": {
+                          "OtherCategories": "INCLUDE",
+                        },
+                        "SmallMultiplesLimitConfiguration": {
+                          "OtherCategories": "INCLUDE",
+                        },
+                      },
+                    },
+                    "ColumnHierarchies": [],
+                    "Subtitle": {
+                      "Visibility": "VISIBLE",
+                    },
+                    "Title": {
+                      "FormatText": {
+                        "PlainText": "YTD Count of Wins vs Losses by Region",
+                      },
+                      "Visibility": "VISIBLE",
+                    },
+                    "VisualId": "520da2ef-9dd8-4d45-8b10-f45b8da3f5a6",
+                  },
+                },
+                {
+                  "PieChartVisual": {
+                    "Actions": [],
+                    "ChartConfiguration": {
+                      "DonutOptions": {
+                        "ArcOptions": {
+                          "ArcThickness": "WHOLE",
+                        },
+                      },
+                      "FieldWells": {
+                        "PieChartAggregatedFieldWells": {
+                          "Category": [
+                            {
+                              "CategoricalDimensionField": {
+                                "Column": {
+                                  "ColumnName": "Region",
+                                  "DataSetIdentifier": "Sales Pipeline",
+                                },
+                                "FieldId": "FieldId1",
+                              },
+                            },
+                          ],
+                          "Values": [
+                            {
+                              "NumericalMeasureField": {
+                                "AggregationFunction": {
+                                  "SimpleNumericalAggregation": "SUM",
+                                },
+                                "Column": {
+                                  "ColumnName": "Weighted Revenue",
+                                  "DataSetIdentifier": "Sales Pipeline",
+                                },
+                                "FieldId": "FieldId2",
+                              },
+                            },
+                          ],
+                        },
+                      },
+                      "SortConfiguration": {
+                        "CategoryItemsLimit": {
+                          "OtherCategories": "INCLUDE",
+                        },
+                        "SmallMultiplesLimitConfiguration": {
+                          "OtherCategories": "INCLUDE",
+                        },
+                      },
+                    },
+                    "ColumnHierarchies": [],
+                    "Subtitle": {
+                      "Visibility": "VISIBLE",
+                    },
+                    "Title": {
+                      "FormatText": {
+                        "PlainText": "YTD Revenue realized by Region",
+                      },
+                      "Visibility": "VISIBLE",
+                    },
+                    "VisualId": "3e40b471-e65f-4ab0-8ec4-cef4171beaaf",
+                  },
+                },
+              ],
+            },
+          ],
+        },
+        "Name": "undefined sales Template",
+        "TemplateId": "sales-template",
+      },
+      "Type": "AWS::QuickSight::Template",
+    },
+    "webquicksighttemplate": {
+      "DependsOn": [
+        "qsautomationsqfsharedashboardresourceproviderframeworkonEvent388397F7",
+        "qsautomationsqfsharedashboardresourceproviderframeworkonEventServiceRoleDefaultPolicy31A55BD0",
+        "qsautomationsqfsharedashboardresourceproviderframeworkonEventServiceRoleE41381C0",
+        "qsautomationsqsdashboardsharefunction83A679BB",
+        "qsautomationsqsdashboardsharefunctionServiceRoleDefaultPolicyEFCDB505",
+        "qsautomationsqsdashboardsharefunctionServiceRoleCE1E73B3",
+      ],
+      "Properties": {
+        "AwsAccountId": {
+          "Ref": "AWS::AccountId",
+        },
+        "Definition": {
+          "AnalysisDefaults": {
+            "DefaultNewSheetConfiguration": {
+              "InteractiveLayoutConfiguration": {
+                "Grid": {
+                  "CanvasSizeOptions": {
+                    "ScreenCanvasSizeOptions": {
+                      "ResizeOption": "RESPONSIVE",
+                    },
+                  },
+                },
+              },
+              "SheetContentType": "INTERACTIVE",
+            },
+          },
+          "CalculatedFields": [],
+          "DataSetConfigurations": [
+            {
+              "ColumnGroupSchemaList": [],
+              "DataSetSchema": {
+                "ColumnSchemaList": [
+                  {
+                    "DataType": "INTEGER",
+                    "Name": "New visitors Social Media",
+                  },
+                  {
+                    "DataType": "INTEGER",
+                    "Name": "New visitors CPC",
+                  },
+                  {
+                    "DataType": "INTEGER",
+                    "Name": "Tablet uniques",
+                  },
+                  {
+                    "DataType": "INTEGER",
+                    "Name": "Paid conversion",
+                  },
+                  {
+                    "DataType": "INTEGER",
+                    "Name": "Twitter mentions",
+                  },
+                  {
+                    "DataType": "INTEGER",
+                    "Name": "Mobile uniques",
+                  },
+                  {
+                    "DataType": "INTEGER",
+                    "Name": "Free sign up",
+                  },
+                  {
+                    "DataType": "INTEGER",
+                    "Name": "Mailing list adds ",
+                  },
+                  {
+                    "DataType": "DATETIME",
+                    "Name": "Date",
+                  },
+                  {
+                    "DataType": "INTEGER",
+                    "Name": "Twitter followers adds",
+                  },
+                  {
+                    "DataType": "INTEGER",
+                    "Name": "New visitors SEO",
+                  },
+                  {
+                    "DataType": "INTEGER",
+                    "Name": "Desktop uniques",
+                  },
+                ],
+              },
+              "Placeholder": "Web and Social Media Analytics",
+            },
+          ],
+          "FilterGroups": [],
+          "ParameterDeclarations": [],
+          "Sheets": [
+            {
+              "ContentType": "INTERACTIVE",
+              "Layouts": [
+                {
+                  "Configuration": {
+                    "GridLayout": {
+                      "Elements": [
+                        {
+                          "ColumnIndex": 0,
+                          "ColumnSpan": 18,
+                          "ElementId": "aa279d36-89bc-4416-a7ec-69b7481e3072",
+                          "ElementType": "VISUAL",
+                          "RowIndex": 9,
+                          "RowSpan": 9,
+                        },
+                        {
+                          "ColumnIndex": 18,
+                          "ColumnSpan": 18,
+                          "ElementId": "5245a531-5826-4c4e-90ef-4d8c33973792",
+                          "ElementType": "VISUAL",
+                          "RowIndex": 9,
+                          "RowSpan": 9,
+                        },
+                        {
+                          "ColumnIndex": 0,
+                          "ColumnSpan": 18,
+                          "ElementId": "362a8b08-9aca-4a40-b43b-8772b167256e",
+                          "ElementType": "VISUAL",
+                          "RowIndex": 18,
+                          "RowSpan": 9,
+                        },
+                        {
+                          "ColumnIndex": 18,
+                          "ColumnSpan": 18,
+                          "ElementId": "585db5a9-fb02-4187-b3db-724970bbc89e",
+                          "ElementType": "VISUAL",
+                          "RowIndex": 18,
+                          "RowSpan": 9,
+                        },
+                        {
+                          "ColumnIndex": 0,
+                          "ColumnSpan": 18,
+                          "ElementId": "ad6cd9a9-5d4f-4b42-a1df-102bda3321fd",
+                          "ElementType": "VISUAL",
+                          "RowIndex": 27,
+                          "RowSpan": 9,
+                        },
+                      ],
+                    },
+                  },
+                },
+              ],
+              "Name": "Sheet 1",
+              "SheetId": "3cd16903-7fe1-40d4-b89b-ad7031cd6787",
+              "Visuals": [
+                {
+                  "LineChartVisual": {
+                    "Actions": [],
+                    "ChartConfiguration": {
+                      "FieldWells": {
+                        "LineChartAggregatedFieldWells": {
+                          "Category": [
+                            {
+                              "DateDimensionField": {
+                                "Column": {
+                                  "ColumnName": "Date",
+                                  "DataSetIdentifier": "Web and Social Media Analytics",
+                                },
+                                "DateGranularity": "MONTH",
+                                "FieldId": "FieldId1",
+                                "HierarchyId": "FieldId1",
+                              },
+                            },
+                          ],
+                          "Colors": [],
+                          "Values": [
+                            {
+                              "NumericalMeasureField": {
+                                "AggregationFunction": {
+                                  "SimpleNumericalAggregation": "SUM",
+                                },
+                                "Column": {
+                                  "ColumnName": "Desktop uniques",
+                                  "DataSetIdentifier": "Web and Social Media Analytics",
+                                },
+                                "FieldId": "FieldId2",
+                              },
+                            },
+                            {
+                              "NumericalMeasureField": {
+                                "AggregationFunction": {
+                                  "SimpleNumericalAggregation": "SUM",
+                                },
+                                "Column": {
+                                  "ColumnName": "Tablet uniques",
+                                  "DataSetIdentifier": "Web and Social Media Analytics",
+                                },
+                                "FieldId": "FieldId3",
+                              },
+                            },
+                            {
+                              "NumericalMeasureField": {
+                                "AggregationFunction": {
+                                  "SimpleNumericalAggregation": "SUM",
+                                },
+                                "Column": {
+                                  "ColumnName": "Mobile uniques",
+                                  "DataSetIdentifier": "Web and Social Media Analytics",
+                                },
+                                "FieldId": "FieldId4",
+                              },
+                            },
+                          ],
+                        },
+                      },
+                      "SortConfiguration": {
+                        "CategoryItemsLimitConfiguration": {
+                          "OtherCategories": "INCLUDE",
+                        },
+                        "ColorItemsLimitConfiguration": {
+                          "OtherCategories": "INCLUDE",
+                        },
+                        "SmallMultiplesLimitConfiguration": {
+                          "OtherCategories": "INCLUDE",
+                        },
+                      },
+                      "Type": "LINE",
+                    },
+                    "ColumnHierarchies": [
+                      {
+                        "DateTimeHierarchy": {
+                          "HierarchyId": "FieldId1",
+                        },
+                      },
+                    ],
+                    "Subtitle": {
+                      "Visibility": "VISIBLE",
+                    },
+                    "Title": {
+                      "FormatText": {
+                        "PlainText": "Unique visits by device type",
+                      },
+                      "Visibility": "VISIBLE",
+                    },
+                    "VisualId": "aa279d36-89bc-4416-a7ec-69b7481e3072",
+                  },
+                },
+                {
+                  "BarChartVisual": {
+                    "Actions": [],
+                    "ChartConfiguration": {
+                      "BarsArrangement": "CLUSTERED",
+                      "FieldWells": {
+                        "BarChartAggregatedFieldWells": {
+                          "Category": [
+                            {
+                              "DateDimensionField": {
+                                "Column": {
+                                  "ColumnName": "Date",
+                                  "DataSetIdentifier": "Web and Social Media Analytics",
+                                },
+                                "DateGranularity": "YEAR",
+                                "FieldId": "FieldId1",
+                                "HierarchyId": "FieldId1",
+                              },
+                            },
+                          ],
+                          "Colors": [],
+                          "Values": [
+                            {
+                              "NumericalMeasureField": {
+                                "AggregationFunction": {
+                                  "SimpleNumericalAggregation": "SUM",
+                                },
+                                "Column": {
+                                  "ColumnName": "Mailing list adds ",
+                                  "DataSetIdentifier": "Web and Social Media Analytics",
+                                },
+                                "FieldId": "FieldId2",
+                              },
+                            },
+                          ],
+                        },
+                      },
+                      "Orientation": "VERTICAL",
+                      "SortConfiguration": {
+                        "CategoryItemsLimit": {
+                          "OtherCategories": "INCLUDE",
+                        },
+                        "ColorItemsLimit": {
+                          "OtherCategories": "INCLUDE",
+                        },
+                        "SmallMultiplesLimitConfiguration": {
+                          "OtherCategories": "INCLUDE",
+                        },
+                      },
+                    },
+                    "ColumnHierarchies": [
+                      {
+                        "DateTimeHierarchy": {
+                          "HierarchyId": "FieldId1",
+                        },
+                      },
+                    ],
+                    "Subtitle": {
+                      "Visibility": "VISIBLE",
+                    },
+                    "Title": {
+                      "FormatText": {
+                        "PlainText": "Mailing List Subscription",
+                      },
+                      "Visibility": "VISIBLE",
+                    },
+                    "VisualId": "5245a531-5826-4c4e-90ef-4d8c33973792",
+                  },
+                },
+                {
+                  "LineChartVisual": {
+                    "Actions": [],
+                    "ChartConfiguration": {
+                      "FieldWells": {
+                        "LineChartAggregatedFieldWells": {
+                          "Category": [
+                            {
+                              "DateDimensionField": {
+                                "Column": {
+                                  "ColumnName": "Date",
+                                  "DataSetIdentifier": "Web and Social Media Analytics",
+                                },
+                                "FieldId": "FieldId1",
+                                "HierarchyId": "FieldId1",
+                              },
+                            },
+                          ],
+                          "Colors": [],
+                          "Values": [
+                            {
+                              "NumericalMeasureField": {
+                                "AggregationFunction": {
+                                  "SimpleNumericalAggregation": "SUM",
+                                },
+                                "Column": {
+                                  "ColumnName": "New visitors CPC",
+                                  "DataSetIdentifier": "Web and Social Media Analytics",
+                                },
+                                "FieldId": "FieldId2",
+                              },
+                            },
+                            {
+                              "NumericalMeasureField": {
+                                "AggregationFunction": {
+                                  "SimpleNumericalAggregation": "SUM",
+                                },
+                                "Column": {
+                                  "ColumnName": "New visitors Social Media",
+                                  "DataSetIdentifier": "Web and Social Media Analytics",
+                                },
+                                "FieldId": "FieldId3",
+                              },
+                            },
+                            {
+                              "NumericalMeasureField": {
+                                "AggregationFunction": {
+                                  "SimpleNumericalAggregation": "SUM",
+                                },
+                                "Column": {
+                                  "ColumnName": "New visitors SEO",
+                                  "DataSetIdentifier": "Web and Social Media Analytics",
+                                },
+                                "FieldId": "FieldId4",
+                              },
+                            },
+                          ],
+                        },
+                      },
+                      "SortConfiguration": {
+                        "CategoryItemsLimitConfiguration": {
+                          "OtherCategories": "INCLUDE",
+                        },
+                        "ColorItemsLimitConfiguration": {
+                          "OtherCategories": "INCLUDE",
+                        },
+                        "SmallMultiplesLimitConfiguration": {
+                          "OtherCategories": "INCLUDE",
+                        },
+                      },
+                      "Type": "LINE",
+                    },
+                    "ColumnHierarchies": [
+                      {
+                        "DateTimeHierarchy": {
+                          "HierarchyId": "FieldId1",
+                        },
+                      },
+                    ],
+                    "Subtitle": {
+                      "Visibility": "VISIBLE",
+                    },
+                    "Title": {
+                      "FormatText": {
+                        "PlainText": "New visits by attribution (SEO/CPC/Social Media)",
+                      },
+                      "Visibility": "VISIBLE",
+                    },
+                    "VisualId": "362a8b08-9aca-4a40-b43b-8772b167256e",
+                  },
+                },
+                {
+                  "BarChartVisual": {
+                    "Actions": [],
+                    "ChartConfiguration": {
+                      "BarsArrangement": "STACKED",
+                      "FieldWells": {
+                        "BarChartAggregatedFieldWells": {
+                          "Category": [
+                            {
+                              "DateDimensionField": {
+                                "Column": {
+                                  "ColumnName": "Date",
+                                  "DataSetIdentifier": "Web and Social Media Analytics",
+                                },
+                                "FieldId": "FieldId1",
+                                "HierarchyId": "FieldId1",
+                              },
+                            },
+                          ],
+                          "Colors": [],
+                          "Values": [
+                            {
+                              "NumericalMeasureField": {
+                                "AggregationFunction": {
+                                  "SimpleNumericalAggregation": "SUM",
+                                },
+                                "Column": {
+                                  "ColumnName": "Free sign up",
+                                  "DataSetIdentifier": "Web and Social Media Analytics",
+                                },
+                                "FieldId": "FieldId2",
+                              },
+                            },
+                            {
+                              "NumericalMeasureField": {
+                                "AggregationFunction": {
+                                  "SimpleNumericalAggregation": "SUM",
+                                },
+                                "Column": {
+                                  "ColumnName": "Paid conversion",
+                                  "DataSetIdentifier": "Web and Social Media Analytics",
+                                },
+                                "FieldId": "FieldId3",
+                              },
+                            },
+                          ],
+                        },
+                      },
+                      "Orientation": "VERTICAL",
+                      "SortConfiguration": {
+                        "CategoryItemsLimit": {
+                          "OtherCategories": "INCLUDE",
+                        },
+                        "ColorItemsLimit": {
+                          "OtherCategories": "INCLUDE",
+                        },
+                        "SmallMultiplesLimitConfiguration": {
+                          "OtherCategories": "INCLUDE",
+                        },
+                      },
+                    },
+                    "ColumnHierarchies": [
+                      {
+                        "DateTimeHierarchy": {
+                          "HierarchyId": "FieldId1",
+                        },
+                      },
+                    ],
+                    "Subtitle": {
+                      "Visibility": "VISIBLE",
+                    },
+                    "Title": {
+                      "FormatText": {
+                        "PlainText": "Free and Paid Signups",
+                      },
+                      "Visibility": "VISIBLE",
+                    },
+                    "VisualId": "585db5a9-fb02-4187-b3db-724970bbc89e",
+                  },
+                },
+                {
+                  "BarChartVisual": {
+                    "Actions": [],
+                    "ChartConfiguration": {
+                      "BarsArrangement": "CLUSTERED",
+                      "CategoryAxis": {
+                        "ScrollbarOptions": {
+                          "VisibleRange": {
+                            "PercentRange": {
+                              "From": 90,
+                              "To": 100,
+                            },
+                          },
+                        },
+                      },
+                      "FieldWells": {
+                        "BarChartAggregatedFieldWells": {
+                          "Category": [
+                            {
+                              "DateDimensionField": {
+                                "Column": {
+                                  "ColumnName": "Date",
+                                  "DataSetIdentifier": "Web and Social Media Analytics",
+                                },
+                                "FieldId": "FieldId1",
+                                "HierarchyId": "FieldId1",
+                              },
+                            },
+                          ],
+                          "Colors": [],
+                          "Values": [
+                            {
+                              "NumericalMeasureField": {
+                                "AggregationFunction": {
+                                  "SimpleNumericalAggregation": "SUM",
+                                },
+                                "Column": {
+                                  "ColumnName": "Twitter mentions",
+                                  "DataSetIdentifier": "Web and Social Media Analytics",
+                                },
+                                "FieldId": "FieldId2",
+                              },
+                            },
+                            {
+                              "NumericalMeasureField": {
+                                "AggregationFunction": {
+                                  "SimpleNumericalAggregation": "SUM",
+                                },
+                                "Column": {
+                                  "ColumnName": "Twitter followers adds",
+                                  "DataSetIdentifier": "Web and Social Media Analytics",
+                                },
+                                "FieldId": "FieldId3",
+                              },
+                            },
+                          ],
+                        },
+                      },
+                      "Orientation": "HORIZONTAL",
+                      "SortConfiguration": {
+                        "CategoryItemsLimit": {
+                          "OtherCategories": "INCLUDE",
+                        },
+                        "ColorItemsLimit": {
+                          "OtherCategories": "INCLUDE",
+                        },
+                        "SmallMultiplesLimitConfiguration": {
+                          "OtherCategories": "INCLUDE",
+                        },
+                      },
+                    },
+                    "ColumnHierarchies": [
+                      {
+                        "DateTimeHierarchy": {
+                          "HierarchyId": "FieldId1",
+                        },
+                      },
+                    ],
+                    "Subtitle": {
+                      "Visibility": "VISIBLE",
+                    },
+                    "Title": {
+                      "FormatText": {
+                        "PlainText": "Twitter mentions and followers",
+                      },
+                      "Visibility": "VISIBLE",
+                    },
+                    "VisualId": "ad6cd9a9-5d4f-4b42-a1df-102bda3321fd",
+                  },
+                },
+              ],
+            },
+          ],
+        },
+        "Name": "undefined web Template",
+        "TemplateId": "web-template",
+      },
+      "Type": "AWS::QuickSight::Template",
+    },
+  },
+  "Rules": {
+    "CheckBootstrapVersion": {
+      "Assertions": [
+        {
+          "Assert": {
+            "Fn::Not": [
+              {
+                "Fn::Contains": [
+                  [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5",
+                  ],
+                  {
+                    "Ref": "BootstrapVersion",
+                  },
+                ],
+              },
+            ],
+          },
+          "AssertDescription": "CDK bootstrap stack version 6 required. Please run 'cdk bootstrap' with a recent version of the CDK CLI.",
+        },
+      ],
+    },
+  },
+}
+`;
