@@ -41,43 +41,58 @@ export abstract class QuickSightSingleSourceDatasetConstruct extends Construct {
                 actions: util.QS_RW_DATASET_ACCESS
             }
         ];
-        let targetColumnNames = props.columns.map(c => c.name);
-        
-        props.transformations.forEach( (t: CfnDataSet.TransformOperationProperty) => {
-            const operations = [t?.castColumnTypeOperation, t?.renameColumnOperation, t?.tagColumnOperation, t?.tagColumnOperation];
-            operations.forEach(o => {
-                if (o !== undefined) {
-                    this.failIfResolvable(o);
-                    const operation = o as CfnDataSet.CastColumnTypeOperationProperty | CfnDataSet.RenameColumnOperationProperty 
-                        | CfnDataSet.TagColumnOperationProperty;
-                    const columnName = operation.columnName;
-                    if (!targetColumnNames.includes(columnName)) {
-                        throw new Error(`Invalid transformation on non-existent column ${columnName}`);
-                    }
+        const targetColumnNames = new Set(props.columns.map(c => c.name));
+
+        const checkColumnNameExists = (operation: CfnDataSet.CastColumnTypeOperationProperty | CfnDataSet.RenameColumnOperationProperty | CfnDataSet.TagColumnOperationProperty) => {
+            const columnName = operation.columnName;
+            if (!targetColumnNames.has(columnName)) {
+                throw new Error(`Invalid transformation on non-existent column ${columnName}`);
+            }
+        };
+
+        const treatRenameOperation = (renameOperation: CfnDataSet.RenameColumnOperationProperty) => {
+            const newColumnName = renameOperation.newColumnName;
+            if (targetColumnNames.has(newColumnName)) {
+                throw new Error(`Invalid rename transformation. Column ${newColumnName} already exists`);
+            }
+            targetColumnNames.add(newColumnName);
+            targetColumnNames.delete(renameOperation.columnName);
+        };
+
+        const treatCreateOperation = (createOperation: any) => {
+            const columns = createOperation.columns;
+            this.failIfResolvable(columns);
+            columns.forEach( (column: any) => {
+                this.failIfResolvable(column);
+                const newColumnName = column.columnName;
+                if (targetColumnNames.has(newColumnName)) {
+                    throw new Error(`Invalid create Column transformation. Column ${newColumnName} already exists`);
                 }
+                targetColumnNames.add(newColumnName);
             });
+        };
         
-            if (t?.renameColumnOperation) {
-                const renameOperation = t?.renameColumnOperation as CfnDataSet.RenameColumnOperationProperty;
-                const newColumnName = renameOperation.newColumnName;
-                if (targetColumnNames.includes(newColumnName)) {
-                    throw new Error(`Invalid rename transformation. Column ${newColumnName} already exists`);
+        props.transformations.forEach( (transformation: CfnDataSet.TransformOperationProperty) => {
+            const operations = [transformation?.castColumnTypeOperation, transformation?.renameColumnOperation, transformation?.tagColumnOperation ];
+            for (const anyOperation of operations) {
+                if (anyOperation === undefined) {
+                    continue;
                 }
-                targetColumnNames.push(newColumnName);
-                targetColumnNames = targetColumnNames.filter(name => name != renameOperation.columnName);
-            } else if (t?.createColumnsOperation) {
-                this.failIfResolvable(t?.createColumnsOperation);
-                const createOperation = t?.createColumnsOperation as any;
-                const columns = createOperation.columns;
-                this.failIfResolvable(columns);
-                columns.forEach( (c: any) => {
-                    this.failIfResolvable(c);
-                    const newColumnName = c.columnName;
-                    if (targetColumnNames.includes(newColumnName)) {
-                        throw new Error(`Invalid create Column transformation. Column ${newColumnName} already exists`);
-                    }
-                    targetColumnNames.push(newColumnName);
-                });
+                    
+                this.failIfResolvable(anyOperation);
+                const operation = anyOperation as CfnDataSet.CastColumnTypeOperationProperty | CfnDataSet.RenameColumnOperationProperty 
+                    | CfnDataSet.TagColumnOperationProperty;
+                checkColumnNameExists(operation);
+            }
+        
+            if (transformation?.renameColumnOperation) {
+                const renameOperation = transformation?.renameColumnOperation as CfnDataSet.RenameColumnOperationProperty;
+                treatRenameOperation(renameOperation);
+
+            } else if (transformation?.createColumnsOperation) {
+                this.failIfResolvable(transformation?.createColumnsOperation);
+                const createOperation = transformation?.createColumnsOperation as any;
+                treatCreateOperation(createOperation);
             }
         });
         

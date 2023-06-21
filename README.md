@@ -5,7 +5,7 @@ This project provides the tools needed to develop and deploy AWS QuickSight (QS)
 The automation tools will be showcased by automating the generation of the QS samples provided by AWS during QS account activations. 
 
 For understanding the motivation, rationale contribution, as well as the process to use the tools, please refer to this article:
-TODO
+[AWS QuickSight as “Code”; a unified approach for QuickSight development and deployment, using AWS CDK, CLI, and CodePipeline](https://medium.com/@gmournos/aws-quicksight-as-code-a-unified-approach-for-quicksight-development-and-deployment-using-aws-30bbb6bd253a)
 
 ## Dataset Automation
 
