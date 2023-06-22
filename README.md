@@ -1,4 +1,4 @@
-# AWS Quicksight as "code" 
+# AWS Quicksight as "code" with CDK, CodePipeline
 
 This project provides the tools needed to develop and deploy AWS QuickSight (QS) artifacts (e.g. datasets, templates, analyses, dashboards) in the same way as other code artifacts (e.g. lambdas, content, user interfaces) are handled. This is achieved by creating QS artifacts automatically using the AWS Cloud Development Kit (CDK) and the AWS Command Line Interface (CLI) and by integrating this automatic generation with your CI/CD pipelines.
 
