@@ -119,9 +119,6 @@ export abstract class QuickSightSingleSourceDatasetConstruct extends Construct {
             permissions,
         });
 
-        const nextMidnight = new Date().setUTCHours(24,0,0,0); // next midnight
-        const formatedNoMilliseconds = `${new Date(nextMidnight).toISOString().slice(0,19)}Z`;
-
         if (props.refreshTime) {
             const schedule = new CfnRefreshSchedule(this, `${id}-data-set-refresh-schedule`, {
                 awsAccountId: Stack.of(this).account,
@@ -134,7 +131,6 @@ export abstract class QuickSightSingleSourceDatasetConstruct extends Construct {
                         timeZone: QS_TIMEZONE,
                 },
                 scheduleId: `${id}-qs-schedule`,
-                startAfterDateTime: formatedNoMilliseconds,
                 },
             });
             schedule.addDependency(ds);
