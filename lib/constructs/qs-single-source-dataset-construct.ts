@@ -96,7 +96,7 @@ export abstract class QuickSightSingleSourceDatasetConstruct extends Construct {
             }
         });
         
-        const dataTransforms = props.excludeColumnNames ? [...props.transformations, util.Transformations.projectionTransformation(targetColumnNames, props.excludeColumnNames)] :
+        const dataTransforms = props.excludeColumnNames ? [...props.transformations, util.Transformations.projectionTransformation([...targetColumnNames], props.excludeColumnNames)] :
             props.transformations;
 
         const ds = new CfnDataSet(this, `${id}-data-set`, {
