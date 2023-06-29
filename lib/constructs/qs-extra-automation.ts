@@ -85,8 +85,9 @@ export class QuickSightAutomationsConstruct extends Construct {
             ],
         });
 
-        refreshDatasetFunction.addToRolePolicy(quicksightInjestionPolicy),
+        refreshDatasetFunction.addToRolePolicy(quicksightInjestionPolicy);
 
+        const jobNames = props.refreshTargets!.map(target => target.etlJobName);
         new Rule(this, `qs-refresh-datasets-rule`, {
             ruleName: 'qs-refresh-datasets-rule',
             description: 'Refresh QS datasets after relevant ETL jobs finish',
@@ -96,6 +97,7 @@ export class QuickSightAutomationsConstruct extends Construct {
                 source: ['aws.glue'],
                 detail: {
                     state: [ 'SUCCEEDED' ],
+                    jobName: jobNames,
                 },
             },
             targets: [
