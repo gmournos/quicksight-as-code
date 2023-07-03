@@ -2,6 +2,8 @@ import { QuickSightClient, CreateIngestionCommand } from '@aws-sdk/client-quicks
 import { EventBridgeEvent } from 'aws-lambda';
 import { v4 as uuidv4 } from 'uuid';
 
+const client = new QuickSightClient({});
+
 export const refreshDataset = async (event: EventBridgeEvent<string, any>): Promise<void> => {
     
     const jobName = event.detail.jobName.replace(/[^a-zA-Z0-9]/g, '_');
@@ -13,7 +15,6 @@ export const refreshDataset = async (event: EventBridgeEvent<string, any>): Prom
     const datasets = datasetStrings.split('___');
  
     try {
-        const client = new QuickSightClient({});
             
         for (const datasetId of datasets) {
             console.log(`Starting refreshing dataset: ${datasetId}`);

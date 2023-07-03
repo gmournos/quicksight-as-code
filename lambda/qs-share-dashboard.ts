@@ -1,6 +1,8 @@
 import { QuickSightClient, UpdateDashboardPermissionsCommand } from '@aws-sdk/client-quicksight';
 import { CdkCustomResourceEvent, CdkCustomResourceResponse } from 'aws-lambda';
 
+const client = new QuickSightClient({});
+
 // export const shareDashboard: Handler = async (event) => {
 export const shareDashboard = async (event: CdkCustomResourceEvent): Promise<CdkCustomResourceResponse> => {
     console.log('Received event:', JSON.stringify(event));
@@ -8,8 +10,7 @@ export const shareDashboard = async (event: CdkCustomResourceEvent): Promise<Cdk
     const { DashboardId, AwsAccountId, Region } = event.ResourceProperties;
     
     try {
-        const client = new QuickSightClient({});
-            
+           
         console.log('Sharing dashboard:', DashboardId);
         const command = new UpdateDashboardPermissionsCommand({
             DashboardId,
