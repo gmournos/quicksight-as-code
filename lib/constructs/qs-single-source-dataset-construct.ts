@@ -1,6 +1,6 @@
 import { Construct } from 'constructs';
 import { CfnDataSet, CfnRefreshSchedule } from 'aws-cdk-lib/aws-quicksight';
-import { IResolvable, Stack } from 'aws-cdk-lib';
+import { Stack } from 'aws-cdk-lib';
 import * as util from './qs-util';
 
 export interface QuickSightSingleSourceConstructProps {
@@ -8,13 +8,11 @@ export interface QuickSightSingleSourceConstructProps {
     columns: CfnDataSet.InputColumnProperty[];
     transformations: CfnDataSet.TransformOperationProperty[];
     permissions?: CfnDataSet.ResourcePermissionProperty[];
-    refreshTime?: string;
-    excludeColumnNames?: string[]; 
+    refreshScheduleProperties?: CfnRefreshSchedule.RefreshScheduleMapProperty;
+    excludeColumnNames?: string[];
+    importMode?: string; 
 }
 
-const QS_INTERVAL = 'DAILY';
-const QS_TIMEZONE = 'Europe/Brussels';
-const QS_REFRESH_TYPE = 'FULL_REFRESH';
 const QS_IMPORT_MODE = 'SPICE';
 
 export abstract class QuickSightSingleSourceDatasetConstruct extends Construct {
@@ -103,7 +101,7 @@ export abstract class QuickSightSingleSourceDatasetConstruct extends Construct {
             name: datasetName,
             awsAccountId: Stack.of(this).account,
             dataSetId: dataSetId,
-            importMode: QS_IMPORT_MODE,
+            importMode: props.importMode ?? QS_IMPORT_MODE,
             physicalTableMap: {
                 anyKey: this.getPhysicalTableDef(),
             },
@@ -119,19 +117,15 @@ export abstract class QuickSightSingleSourceDatasetConstruct extends Construct {
             permissions,
         });
 
-        if (props.refreshTime) {
+        if (props.refreshScheduleProperties) {
+            const refreshScheduleProperties = {
+                ...props.refreshScheduleProperties,
+                scheduleId: `${id}-qs-schedule`,
+            };
             const schedule = new CfnRefreshSchedule(this, `${id}-data-set-refresh-schedule`, {
                 awsAccountId: Stack.of(this).account,
                 dataSetId,
-                schedule: {
-                    refreshType: QS_REFRESH_TYPE,
-                    scheduleFrequency: {
-                        interval: QS_INTERVAL,
-                        timeOfTheDay: props.refreshTime,
-                        timeZone: QS_TIMEZONE,
-                },
-                scheduleId: `${id}-qs-schedule`,
-                },
+                schedule: refreshScheduleProperties,
             });
             schedule.addDependency(ds);
         }
