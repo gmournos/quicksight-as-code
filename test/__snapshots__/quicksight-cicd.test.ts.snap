@@ -26,7 +26,7 @@ exports[`Pipeline Stack matches Snapshot 1`] = `
         "EncryptionKey": "alias/aws/s3",
         "Environment": {
           "ComputeType": "BUILD_GENERAL1_SMALL",
-          "Image": "aws/codebuild/standard:6.0",
+          "Image": "aws/codebuild/standard:7.0",
           "ImagePullCredentialsType": "CODEBUILD",
           "PrivilegedMode": false,
           "Type": "LINUX_CONTAINER",
@@ -48,7 +48,7 @@ exports[`Pipeline Stack matches Snapshot 1`] = `
     },
     "build": {
       "commands": [
-        "cdk-assets --path \\"assembly-MyTestStack-quicksight-artifacts-deploy/MyTestStackquicksightartifactsdeployquicksightartifactsstack196F46D6.assets.json\\" --verbose publish \\"17f8ac1139b340592459823b5309018b9196ed37ec8c7890fcc8a64bd0815204:current_account-current_region\\""
+        "cdk-assets --path \\"assembly-MyTestStack-quicksight-artifacts-deploy/MyTestStackquicksightartifactsdeployquicksightartifactsstack196F46D6.assets.json\\" --verbose publish \\"5b2cc2adde64ac376f4c7270100d515d90a3af409f7db54bb22dab3dbe727c19:current_account-current_region\\""
       ]
     }
   }
@@ -70,7 +70,7 @@ exports[`Pipeline Stack matches Snapshot 1`] = `
         "EncryptionKey": "alias/aws/s3",
         "Environment": {
           "ComputeType": "BUILD_GENERAL1_SMALL",
-          "Image": "aws/codebuild/standard:6.0",
+          "Image": "aws/codebuild/standard:7.0",
           "ImagePullCredentialsType": "CODEBUILD",
           "PrivilegedMode": false,
           "Type": "LINUX_CONTAINER",
@@ -92,7 +92,7 @@ exports[`Pipeline Stack matches Snapshot 1`] = `
     },
     "build": {
       "commands": [
-        "cdk-assets --path \\"assembly-MyTestStack-quicksight-artifacts-deploy/MyTestStackquicksightartifactsdeployquicksightartifactsstack196F46D6.assets.json\\" --verbose publish \\"8e3d635893ea17fa3158623489cd42c680fad925b38de1ef51cb10d84f6e245e:current_account-current_region\\""
+        "cdk-assets --path \\"assembly-MyTestStack-quicksight-artifacts-deploy/MyTestStackquicksightartifactsdeployquicksightartifactsstack196F46D6.assets.json\\" --verbose publish \\"3542be390685e0c8353d92ccb5796d343cd93ca946b6b0de798004206a199adc:current_account-current_region\\""
       ]
     }
   }
@@ -111,28 +111,6 @@ exports[`Pipeline Stack matches Snapshot 1`] = `
               "Effect": "Allow",
               "Principal": {
                 "Service": "codebuild.amazonaws.com",
-              },
-            },
-            {
-              "Action": "sts:AssumeRole",
-              "Effect": "Allow",
-              "Principal": {
-                "AWS": {
-                  "Fn::Join": [
-                    "",
-                    [
-                      "arn:",
-                      {
-                        "Ref": "AWS::Partition",
-                      },
-                      ":iam::",
-                      {
-                        "Ref": "AWS::AccountId",
-                      },
-                      ":root",
-                    ],
-                  ],
-                },
               },
             },
           ],
@@ -368,6 +346,7 @@ exports[`Pipeline Stack matches Snapshot 1`] = `
           "Type": "S3",
         },
         "Name": "Quicksight_CICD_Pipeline",
+        "PipelineType": "V1",
         "RestartExecutionOnUpdate": true,
         "RoleArn": {
           "Fn::GetAtt": [
@@ -420,7 +399,7 @@ exports[`Pipeline Stack matches Snapshot 1`] = `
                   "Version": "1",
                 },
                 "Configuration": {
-                  "EnvironmentVariables": "[{"name":"_PROJECT_CONFIG_HASH","type":"PLAINTEXT","value":"523457634eb8ca3baeccb35e3d63ff59157c3ddcaaca952af2e26d297f7d1bd4"}]",
+                  "EnvironmentVariables": "[{"name":"_PROJECT_CONFIG_HASH","type":"PLAINTEXT","value":"80c8684df93f2a605309f9406e26664e48321ed546f03f6f96a2f47dec1ee56f"}]",
                   "ProjectName": {
                     "Ref": "quicksightcicdpipelinePipelineBuildsynthstepCdkBuildProjectBCC72DE1",
                   },
@@ -457,7 +436,7 @@ exports[`Pipeline Stack matches Snapshot 1`] = `
                   "Version": "1",
                 },
                 "Configuration": {
-                  "EnvironmentVariables": "[{"name":"_PROJECT_CONFIG_HASH","type":"PLAINTEXT","value":"d6e4d3305d3f17661138d3a9904217e893c6288421ce4e5253c3770cb8d00164"}]",
+                  "EnvironmentVariables": "[{"name":"_PROJECT_CONFIG_HASH","type":"PLAINTEXT","value":"08920c57bed57d90c3ffb3813ad4596e66091f970896882ec0af67fd5e1b80c5"}]",
                   "ProjectName": {
                     "Ref": "quicksightcicdpipelineUpdatePipelineSelfMutationA4A592DB",
                   },
@@ -787,7 +766,7 @@ exports[`Pipeline Stack matches Snapshot 1`] = `
         "EncryptionKey": "alias/aws/s3",
         "Environment": {
           "ComputeType": "BUILD_GENERAL1_SMALL",
-          "Image": "aws/codebuild/standard:6.0",
+          "Image": "aws/codebuild/standard:7.0",
           "ImagePullCredentialsType": "CODEBUILD",
           "PrivilegedMode": false,
           "Type": "LINUX_CONTAINER",
@@ -1228,7 +1207,7 @@ exports[`Pipeline Stack matches Snapshot 1`] = `
         "EncryptionKey": "alias/aws/s3",
         "Environment": {
           "ComputeType": "BUILD_GENERAL1_SMALL",
-          "Image": "aws/codebuild/standard:6.0",
+          "Image": "aws/codebuild/standard:7.0",
           "ImagePullCredentialsType": "CODEBUILD",
           "PrivilegedMode": false,
           "Type": "LINUX_CONTAINER",

@@ -2,6 +2,130 @@
 
 exports[`Pipeline Stack matches Snapshot 1`] = `
 {
+  "Mappings": {
+    "LatestNodeRuntimeMap": {
+      "af-south-1": {
+        "value": "nodejs20.x",
+      },
+      "ap-east-1": {
+        "value": "nodejs20.x",
+      },
+      "ap-northeast-1": {
+        "value": "nodejs20.x",
+      },
+      "ap-northeast-2": {
+        "value": "nodejs20.x",
+      },
+      "ap-northeast-3": {
+        "value": "nodejs20.x",
+      },
+      "ap-south-1": {
+        "value": "nodejs20.x",
+      },
+      "ap-south-2": {
+        "value": "nodejs20.x",
+      },
+      "ap-southeast-1": {
+        "value": "nodejs20.x",
+      },
+      "ap-southeast-2": {
+        "value": "nodejs20.x",
+      },
+      "ap-southeast-3": {
+        "value": "nodejs20.x",
+      },
+      "ap-southeast-4": {
+        "value": "nodejs20.x",
+      },
+      "ap-southeast-5": {
+        "value": "nodejs20.x",
+      },
+      "ap-southeast-7": {
+        "value": "nodejs20.x",
+      },
+      "ca-central-1": {
+        "value": "nodejs20.x",
+      },
+      "ca-west-1": {
+        "value": "nodejs20.x",
+      },
+      "cn-north-1": {
+        "value": "nodejs18.x",
+      },
+      "cn-northwest-1": {
+        "value": "nodejs18.x",
+      },
+      "eu-central-1": {
+        "value": "nodejs20.x",
+      },
+      "eu-central-2": {
+        "value": "nodejs20.x",
+      },
+      "eu-isoe-west-1": {
+        "value": "nodejs18.x",
+      },
+      "eu-north-1": {
+        "value": "nodejs20.x",
+      },
+      "eu-south-1": {
+        "value": "nodejs20.x",
+      },
+      "eu-south-2": {
+        "value": "nodejs20.x",
+      },
+      "eu-west-1": {
+        "value": "nodejs20.x",
+      },
+      "eu-west-2": {
+        "value": "nodejs20.x",
+      },
+      "eu-west-3": {
+        "value": "nodejs20.x",
+      },
+      "il-central-1": {
+        "value": "nodejs20.x",
+      },
+      "me-central-1": {
+        "value": "nodejs20.x",
+      },
+      "me-south-1": {
+        "value": "nodejs20.x",
+      },
+      "mx-central-1": {
+        "value": "nodejs20.x",
+      },
+      "sa-east-1": {
+        "value": "nodejs20.x",
+      },
+      "us-east-1": {
+        "value": "nodejs20.x",
+      },
+      "us-east-2": {
+        "value": "nodejs20.x",
+      },
+      "us-gov-east-1": {
+        "value": "nodejs18.x",
+      },
+      "us-gov-west-1": {
+        "value": "nodejs18.x",
+      },
+      "us-iso-east-1": {
+        "value": "nodejs18.x",
+      },
+      "us-iso-west-1": {
+        "value": "nodejs18.x",
+      },
+      "us-isob-east-1": {
+        "value": "nodejs18.x",
+      },
+      "us-west-1": {
+        "value": "nodejs20.x",
+      },
+      "us-west-2": {
+        "value": "nodejs20.x",
+      },
+    },
+  },
   "Parameters": {
     "BootstrapVersion": {
       "Default": "/cdk-bootstrap/hnb659fds/version",
@@ -12,12 +136,12 @@ exports[`Pipeline Stack matches Snapshot 1`] = `
   "Resources": {
     "businessquicksighttemplate": {
       "DependsOn": [
-        "qsautomationsqfsharedashboardresourceproviderframeworkonEvent388397F7",
-        "qsautomationsqfsharedashboardresourceproviderframeworkonEventServiceRoleDefaultPolicy31A55BD0",
-        "qsautomationsqfsharedashboardresourceproviderframeworkonEventServiceRoleE41381C0",
-        "qsautomationsqsdashboardsharefunction83A679BB",
-        "qsautomationsqsdashboardsharefunctionServiceRoleDefaultPolicyEFCDB505",
-        "qsautomationsqsdashboardsharefunctionServiceRoleCE1E73B3",
+        "qsautomationsqssharedashboardfunctionFFC97549",
+        "qsautomationsqssharedashboardfunctionServiceRoleDefaultPolicy441D409A",
+        "qsautomationsqssharedashboardfunctionServiceRoleCC3D74CA",
+        "qsautomationsqssharedashboardresourceproviderframeworkonEvent97409FE6",
+        "qsautomationsqssharedashboardresourceproviderframeworkonEventServiceRoleDefaultPolicy4D6C92CE",
+        "qsautomationsqssharedashboardresourceproviderframeworkonEventServiceRole220BACCE",
       ],
       "Properties": {
         "AwsAccountId": {
@@ -689,12 +813,12 @@ exports[`Pipeline Stack matches Snapshot 1`] = `
     },
     "peoplequicksighttemplate": {
       "DependsOn": [
-        "qsautomationsqfsharedashboardresourceproviderframeworkonEvent388397F7",
-        "qsautomationsqfsharedashboardresourceproviderframeworkonEventServiceRoleDefaultPolicy31A55BD0",
-        "qsautomationsqfsharedashboardresourceproviderframeworkonEventServiceRoleE41381C0",
-        "qsautomationsqsdashboardsharefunction83A679BB",
-        "qsautomationsqsdashboardsharefunctionServiceRoleDefaultPolicyEFCDB505",
-        "qsautomationsqsdashboardsharefunctionServiceRoleCE1E73B3",
+        "qsautomationsqssharedashboardfunctionFFC97549",
+        "qsautomationsqssharedashboardfunctionServiceRoleDefaultPolicy441D409A",
+        "qsautomationsqssharedashboardfunctionServiceRoleCC3D74CA",
+        "qsautomationsqssharedashboardresourceproviderframeworkonEvent97409FE6",
+        "qsautomationsqssharedashboardresourceproviderframeworkonEventServiceRoleDefaultPolicy4D6C92CE",
+        "qsautomationsqssharedashboardresourceproviderframeworkonEventServiceRole220BACCE",
       ],
       "Properties": {
         "AwsAccountId": {
@@ -1415,24 +1539,100 @@ exports[`Pipeline Stack matches Snapshot 1`] = `
       },
       "Type": "AWS::QuickSight::Template",
     },
-    "qsautomationsqfsharedashboardresourceproviderframeworkonEvent388397F7": {
+    "qsautomationsqssharedashboardfunctionFFC97549": {
       "DependsOn": [
-        "qsautomationsqfsharedashboardresourceproviderframeworkonEventServiceRoleDefaultPolicy31A55BD0",
-        "qsautomationsqfsharedashboardresourceproviderframeworkonEventServiceRoleE41381C0",
+        "qsautomationsqssharedashboardfunctionServiceRoleDefaultPolicy441D409A",
+        "qsautomationsqssharedashboardfunctionServiceRoleCC3D74CA",
       ],
       "Properties": {
         "Code": {
           "S3Bucket": {
             "Fn::Sub": "cdk-hnb659fds-assets-\${AWS::AccountId}-\${AWS::Region}",
           },
-          "S3Key": "8e3d635893ea17fa3158623489cd42c680fad925b38de1ef51cb10d84f6e245e.zip",
+          "S3Key": "5b2cc2adde64ac376f4c7270100d515d90a3af409f7db54bb22dab3dbe727c19.zip",
         },
-        "Description": "AWS CDK resource provider framework - onEvent (MyTestStack/qs-automations/qf-share-dashboard-resource-provider)",
+        "FunctionName": "qs-share-dashboard-function",
+        "Handler": "index.shareDashboard",
+        "Role": {
+          "Fn::GetAtt": [
+            "qsautomationsqssharedashboardfunctionServiceRoleCC3D74CA",
+            "Arn",
+          ],
+        },
+        "Runtime": "nodejs20.x",
+      },
+      "Type": "AWS::Lambda::Function",
+    },
+    "qsautomationsqssharedashboardfunctionServiceRoleCC3D74CA": {
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "lambda.amazonaws.com",
+              },
+            },
+          ],
+          "Version": "2012-10-17",
+        },
+        "ManagedPolicyArns": [
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition",
+                },
+                ":iam::aws:policy/service-role/AWSLambdaBasicExecutionRole",
+              ],
+            ],
+          },
+        ],
+      },
+      "Type": "AWS::IAM::Role",
+    },
+    "qsautomationsqssharedashboardfunctionServiceRoleDefaultPolicy441D409A": {
+      "Properties": {
+        "PolicyDocument": {
+          "Statement": [
+            {
+              "Action": "quicksight:UpdateDashboardPermissions",
+              "Effect": "Allow",
+              "Resource": "*",
+            },
+          ],
+          "Version": "2012-10-17",
+        },
+        "PolicyName": "qsautomationsqssharedashboardfunctionServiceRoleDefaultPolicy441D409A",
+        "Roles": [
+          {
+            "Ref": "qsautomationsqssharedashboardfunctionServiceRoleCC3D74CA",
+          },
+        ],
+      },
+      "Type": "AWS::IAM::Policy",
+    },
+    "qsautomationsqssharedashboardresourceproviderframeworkonEvent97409FE6": {
+      "DependsOn": [
+        "qsautomationsqssharedashboardresourceproviderframeworkonEventServiceRoleDefaultPolicy4D6C92CE",
+        "qsautomationsqssharedashboardresourceproviderframeworkonEventServiceRole220BACCE",
+      ],
+      "Properties": {
+        "Code": {
+          "S3Bucket": {
+            "Fn::Sub": "cdk-hnb659fds-assets-\${AWS::AccountId}-\${AWS::Region}",
+          },
+          "S3Key": "3542be390685e0c8353d92ccb5796d343cd93ca946b6b0de798004206a199adc.zip",
+        },
+        "Description": "AWS CDK resource provider framework - onEvent (MyTestStack/qs-automations/qs-share-dashboard-resource-provider)",
         "Environment": {
           "Variables": {
             "USER_ON_EVENT_FUNCTION_ARN": {
               "Fn::GetAtt": [
-                "qsautomationsqsdashboardsharefunction83A679BB",
+                "qsautomationsqssharedashboardfunctionFFC97549",
                 "Arn",
               ],
             },
@@ -1441,16 +1641,55 @@ exports[`Pipeline Stack matches Snapshot 1`] = `
         "Handler": "framework.onEvent",
         "Role": {
           "Fn::GetAtt": [
-            "qsautomationsqfsharedashboardresourceproviderframeworkonEventServiceRoleE41381C0",
+            "qsautomationsqssharedashboardresourceproviderframeworkonEventServiceRole220BACCE",
             "Arn",
           ],
         },
-        "Runtime": "nodejs14.x",
+        "Runtime": {
+          "Fn::FindInMap": [
+            "LatestNodeRuntimeMap",
+            {
+              "Ref": "AWS::Region",
+            },
+            "value",
+          ],
+        },
         "Timeout": 900,
       },
       "Type": "AWS::Lambda::Function",
     },
-    "qsautomationsqfsharedashboardresourceproviderframeworkonEventServiceRoleDefaultPolicy31A55BD0": {
+    "qsautomationsqssharedashboardresourceproviderframeworkonEventServiceRole220BACCE": {
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "lambda.amazonaws.com",
+              },
+            },
+          ],
+          "Version": "2012-10-17",
+        },
+        "ManagedPolicyArns": [
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition",
+                },
+                ":iam::aws:policy/service-role/AWSLambdaBasicExecutionRole",
+              ],
+            ],
+          },
+        ],
+      },
+      "Type": "AWS::IAM::Role",
+    },
+    "qsautomationsqssharedashboardresourceproviderframeworkonEventServiceRoleDefaultPolicy4D6C92CE": {
       "Properties": {
         "PolicyDocument": {
           "Statement": [
@@ -1460,7 +1699,7 @@ exports[`Pipeline Stack matches Snapshot 1`] = `
               "Resource": [
                 {
                   "Fn::GetAtt": [
-                    "qsautomationsqsdashboardsharefunction83A679BB",
+                    "qsautomationsqssharedashboardfunctionFFC97549",
                     "Arn",
                   ],
                 },
@@ -1470,7 +1709,7 @@ exports[`Pipeline Stack matches Snapshot 1`] = `
                     [
                       {
                         "Fn::GetAtt": [
-                          "qsautomationsqsdashboardsharefunction83A679BB",
+                          "qsautomationsqssharedashboardfunctionFFC97549",
                           "Arn",
                         ],
                       },
@@ -1483,122 +1722,10 @@ exports[`Pipeline Stack matches Snapshot 1`] = `
           ],
           "Version": "2012-10-17",
         },
-        "PolicyName": "qsautomationsqfsharedashboardresourceproviderframeworkonEventServiceRoleDefaultPolicy31A55BD0",
+        "PolicyName": "qsautomationsqssharedashboardresourceproviderframeworkonEventServiceRoleDefaultPolicy4D6C92CE",
         "Roles": [
           {
-            "Ref": "qsautomationsqfsharedashboardresourceproviderframeworkonEventServiceRoleE41381C0",
-          },
-        ],
-      },
-      "Type": "AWS::IAM::Policy",
-    },
-    "qsautomationsqfsharedashboardresourceproviderframeworkonEventServiceRoleE41381C0": {
-      "Properties": {
-        "AssumeRolePolicyDocument": {
-          "Statement": [
-            {
-              "Action": "sts:AssumeRole",
-              "Effect": "Allow",
-              "Principal": {
-                "Service": "lambda.amazonaws.com",
-              },
-            },
-          ],
-          "Version": "2012-10-17",
-        },
-        "ManagedPolicyArns": [
-          {
-            "Fn::Join": [
-              "",
-              [
-                "arn:",
-                {
-                  "Ref": "AWS::Partition",
-                },
-                ":iam::aws:policy/service-role/AWSLambdaBasicExecutionRole",
-              ],
-            ],
-          },
-        ],
-      },
-      "Type": "AWS::IAM::Role",
-    },
-    "qsautomationsqsdashboardsharefunction83A679BB": {
-      "DependsOn": [
-        "qsautomationsqsdashboardsharefunctionServiceRoleDefaultPolicyEFCDB505",
-        "qsautomationsqsdashboardsharefunctionServiceRoleCE1E73B3",
-      ],
-      "Properties": {
-        "Code": {
-          "S3Bucket": {
-            "Fn::Sub": "cdk-hnb659fds-assets-\${AWS::AccountId}-\${AWS::Region}",
-          },
-          "S3Key": "17f8ac1139b340592459823b5309018b9196ed37ec8c7890fcc8a64bd0815204.zip",
-        },
-        "Environment": {
-          "Variables": {
-            "AWS_NODEJS_CONNECTION_REUSE_ENABLED": "1",
-          },
-        },
-        "FunctionName": "qs-dashboard-share-function",
-        "Handler": "index.shareDashboard",
-        "Role": {
-          "Fn::GetAtt": [
-            "qsautomationsqsdashboardsharefunctionServiceRoleCE1E73B3",
-            "Arn",
-          ],
-        },
-        "Runtime": "nodejs18.x",
-      },
-      "Type": "AWS::Lambda::Function",
-    },
-    "qsautomationsqsdashboardsharefunctionServiceRoleCE1E73B3": {
-      "Properties": {
-        "AssumeRolePolicyDocument": {
-          "Statement": [
-            {
-              "Action": "sts:AssumeRole",
-              "Effect": "Allow",
-              "Principal": {
-                "Service": "lambda.amazonaws.com",
-              },
-            },
-          ],
-          "Version": "2012-10-17",
-        },
-        "ManagedPolicyArns": [
-          {
-            "Fn::Join": [
-              "",
-              [
-                "arn:",
-                {
-                  "Ref": "AWS::Partition",
-                },
-                ":iam::aws:policy/service-role/AWSLambdaBasicExecutionRole",
-              ],
-            ],
-          },
-        ],
-      },
-      "Type": "AWS::IAM::Role",
-    },
-    "qsautomationsqsdashboardsharefunctionServiceRoleDefaultPolicyEFCDB505": {
-      "Properties": {
-        "PolicyDocument": {
-          "Statement": [
-            {
-              "Action": "quicksight:UpdateDashboardPermissions",
-              "Effect": "Allow",
-              "Resource": "*",
-            },
-          ],
-          "Version": "2012-10-17",
-        },
-        "PolicyName": "qsautomationsqsdashboardsharefunctionServiceRoleDefaultPolicyEFCDB505",
-        "Roles": [
-          {
-            "Ref": "qsautomationsqsdashboardsharefunctionServiceRoleCE1E73B3",
+            "Ref": "qsautomationsqssharedashboardresourceproviderframeworkonEventServiceRole220BACCE",
           },
         ],
       },
@@ -1756,6 +1883,31 @@ exports[`Pipeline Stack matches Snapshot 1`] = `
                     "Ref": "AWS::AccountId",
                   },
                   ":group/default/QS-Developers",
+                ],
+              ],
+            },
+          },
+          {
+            "Actions": [
+              "quicksight:ListIngestions",
+              "quicksight:DescribeDataSetPermissions",
+              "quicksight:DescribeDataSet",
+              "quicksight:PassDataSet",
+              "quicksight:DescribeIngestion",
+            ],
+            "Principal": {
+              "Fn::Join": [
+                "",
+                [
+                  "arn:aws:quicksight:",
+                  {
+                    "Ref": "AWS::Region",
+                  },
+                  ":",
+                  {
+                    "Ref": "AWS::AccountId",
+                  },
+                  ":group/default/QS-Readers",
                 ],
               ],
             },
@@ -2112,6 +2264,31 @@ exports[`Pipeline Stack matches Snapshot 1`] = `
               ],
             },
           },
+          {
+            "Actions": [
+              "quicksight:ListIngestions",
+              "quicksight:DescribeDataSetPermissions",
+              "quicksight:DescribeDataSet",
+              "quicksight:PassDataSet",
+              "quicksight:DescribeIngestion",
+            ],
+            "Principal": {
+              "Fn::Join": [
+                "",
+                [
+                  "arn:aws:quicksight:",
+                  {
+                    "Ref": "AWS::Region",
+                  },
+                  ":",
+                  {
+                    "Ref": "AWS::AccountId",
+                  },
+                  ":group/default/QS-Readers",
+                ],
+              ],
+            },
+          },
         ],
         "PhysicalTableMap": {
           "anyKey": {
@@ -2404,6 +2581,31 @@ exports[`Pipeline Stack matches Snapshot 1`] = `
                     "Ref": "AWS::AccountId",
                   },
                   ":group/default/QS-Developers",
+                ],
+              ],
+            },
+          },
+          {
+            "Actions": [
+              "quicksight:ListIngestions",
+              "quicksight:DescribeDataSetPermissions",
+              "quicksight:DescribeDataSet",
+              "quicksight:PassDataSet",
+              "quicksight:DescribeIngestion",
+            ],
+            "Principal": {
+              "Fn::Join": [
+                "",
+                [
+                  "arn:aws:quicksight:",
+                  {
+                    "Ref": "AWS::Region",
+                  },
+                  ":",
+                  {
+                    "Ref": "AWS::AccountId",
+                  },
+                  ":group/default/QS-Readers",
                 ],
               ],
             },
@@ -2807,6 +3009,31 @@ exports[`Pipeline Stack matches Snapshot 1`] = `
               ],
             },
           },
+          {
+            "Actions": [
+              "quicksight:ListIngestions",
+              "quicksight:DescribeDataSetPermissions",
+              "quicksight:DescribeDataSet",
+              "quicksight:PassDataSet",
+              "quicksight:DescribeIngestion",
+            ],
+            "Principal": {
+              "Fn::Join": [
+                "",
+                [
+                  "arn:aws:quicksight:",
+                  {
+                    "Ref": "AWS::Region",
+                  },
+                  ":",
+                  {
+                    "Ref": "AWS::AccountId",
+                  },
+                  ":group/default/QS-Readers",
+                ],
+              ],
+            },
+          },
         ],
         "PhysicalTableMap": {
           "anyKey": {
@@ -2910,12 +3137,12 @@ exports[`Pipeline Stack matches Snapshot 1`] = `
     },
     "qstemplatesbusinessbusinessqsanalysis0C258A3C": {
       "DependsOn": [
-        "qsautomationsqfsharedashboardresourceproviderframeworkonEvent388397F7",
-        "qsautomationsqfsharedashboardresourceproviderframeworkonEventServiceRoleDefaultPolicy31A55BD0",
-        "qsautomationsqfsharedashboardresourceproviderframeworkonEventServiceRoleE41381C0",
-        "qsautomationsqsdashboardsharefunction83A679BB",
-        "qsautomationsqsdashboardsharefunctionServiceRoleDefaultPolicyEFCDB505",
-        "qsautomationsqsdashboardsharefunctionServiceRoleCE1E73B3",
+        "qsautomationsqssharedashboardfunctionFFC97549",
+        "qsautomationsqssharedashboardfunctionServiceRoleDefaultPolicy441D409A",
+        "qsautomationsqssharedashboardfunctionServiceRoleCC3D74CA",
+        "qsautomationsqssharedashboardresourceproviderframeworkonEvent97409FE6",
+        "qsautomationsqssharedashboardresourceproviderframeworkonEventServiceRoleDefaultPolicy4D6C92CE",
+        "qsautomationsqssharedashboardresourceproviderframeworkonEventServiceRole220BACCE",
         "businessquicksighttemplate",
       ],
       "Properties": {
@@ -2923,7 +3150,7 @@ exports[`Pipeline Stack matches Snapshot 1`] = `
         "AwsAccountId": {
           "Ref": "AWS::AccountId",
         },
-        "Name": "undefined business Analysis",
+        "Name": "undefined business Analysis Timestamp: Sat Jul 20 2024 06:13:27 GMT+0200 (Central European Summer Time)",
         "Permissions": [
           {
             "Actions": [
@@ -3000,12 +3227,12 @@ exports[`Pipeline Stack matches Snapshot 1`] = `
     },
     "qstemplatesbusinessbusinessqsdashboard9C239EE6": {
       "DependsOn": [
-        "qsautomationsqfsharedashboardresourceproviderframeworkonEvent388397F7",
-        "qsautomationsqfsharedashboardresourceproviderframeworkonEventServiceRoleDefaultPolicy31A55BD0",
-        "qsautomationsqfsharedashboardresourceproviderframeworkonEventServiceRoleE41381C0",
-        "qsautomationsqsdashboardsharefunction83A679BB",
-        "qsautomationsqsdashboardsharefunctionServiceRoleDefaultPolicyEFCDB505",
-        "qsautomationsqsdashboardsharefunctionServiceRoleCE1E73B3",
+        "qsautomationsqssharedashboardfunctionFFC97549",
+        "qsautomationsqssharedashboardfunctionServiceRoleDefaultPolicy441D409A",
+        "qsautomationsqssharedashboardfunctionServiceRoleCC3D74CA",
+        "qsautomationsqssharedashboardresourceproviderframeworkonEvent97409FE6",
+        "qsautomationsqssharedashboardresourceproviderframeworkonEventServiceRoleDefaultPolicy4D6C92CE",
+        "qsautomationsqssharedashboardresourceproviderframeworkonEventServiceRole220BACCE",
         "businessquicksighttemplate",
       ],
       "Properties": {
@@ -3045,7 +3272,7 @@ exports[`Pipeline Stack matches Snapshot 1`] = `
             "AvailabilityStatus": "ENABLED",
           },
         },
-        "Name": "undefined business Dashboard",
+        "Name": "undefined business Dashboard Timestamp: Sat Jul 20 2024 06:13:27 GMT+0200 (Central European Summer Time)",
         "Permissions": [
           {
             "Actions": [
@@ -3071,6 +3298,29 @@ exports[`Pipeline Stack matches Snapshot 1`] = `
                     "Ref": "AWS::AccountId",
                   },
                   ":group/default/QS-Developers",
+                ],
+              ],
+            },
+          },
+          {
+            "Actions": [
+              "quicksight:DescribeDashboard",
+              "quicksight:ListDashboardVersions",
+              "quicksight:QueryDashboard",
+            ],
+            "Principal": {
+              "Fn::Join": [
+                "",
+                [
+                  "arn:aws:quicksight:",
+                  {
+                    "Ref": "AWS::Region",
+                  },
+                  ":",
+                  {
+                    "Ref": "AWS::AccountId",
+                  },
+                  ":group/default/QS-Readers",
                 ],
               ],
             },
@@ -3124,12 +3374,12 @@ exports[`Pipeline Stack matches Snapshot 1`] = `
     "qstemplatesbusinessbusinessqsdashboardsharefunctionC7349E9C": {
       "DeletionPolicy": "Delete",
       "DependsOn": [
-        "qsautomationsqfsharedashboardresourceproviderframeworkonEvent388397F7",
-        "qsautomationsqfsharedashboardresourceproviderframeworkonEventServiceRoleDefaultPolicy31A55BD0",
-        "qsautomationsqfsharedashboardresourceproviderframeworkonEventServiceRoleE41381C0",
-        "qsautomationsqsdashboardsharefunction83A679BB",
-        "qsautomationsqsdashboardsharefunctionServiceRoleDefaultPolicyEFCDB505",
-        "qsautomationsqsdashboardsharefunctionServiceRoleCE1E73B3",
+        "qsautomationsqssharedashboardfunctionFFC97549",
+        "qsautomationsqssharedashboardfunctionServiceRoleDefaultPolicy441D409A",
+        "qsautomationsqssharedashboardfunctionServiceRoleCC3D74CA",
+        "qsautomationsqssharedashboardresourceproviderframeworkonEvent97409FE6",
+        "qsautomationsqssharedashboardresourceproviderframeworkonEventServiceRoleDefaultPolicy4D6C92CE",
+        "qsautomationsqssharedashboardresourceproviderframeworkonEventServiceRole220BACCE",
         "qstemplatesbusinessbusinessqsdashboard9C239EE6",
       ],
       "Properties": {
@@ -3142,7 +3392,7 @@ exports[`Pipeline Stack matches Snapshot 1`] = `
         },
         "ServiceToken": {
           "Fn::GetAtt": [
-            "qsautomationsqfsharedashboardresourceproviderframeworkonEvent388397F7",
+            "qsautomationsqssharedashboardresourceproviderframeworkonEvent97409FE6",
             "Arn",
           ],
         },
@@ -3152,12 +3402,12 @@ exports[`Pipeline Stack matches Snapshot 1`] = `
     },
     "qstemplatespeoplepeopleqsanalysisC12232E1": {
       "DependsOn": [
-        "qsautomationsqfsharedashboardresourceproviderframeworkonEvent388397F7",
-        "qsautomationsqfsharedashboardresourceproviderframeworkonEventServiceRoleDefaultPolicy31A55BD0",
-        "qsautomationsqfsharedashboardresourceproviderframeworkonEventServiceRoleE41381C0",
-        "qsautomationsqsdashboardsharefunction83A679BB",
-        "qsautomationsqsdashboardsharefunctionServiceRoleDefaultPolicyEFCDB505",
-        "qsautomationsqsdashboardsharefunctionServiceRoleCE1E73B3",
+        "qsautomationsqssharedashboardfunctionFFC97549",
+        "qsautomationsqssharedashboardfunctionServiceRoleDefaultPolicy441D409A",
+        "qsautomationsqssharedashboardfunctionServiceRoleCC3D74CA",
+        "qsautomationsqssharedashboardresourceproviderframeworkonEvent97409FE6",
+        "qsautomationsqssharedashboardresourceproviderframeworkonEventServiceRoleDefaultPolicy4D6C92CE",
+        "qsautomationsqssharedashboardresourceproviderframeworkonEventServiceRole220BACCE",
         "peoplequicksighttemplate",
       ],
       "Properties": {
@@ -3165,7 +3415,7 @@ exports[`Pipeline Stack matches Snapshot 1`] = `
         "AwsAccountId": {
           "Ref": "AWS::AccountId",
         },
-        "Name": "undefined people Analysis",
+        "Name": "undefined people Analysis Timestamp: Sat Jul 20 2024 06:13:27 GMT+0200 (Central European Summer Time)",
         "Permissions": [
           {
             "Actions": [
@@ -3242,12 +3492,12 @@ exports[`Pipeline Stack matches Snapshot 1`] = `
     },
     "qstemplatespeoplepeopleqsdashboardE8783D09": {
       "DependsOn": [
-        "qsautomationsqfsharedashboardresourceproviderframeworkonEvent388397F7",
-        "qsautomationsqfsharedashboardresourceproviderframeworkonEventServiceRoleDefaultPolicy31A55BD0",
-        "qsautomationsqfsharedashboardresourceproviderframeworkonEventServiceRoleE41381C0",
-        "qsautomationsqsdashboardsharefunction83A679BB",
-        "qsautomationsqsdashboardsharefunctionServiceRoleDefaultPolicyEFCDB505",
-        "qsautomationsqsdashboardsharefunctionServiceRoleCE1E73B3",
+        "qsautomationsqssharedashboardfunctionFFC97549",
+        "qsautomationsqssharedashboardfunctionServiceRoleDefaultPolicy441D409A",
+        "qsautomationsqssharedashboardfunctionServiceRoleCC3D74CA",
+        "qsautomationsqssharedashboardresourceproviderframeworkonEvent97409FE6",
+        "qsautomationsqssharedashboardresourceproviderframeworkonEventServiceRoleDefaultPolicy4D6C92CE",
+        "qsautomationsqssharedashboardresourceproviderframeworkonEventServiceRole220BACCE",
         "peoplequicksighttemplate",
       ],
       "Properties": {
@@ -3287,7 +3537,7 @@ exports[`Pipeline Stack matches Snapshot 1`] = `
             "AvailabilityStatus": "ENABLED",
           },
         },
-        "Name": "undefined people Dashboard",
+        "Name": "undefined people Dashboard Timestamp: Sat Jul 20 2024 06:13:27 GMT+0200 (Central European Summer Time)",
         "Permissions": [
           {
             "Actions": [
@@ -3313,6 +3563,29 @@ exports[`Pipeline Stack matches Snapshot 1`] = `
                     "Ref": "AWS::AccountId",
                   },
                   ":group/default/QS-Developers",
+                ],
+              ],
+            },
+          },
+          {
+            "Actions": [
+              "quicksight:DescribeDashboard",
+              "quicksight:ListDashboardVersions",
+              "quicksight:QueryDashboard",
+            ],
+            "Principal": {
+              "Fn::Join": [
+                "",
+                [
+                  "arn:aws:quicksight:",
+                  {
+                    "Ref": "AWS::Region",
+                  },
+                  ":",
+                  {
+                    "Ref": "AWS::AccountId",
+                  },
+                  ":group/default/QS-Readers",
                 ],
               ],
             },
@@ -3366,12 +3639,12 @@ exports[`Pipeline Stack matches Snapshot 1`] = `
     "qstemplatespeoplepeopleqsdashboardsharefunction63C9B823": {
       "DeletionPolicy": "Delete",
       "DependsOn": [
-        "qsautomationsqfsharedashboardresourceproviderframeworkonEvent388397F7",
-        "qsautomationsqfsharedashboardresourceproviderframeworkonEventServiceRoleDefaultPolicy31A55BD0",
-        "qsautomationsqfsharedashboardresourceproviderframeworkonEventServiceRoleE41381C0",
-        "qsautomationsqsdashboardsharefunction83A679BB",
-        "qsautomationsqsdashboardsharefunctionServiceRoleDefaultPolicyEFCDB505",
-        "qsautomationsqsdashboardsharefunctionServiceRoleCE1E73B3",
+        "qsautomationsqssharedashboardfunctionFFC97549",
+        "qsautomationsqssharedashboardfunctionServiceRoleDefaultPolicy441D409A",
+        "qsautomationsqssharedashboardfunctionServiceRoleCC3D74CA",
+        "qsautomationsqssharedashboardresourceproviderframeworkonEvent97409FE6",
+        "qsautomationsqssharedashboardresourceproviderframeworkonEventServiceRoleDefaultPolicy4D6C92CE",
+        "qsautomationsqssharedashboardresourceproviderframeworkonEventServiceRole220BACCE",
         "qstemplatespeoplepeopleqsdashboardE8783D09",
       ],
       "Properties": {
@@ -3384,7 +3657,7 @@ exports[`Pipeline Stack matches Snapshot 1`] = `
         },
         "ServiceToken": {
           "Fn::GetAtt": [
-            "qsautomationsqfsharedashboardresourceproviderframeworkonEvent388397F7",
+            "qsautomationsqssharedashboardresourceproviderframeworkonEvent97409FE6",
             "Arn",
           ],
         },
@@ -3394,12 +3667,12 @@ exports[`Pipeline Stack matches Snapshot 1`] = `
     },
     "qstemplatessalessalesqsanalysisCAC7BF91": {
       "DependsOn": [
-        "qsautomationsqfsharedashboardresourceproviderframeworkonEvent388397F7",
-        "qsautomationsqfsharedashboardresourceproviderframeworkonEventServiceRoleDefaultPolicy31A55BD0",
-        "qsautomationsqfsharedashboardresourceproviderframeworkonEventServiceRoleE41381C0",
-        "qsautomationsqsdashboardsharefunction83A679BB",
-        "qsautomationsqsdashboardsharefunctionServiceRoleDefaultPolicyEFCDB505",
-        "qsautomationsqsdashboardsharefunctionServiceRoleCE1E73B3",
+        "qsautomationsqssharedashboardfunctionFFC97549",
+        "qsautomationsqssharedashboardfunctionServiceRoleDefaultPolicy441D409A",
+        "qsautomationsqssharedashboardfunctionServiceRoleCC3D74CA",
+        "qsautomationsqssharedashboardresourceproviderframeworkonEvent97409FE6",
+        "qsautomationsqssharedashboardresourceproviderframeworkonEventServiceRoleDefaultPolicy4D6C92CE",
+        "qsautomationsqssharedashboardresourceproviderframeworkonEventServiceRole220BACCE",
         "salesquicksighttemplate",
       ],
       "Properties": {
@@ -3407,7 +3680,7 @@ exports[`Pipeline Stack matches Snapshot 1`] = `
         "AwsAccountId": {
           "Ref": "AWS::AccountId",
         },
-        "Name": "undefined sales Analysis",
+        "Name": "undefined sales Analysis Timestamp: Sat Jul 20 2024 06:13:27 GMT+0200 (Central European Summer Time)",
         "Permissions": [
           {
             "Actions": [
@@ -3484,12 +3757,12 @@ exports[`Pipeline Stack matches Snapshot 1`] = `
     },
     "qstemplatessalessalesqsdashboard15DB6E04": {
       "DependsOn": [
-        "qsautomationsqfsharedashboardresourceproviderframeworkonEvent388397F7",
-        "qsautomationsqfsharedashboardresourceproviderframeworkonEventServiceRoleDefaultPolicy31A55BD0",
-        "qsautomationsqfsharedashboardresourceproviderframeworkonEventServiceRoleE41381C0",
-        "qsautomationsqsdashboardsharefunction83A679BB",
-        "qsautomationsqsdashboardsharefunctionServiceRoleDefaultPolicyEFCDB505",
-        "qsautomationsqsdashboardsharefunctionServiceRoleCE1E73B3",
+        "qsautomationsqssharedashboardfunctionFFC97549",
+        "qsautomationsqssharedashboardfunctionServiceRoleDefaultPolicy441D409A",
+        "qsautomationsqssharedashboardfunctionServiceRoleCC3D74CA",
+        "qsautomationsqssharedashboardresourceproviderframeworkonEvent97409FE6",
+        "qsautomationsqssharedashboardresourceproviderframeworkonEventServiceRoleDefaultPolicy4D6C92CE",
+        "qsautomationsqssharedashboardresourceproviderframeworkonEventServiceRole220BACCE",
         "salesquicksighttemplate",
       ],
       "Properties": {
@@ -3529,7 +3802,7 @@ exports[`Pipeline Stack matches Snapshot 1`] = `
             "AvailabilityStatus": "ENABLED",
           },
         },
-        "Name": "undefined sales Dashboard",
+        "Name": "undefined sales Dashboard Timestamp: Sat Jul 20 2024 06:13:27 GMT+0200 (Central European Summer Time)",
         "Permissions": [
           {
             "Actions": [
@@ -3555,6 +3828,29 @@ exports[`Pipeline Stack matches Snapshot 1`] = `
                     "Ref": "AWS::AccountId",
                   },
                   ":group/default/QS-Developers",
+                ],
+              ],
+            },
+          },
+          {
+            "Actions": [
+              "quicksight:DescribeDashboard",
+              "quicksight:ListDashboardVersions",
+              "quicksight:QueryDashboard",
+            ],
+            "Principal": {
+              "Fn::Join": [
+                "",
+                [
+                  "arn:aws:quicksight:",
+                  {
+                    "Ref": "AWS::Region",
+                  },
+                  ":",
+                  {
+                    "Ref": "AWS::AccountId",
+                  },
+                  ":group/default/QS-Readers",
                 ],
               ],
             },
@@ -3608,12 +3904,12 @@ exports[`Pipeline Stack matches Snapshot 1`] = `
     "qstemplatessalessalesqsdashboardsharefunction305336F4": {
       "DeletionPolicy": "Delete",
       "DependsOn": [
-        "qsautomationsqfsharedashboardresourceproviderframeworkonEvent388397F7",
-        "qsautomationsqfsharedashboardresourceproviderframeworkonEventServiceRoleDefaultPolicy31A55BD0",
-        "qsautomationsqfsharedashboardresourceproviderframeworkonEventServiceRoleE41381C0",
-        "qsautomationsqsdashboardsharefunction83A679BB",
-        "qsautomationsqsdashboardsharefunctionServiceRoleDefaultPolicyEFCDB505",
-        "qsautomationsqsdashboardsharefunctionServiceRoleCE1E73B3",
+        "qsautomationsqssharedashboardfunctionFFC97549",
+        "qsautomationsqssharedashboardfunctionServiceRoleDefaultPolicy441D409A",
+        "qsautomationsqssharedashboardfunctionServiceRoleCC3D74CA",
+        "qsautomationsqssharedashboardresourceproviderframeworkonEvent97409FE6",
+        "qsautomationsqssharedashboardresourceproviderframeworkonEventServiceRoleDefaultPolicy4D6C92CE",
+        "qsautomationsqssharedashboardresourceproviderframeworkonEventServiceRole220BACCE",
         "qstemplatessalessalesqsdashboard15DB6E04",
       ],
       "Properties": {
@@ -3626,7 +3922,7 @@ exports[`Pipeline Stack matches Snapshot 1`] = `
         },
         "ServiceToken": {
           "Fn::GetAtt": [
-            "qsautomationsqfsharedashboardresourceproviderframeworkonEvent388397F7",
+            "qsautomationsqssharedashboardresourceproviderframeworkonEvent97409FE6",
             "Arn",
           ],
         },
@@ -3636,12 +3932,12 @@ exports[`Pipeline Stack matches Snapshot 1`] = `
     },
     "qstemplateswebwebqsanalysis17BD408F": {
       "DependsOn": [
-        "qsautomationsqfsharedashboardresourceproviderframeworkonEvent388397F7",
-        "qsautomationsqfsharedashboardresourceproviderframeworkonEventServiceRoleDefaultPolicy31A55BD0",
-        "qsautomationsqfsharedashboardresourceproviderframeworkonEventServiceRoleE41381C0",
-        "qsautomationsqsdashboardsharefunction83A679BB",
-        "qsautomationsqsdashboardsharefunctionServiceRoleDefaultPolicyEFCDB505",
-        "qsautomationsqsdashboardsharefunctionServiceRoleCE1E73B3",
+        "qsautomationsqssharedashboardfunctionFFC97549",
+        "qsautomationsqssharedashboardfunctionServiceRoleDefaultPolicy441D409A",
+        "qsautomationsqssharedashboardfunctionServiceRoleCC3D74CA",
+        "qsautomationsqssharedashboardresourceproviderframeworkonEvent97409FE6",
+        "qsautomationsqssharedashboardresourceproviderframeworkonEventServiceRoleDefaultPolicy4D6C92CE",
+        "qsautomationsqssharedashboardresourceproviderframeworkonEventServiceRole220BACCE",
         "webquicksighttemplate",
       ],
       "Properties": {
@@ -3649,7 +3945,7 @@ exports[`Pipeline Stack matches Snapshot 1`] = `
         "AwsAccountId": {
           "Ref": "AWS::AccountId",
         },
-        "Name": "undefined web Analysis",
+        "Name": "undefined web Analysis Timestamp: Sat Jul 20 2024 06:13:27 GMT+0200 (Central European Summer Time)",
         "Permissions": [
           {
             "Actions": [
@@ -3726,12 +4022,12 @@ exports[`Pipeline Stack matches Snapshot 1`] = `
     },
     "qstemplateswebwebqsdashboard1AC867DC": {
       "DependsOn": [
-        "qsautomationsqfsharedashboardresourceproviderframeworkonEvent388397F7",
-        "qsautomationsqfsharedashboardresourceproviderframeworkonEventServiceRoleDefaultPolicy31A55BD0",
-        "qsautomationsqfsharedashboardresourceproviderframeworkonEventServiceRoleE41381C0",
-        "qsautomationsqsdashboardsharefunction83A679BB",
-        "qsautomationsqsdashboardsharefunctionServiceRoleDefaultPolicyEFCDB505",
-        "qsautomationsqsdashboardsharefunctionServiceRoleCE1E73B3",
+        "qsautomationsqssharedashboardfunctionFFC97549",
+        "qsautomationsqssharedashboardfunctionServiceRoleDefaultPolicy441D409A",
+        "qsautomationsqssharedashboardfunctionServiceRoleCC3D74CA",
+        "qsautomationsqssharedashboardresourceproviderframeworkonEvent97409FE6",
+        "qsautomationsqssharedashboardresourceproviderframeworkonEventServiceRoleDefaultPolicy4D6C92CE",
+        "qsautomationsqssharedashboardresourceproviderframeworkonEventServiceRole220BACCE",
         "webquicksighttemplate",
       ],
       "Properties": {
@@ -3771,7 +4067,7 @@ exports[`Pipeline Stack matches Snapshot 1`] = `
             "AvailabilityStatus": "ENABLED",
           },
         },
-        "Name": "undefined web Dashboard",
+        "Name": "undefined web Dashboard Timestamp: Sat Jul 20 2024 06:13:27 GMT+0200 (Central European Summer Time)",
         "Permissions": [
           {
             "Actions": [
@@ -3797,6 +4093,29 @@ exports[`Pipeline Stack matches Snapshot 1`] = `
                     "Ref": "AWS::AccountId",
                   },
                   ":group/default/QS-Developers",
+                ],
+              ],
+            },
+          },
+          {
+            "Actions": [
+              "quicksight:DescribeDashboard",
+              "quicksight:ListDashboardVersions",
+              "quicksight:QueryDashboard",
+            ],
+            "Principal": {
+              "Fn::Join": [
+                "",
+                [
+                  "arn:aws:quicksight:",
+                  {
+                    "Ref": "AWS::Region",
+                  },
+                  ":",
+                  {
+                    "Ref": "AWS::AccountId",
+                  },
+                  ":group/default/QS-Readers",
                 ],
               ],
             },
@@ -3850,12 +4169,12 @@ exports[`Pipeline Stack matches Snapshot 1`] = `
     "qstemplateswebwebqsdashboardsharefunctionC0173B60": {
       "DeletionPolicy": "Delete",
       "DependsOn": [
-        "qsautomationsqfsharedashboardresourceproviderframeworkonEvent388397F7",
-        "qsautomationsqfsharedashboardresourceproviderframeworkonEventServiceRoleDefaultPolicy31A55BD0",
-        "qsautomationsqfsharedashboardresourceproviderframeworkonEventServiceRoleE41381C0",
-        "qsautomationsqsdashboardsharefunction83A679BB",
-        "qsautomationsqsdashboardsharefunctionServiceRoleDefaultPolicyEFCDB505",
-        "qsautomationsqsdashboardsharefunctionServiceRoleCE1E73B3",
+        "qsautomationsqssharedashboardfunctionFFC97549",
+        "qsautomationsqssharedashboardfunctionServiceRoleDefaultPolicy441D409A",
+        "qsautomationsqssharedashboardfunctionServiceRoleCC3D74CA",
+        "qsautomationsqssharedashboardresourceproviderframeworkonEvent97409FE6",
+        "qsautomationsqssharedashboardresourceproviderframeworkonEventServiceRoleDefaultPolicy4D6C92CE",
+        "qsautomationsqssharedashboardresourceproviderframeworkonEventServiceRole220BACCE",
         "qstemplateswebwebqsdashboard1AC867DC",
       ],
       "Properties": {
@@ -3868,7 +4187,7 @@ exports[`Pipeline Stack matches Snapshot 1`] = `
         },
         "ServiceToken": {
           "Fn::GetAtt": [
-            "qsautomationsqfsharedashboardresourceproviderframeworkonEvent388397F7",
+            "qsautomationsqssharedashboardresourceproviderframeworkonEvent97409FE6",
             "Arn",
           ],
         },
@@ -3878,12 +4197,12 @@ exports[`Pipeline Stack matches Snapshot 1`] = `
     },
     "salesquicksighttemplate": {
       "DependsOn": [
-        "qsautomationsqfsharedashboardresourceproviderframeworkonEvent388397F7",
-        "qsautomationsqfsharedashboardresourceproviderframeworkonEventServiceRoleDefaultPolicy31A55BD0",
-        "qsautomationsqfsharedashboardresourceproviderframeworkonEventServiceRoleE41381C0",
-        "qsautomationsqsdashboardsharefunction83A679BB",
-        "qsautomationsqsdashboardsharefunctionServiceRoleDefaultPolicyEFCDB505",
-        "qsautomationsqsdashboardsharefunctionServiceRoleCE1E73B3",
+        "qsautomationsqssharedashboardfunctionFFC97549",
+        "qsautomationsqssharedashboardfunctionServiceRoleDefaultPolicy441D409A",
+        "qsautomationsqssharedashboardfunctionServiceRoleCC3D74CA",
+        "qsautomationsqssharedashboardresourceproviderframeworkonEvent97409FE6",
+        "qsautomationsqssharedashboardresourceproviderframeworkonEventServiceRoleDefaultPolicy4D6C92CE",
+        "qsautomationsqssharedashboardresourceproviderframeworkonEventServiceRole220BACCE",
       ],
       "Properties": {
         "AwsAccountId": {
@@ -4329,12 +4648,12 @@ exports[`Pipeline Stack matches Snapshot 1`] = `
     },
     "webquicksighttemplate": {
       "DependsOn": [
-        "qsautomationsqfsharedashboardresourceproviderframeworkonEvent388397F7",
-        "qsautomationsqfsharedashboardresourceproviderframeworkonEventServiceRoleDefaultPolicy31A55BD0",
-        "qsautomationsqfsharedashboardresourceproviderframeworkonEventServiceRoleE41381C0",
-        "qsautomationsqsdashboardsharefunction83A679BB",
-        "qsautomationsqsdashboardsharefunctionServiceRoleDefaultPolicyEFCDB505",
-        "qsautomationsqsdashboardsharefunctionServiceRoleCE1E73B3",
+        "qsautomationsqssharedashboardfunctionFFC97549",
+        "qsautomationsqssharedashboardfunctionServiceRoleDefaultPolicy441D409A",
+        "qsautomationsqssharedashboardfunctionServiceRoleCC3D74CA",
+        "qsautomationsqssharedashboardresourceproviderframeworkonEvent97409FE6",
+        "qsautomationsqssharedashboardresourceproviderframeworkonEventServiceRoleDefaultPolicy4D6C92CE",
+        "qsautomationsqssharedashboardresourceproviderframeworkonEventServiceRole220BACCE",
       ],
       "Properties": {
         "AwsAccountId": {

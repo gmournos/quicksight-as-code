@@ -27,7 +27,7 @@ Construct QuickSightSampleTemplatesConstruct automates the generation of these a
 
 ## Pipeline
 
-A simple pipeline in stack QuicksightCicdStack  is activated when commits happen in the master branch of this GitHub project. It is a simple proof-of-concept demonstrating the continuous delivery of QS artifacts. In a normal project, you would probably be running more complex pipelines; also, you would typically be running from a devops account and deploying the QS artifacts to your testing accounts.
+A simple pipeline in stack QuicksightCicdStack  is activated when commits happen in the master branch of this GitHub project. It is a simple proof-of-concept demonstrating the continuous delivery of QS artifacts. In a normal project, you would probably be running more complex delivery pipelines; also, you would typically be running from a devops account and deploying the QS artifacts to your testing accounts.
 
 ## Process
 
